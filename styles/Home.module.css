@@ -1,0 +1,89 @@
+.Container {
+
+}
+
+.HeaderSlider {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  background-image: url(../images/Top-BG.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.HeaderSliderLeft {
+  color: white;
+  padding: 16% 10%;
+  margin: 0 auto;
+}
+
+.TopHeader {
+  font-size: calc(22px + (50 - 22) * ((100vw - 300px) / (1920 - 300)));
+  font-family: Poppins;
+  font-weight: bold;
+  letter-spacing: 2px;
+  filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
+}
+
+.TopDescription {
+  font-family: Lato;
+  text-align: justify;
+  filter: drop-shadow(3px 3px 5px rgb(89, 45, 98));
+}
+
+.HeaderSliderRight {
+  padding: 10% 5% 0 0;
+}
+
+.HeaderSliderRightIMG {
+  filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
+}
+
+.Main {
+
+}
+
+.FirstBlock {
+
+}
+
+.FirstBlockHeader {
+  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  color: #844adb;
+  text-align: center;
+}
+
+.FirstBlockParagraph {
+  text-align: center;
+}
+
+.FirstBlockSidesDivision{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.FirstBlockLeft {
+  padding: 1rem 5%;
+}
+
+.FirstBlockLeftIMG {
+  filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
+}
+
+.FirstBlockRight {
+  padding: 1rem 5% 0 0;
+}
+
+.FirstBlockRightList {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.FirstBlockRightListHeader {
+  color: #844adb;
+}
+
+.Footer {
+
+}
