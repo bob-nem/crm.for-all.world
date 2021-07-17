@@ -1,5 +1,8 @@
 import style from '../styles/Home.module.css';
 import Image from 'next/image';
+import { ReactElement } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import topIMG from '../images/Top-IMG.png';
 import firstBlockIMG from '../images/FirstBlock-IMG.png';
@@ -7,6 +10,7 @@ import secondBlockIMG from '../images/SecondBlock-IMG.png';
 import windowTargetIcon from '../images/window-target1.svg';
 import manyProcessessIcon from '../images/many-processes.svg';
 import employeeStudying from '../images/employee-studying.svg';
+import unicornTopLogo from '../images/unicorn-logo-gr.png';
 
 export default function Home() {
   return (
@@ -17,6 +21,11 @@ export default function Home() {
         </div>
         <div className={style.HeaderSlider}>
           <div className={style.HeaderSliderLeft}>
+            <div className={style.UnicornTopLogo}>
+              <Image
+                src={unicornTopLogo}
+              />
+            </div>
             <h1 className={style.TopHeader}>Customer Relationship Management Systems</h1>
             <p className={style.TopDescription}>&#10148; <strong>CRM system</strong> (Customer Relations Management) is a program for automating document management processes, accounting and data analysis in an organization, as well as effectively interacting with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.<br />&#10144; A well-thought-out CRM system allows the manager to understand how the processes are moving in the company, what needs to be done to achieve the targets and monitor the stages of each process</p>
           </div>
@@ -87,21 +96,34 @@ export default function Home() {
         <div className={style.SecondBlock}>
           <div className={style.SecondBlockLeft}>
             <h2 className={style.SecondBlockHeader}>Stages of CRM development and implementation</h2>
+            <div className={style.SecondBlockLine}></div>
             <div className={style.SecondBlockConent}>
-              <h3>Technical task development</h3>
-              <p>Analysis of business processes of the enterprise, development of a flowchart, a detailed description of the functionality. Selecting the optimal CRM solution for solving your tasks, determining the stages of implementation and the results of each stage.</p>
+              <FontAwesomeIcon icon={faCheck} className={style.SecondBlockIcon}/>
+              <div>
+                <h3>Technical task development</h3>
+                <p>Analysis of business processes of the enterprise, development of a flowchart, a detailed description of the functionality. Selecting the optimal CRM solution for solving your tasks, determining the stages of implementation and the results of each stage.</p>
+              </div>
             </div>
             <div className={style.SecondBlockConent}>
-              <h3>Interface design, programming</h3>
-              <p>Interface design development, module programming. Working in a CRM system has its own nuances and features, we will help to optimize the process, make it more understandable for the employee. The execution of all actions in the system will become obvious and intuitive. Using the example of specific tasks, we show how CRM will help simplify the work for him.</p>
+              <FontAwesomeIcon icon={faCheck} className={style.SecondBlockIcon}/>
+              <div>
+                <h3>Interface design, programming</h3>
+                <p>Interface design development, module programming. Working in a CRM system has its own nuances and features, we will help to optimize the process, make it more understandable for the employee. The execution of all actions in the system will become obvious and intuitive. Using the example of specific tasks, we show how CRM will help simplify the work for him.</p>
+              </div>
             </div>
             <div className={style.SecondBlockConent}>
-              <h3>Testing and launching</h3>
-              <p>Project testing, integration, warranty support, staff training. An employee who knows his product well, sales methods and tools that increase efficiency, which is CRM, has great value. Such an employee becomes a much more important combat unit than an employee without CRM skills.</p>
+              <FontAwesomeIcon icon={faCheck} className={style.SecondBlockIcon}/>
+              <div>
+                <h3>Testing and launching</h3>
+                <p>Project testing, integration, warranty support, staff training. An employee who knows his product well, sales methods and tools that increase efficiency, which is CRM, has great value. Such an employee becomes a much more important combat unit than an employee without CRM skills.</p>
+              </div>
             </div>
             <div className={style.SecondBlockConent}>
-              <h3>Further support</h3>
-              <p>The developed CRM systems have the possibility of improvement when new goals and objectives appear. Ensure that all applications and requests (autolids)get into the CRM. Synchronize management and sales department using department reporting. </p>
+              <FontAwesomeIcon icon={faCheck} className={style.SecondBlockIcon}/>
+              <div>
+                <h3>Further support</h3>
+                <p>The developed CRM systems have the possibility of improvement when new goals and objectives appear. Ensure that all applications and requests (autolids)get into the CRM. Synchronize management and sales department using department reporting. </p>
+              </div>
             </div>
           </div>
           <div className={style.SecondBlockRight}>
@@ -113,6 +135,30 @@ export default function Home() {
           </div>
         </div>
         <div className={style.ThirdBlock}>
+        <div className={style.ThirdBlockColorBG}>
+          <h2 className={style.ThirdBlockHeader}>CAPABILITIES OF CRM SYSTEMS</h2>
+          <p className={style.ThirdBlockParagraph}>An effective CRM system helps a business to sell more, takes control of communication with customers, sales and marketing management.</p>
+          <div className={style.ThirdBlockCards}>
+            <div className={style.ThirdBlockOneCard1}>
+              <p>Customer base and sales management</p>
+            </div>
+            <div className={style.ThirdBlockOneCard2}>
+              <p>Customer support and service</p>
+            </div>
+            <div className={style.ThirdBlockOneCard3}>
+              <p>Employees (tasks, KPI)</p>
+            </div>
+            <div className={style.ThirdBlockOneCard4}>
+              <p className={style.ThirdBlockOneCardP}>Telephony</p>
+            </div>
+            <div className={style.ThirdBlockOneCard5}>
+              <p className={style.ThirdBlockOneCardP}>Omnichannel</p>
+            </div>
+            <div className={style.ThirdBlockOneCard6}>
+              <p>Integration with other systems and services</p>
+            </div>
+          </div>
+        </div>
         </div>
       </main>
       <footer className={style.Footer}>

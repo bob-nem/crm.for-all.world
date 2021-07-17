@@ -13,8 +13,12 @@
 
 .HeaderSliderLeft {
   color: white;
-  padding: 16% 10%;
+  padding: 6% 10%;
   margin: 0 auto;
+}
+
+.UnicornTopLogo {
+  width: 12vh;
 }
 
 .TopHeader {
@@ -22,6 +26,7 @@
   font-weight: bold;
   letter-spacing: 2px;
   filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
+  margin-block-start: 0.3em;
 }
 
 .TopDescription {
@@ -83,7 +88,6 @@
 .FirstBlockRightListHeader {
   color: #844adb;
   text-shadow: 1px 1px 2px rgba(77, 77, 77, 0.5);
-  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.5))
 }
 
 .FirstBlockRightListParagraph {
@@ -111,7 +115,7 @@
 .SecondBlockLeft {
   filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
   color: white;
-  padding: 5%;
+  padding: 3% 5% 5%;
   margin: auto 0;
 }
 
@@ -119,8 +123,22 @@
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
 }
 
-.SecondBlockConent {
+.SecondBlockLine {
+  border: 2px solid #fff;
+  width: 6vw;
+}
 
+.SecondBlockConent {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  text-align: justify;
+  filter: drop-shadow(3px 5px 5px rgba(89, 45, 98, 0.5));
+}
+
+.SecondBlockIcon {
+  display: inline-block;
+  margin: 0 auto;
+  margin-block-start: 1.5em;
 }
 
 .SecondBlockRight {
@@ -133,8 +151,87 @@
 }
 
 .ThirdBlock {
-  height: 50vh;
+  background-image: url(../images/ThirdBlock-BG.jpg);
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
+
+.ThirdBlockColorBG {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100vh;
+  padding: 3%;
+
+}
+
+.ThirdBlockHeader {
+  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  color: #844adb;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(77, 77, 77, 0.5);
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+}
+
+.ThirdBlockParagraph {
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(77, 77, 77, 0.5);
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+}
+
+.ThirdBlockCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "a a a"
+  "b b b";
+  padding: 3% 10%;
+  margin: 2% auto;
+  align-content: stretch;
+}
+
+.ThirdBlockOneCardP {
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  align-content: center;
+}
+
+.ThirdBlockOneCard1 {
+  grid-area: a;
+  justify-self: start;
+}
+
+.ThirdBlockOneCard2 {
+  grid-area: a;
+  justify-self: center;
+}
+
+.ThirdBlockOneCard3 {
+  grid-area: a;
+  justify-self: end;
+}
+
+.ThirdBlockOneCard4 {
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  align-content: center;
+  grid-area: b;
+  justify-self: start;
+}
+
+.ThirdBlockOneCard5 {
+  grid-area: b;
+  justify-self: center;
+}
+
+.ThirdBlockOneCard6 {
+  grid-area: b;
+  justify-self: end;
+}
+
+
 
 .Footer {
 

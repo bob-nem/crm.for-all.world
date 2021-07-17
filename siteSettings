@@ -66,3 +66,21 @@ If you have a complex, multi-level business process, with the help of CRM you ge
 Анализ бизнес-процессов предприятия, разработка блок-схемы, подробное описание функционала.
 
 Сотрудники избавляются от рутинных операций освобождая время для более полезных действий.
+
+
+let imageMove = document.getElementByID('SecondBlockRight');
+
+imageMove.addEventListener('mouseenter', hintBrowser);
+imageMove.addEventListener('animationEnd', removeHint);
+
+function hintBrowser() {
+  this.style.willChange = 'transform, transition';
+}
+
+function removeHint() {
+  this.style.willChange = 'auto';
+}
+
+  will-change: transform;
+  transition: all 3000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+  transform: perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
