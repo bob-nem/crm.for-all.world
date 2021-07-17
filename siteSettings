@@ -1,7 +1,66 @@
+COLORS:    
+https://colorscheme.ru/#4r31TnhMTw0w0
+    text shadow: rgb(89, 45, 98)
+    first block blue: #448ef1
+/* HEX коды */
+
+.primary-0 { color: #854adb }		/* Основной Цвет */
+.primary-1 { color: #7453a4 }
+.primary-2 { color: #48188e }
+.primary-3 { color: #a777ed }
+.primary-4 { color: #ba97ed }
+
+.secondary-a-0 { color: #e0fc45 }	/* Вторичный Цвет A (зеленый) */
+.secondary-a-1 { color: #adbd56 }
+.secondary-a-2 { color: adbd56 }
+.secondary-a-3 { color: #e9fd73 }
+.secondary-a-4 { color: #eefd98 }
+
+.secondary-b-0 { color: #ffcf46 }	/* Вторичный Цвет B (желтый) */
+.secondary-b-1 { color: #bfa457 }
+.secondary-b-2 { color: #a68017 }
+.secondary-b-3 { color: #ffdb74 }
+.secondary-b-4 { color: #ffe499 }
+
+
+/* RGBA коды */
+
+.primary-0 { color: rgba(133,  74, 219, 1) }		/* Основной Цвет */
+.primary-1 { color: rgba(116,  83, 164, 1) }
+.primary-2 { color: rgba( 72,  24, 142, 1) }
+.primary-3 { color: rgba(167, 119, 237, 1) }
+.primary-4 { color: rgba(186, 151, 237, 1) }
+
+.secondary-a-0 { color: rgba(224, 252,  69, 1) }	/* Вторичный Цвет A */
+.secondary-a-1 { color: rgba(173, 189,  86, 1) }
+.secondary-a-2 { color: rgba(142, 164,  22, 1) }
+.secondary-a-3 { color: rgba(233, 253, 115, 1) }
+.secondary-a-4 { color: rgba(238, 253, 152, 1) }
+
+.secondary-b-0 { color: rgba(255, 207,  70, 1) }	/* Вторичный Цвет B */
+.secondary-b-1 { color: rgba(191, 164,  87, 1) }
+.secondary-b-2 { color: rgba(166, 128,  23, 1) }
+.secondary-b-3 { color: rgba(255, 219, 116, 1) }
+.secondary-b-4 { color: rgba(255, 228, 153, 1) }
+
+    
+
+
+
+
+
+TEXT:
 CRM система (Customer Relations Management) – это программа автоматизации процессов документооборота, учёта и анализа данных в организации а также эффективно взаимодействовать с клиентами и партнерами. Интеграция этого программного обеспечения позволяет наладить контроль и планирование любого продуктивного и клиентоориентированного бизнеса.
 Качественно продуманная CRM система позволяет руководителю понимать как движутся процессы в компании, что необходимо сделать для достижения целевых показателей и следить за этапами работы каждого процесса.
 CRM system (Customer Relations Management) is a program for automating document management processes, accounting and data analysis in an organization, as well as effectively interacting with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.
 A well-thought-out CRM system allows the manager to understand how the processes are moving in the company, what needs to be done to achieve the targets and monitor the stages of each process.
 Интеграция в любой сервис. Комплексная автоматизация по сложным алгоритмам с большим количеством вводных данных с тонкой настрокой пользовательских функций для каждого сотруджника.
 Integration into any service. Complex automation using difficult algorithms with a large amount of input data with fine-tuning of user functions for each employee.
+https://www.youtube.com/watch?v=bvFdynyUNB8
+https://ru.enterpriseunix.org/5-best-vector-graphics-editors
+Если у вас сложный, многоуровневый бизнес процесс, с помощью CRM вы получаете контроль не только отдела продаж, но и дилеров, подрядчиков, работу заводов и доставку до конечного потребителя
+If you have a complex, multi-level business process, with the help of CRM you get control not only of the sales department, but also of dealers, contractors, the work of factories and delivery to the final consumer
+Пользователи, прошедшие обученные применению CRM решений знают какие процессы и для чего она автоматизирует, умеют быстро формировать необходимую информацию. Система интуитивно понятна и доступна для восприятия и взаимодействия. 
+Анализ бизнес-процессов предприятия, разработка блок-схемы, подробное описание функционала.
 
+Сотрудники избавляются от рутинных операций освобождая время для более полезных действий.

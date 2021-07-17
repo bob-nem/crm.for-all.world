@@ -1,9 +1,10 @@
 import style from '../styles/Home.module.css';
 import Image from 'next/image';
 
-import topAudit from '../images/Audit.png';
-import topDesktop from '../images/Top-Desktop.png';
-import firstBlockLeftIMG from '../images/CRM-Development.png';
+import topIMG from '../images/Top-IMG.png';
+import firstBlockIMG from '../images/FirstBlock-IMG.png';
+import secondBlockIMG from '../images/SecondBlock-IMG.png';
+import windowTargetIcon from '../images/window-target1.svg';
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           <div className={style.HeaderSliderRight}>
             <Image
               className={style.HeaderSliderRightIMG}
-              src={topAudit}
+              src={topIMG}
               alt="computer with CRM"
             />
           </div>
@@ -34,28 +35,74 @@ export default function Home() {
             <div className={style.FirstBlockLeft}>
               <Image
                 className={style.FirstBlockLeftIMG}
-                src={firstBlockLeftIMG}
+                src={firstBlockIMG}
                 alt="CRM development"
               />
             </div>
             <div className={style.FirstBlockRight}>
               <div className={style.FirstBlockRightList}>
                 <div className={style.FirstBlockRightListIcon}>
-                
+                <Image
+                  className={style.WindowTargetIcon}
+                  src={windowTargetIcon}
+                  alt="design system for you specifics"
+                />
                 </div>
                 <div>
                   <h3 className={style.FirstBlockRightListHeader}>Design a CRM system for your specifics</h3>
-                  <p className={style.FirstBlockRightListParagraph}>Integration into any service. Complex automation using difficult algorithms with a large amount of input data with fine-tuning of user functions for each employee.</p>
+                  <p className={style.FirstBlockRightListParagraph}>Integration into any service. Complex automation using difficult algorithms with a large amount of input data with fine-tuning of user functions for each employee. We will make a unique CRM exactly for your needs.</p>
                 </div>
               </div>
               <div className={style.FirstBlockRightList}>
+                <div className={style.FirstBlockRightListIcon}>
+
+                </div>
+                <div>
+                  <h3 className={style.FirstBlockRightListHeader}>Systems for non-typical processes</h3>
+                  <p className={style.FirstBlockRightListParagraph}>If you have a complex, multi-level business process, with the help of CRM you get control not only of the sales department, but also of dealers, contractors, the work of factories and delivery to the final consumer.</p>
+                </div>
               </div>
               <div className={style.FirstBlockRightList}>
+              <div className={style.FirstBlockRightListIcon}>
+
               </div>
-              <div className={style.FirstBlockRightList}>
+              <div>
+                <h3 className={style.FirstBlockRightListHeader}>Employee training to CRM use</h3>
+                <p className={style.FirstBlockRightListParagraph}>Users who have been trained in the use of CRM solutions know what processes and for what it automates, are able to quickly generate the necessary information. The system is intuitive and accessible for perception and interaction.</p>
+              </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className={style.SecondBlock}>
+          <div className={style.SecondBlockLeft}>
+            <h2 className={style.SecondBlockHeader}>Stages of CRM development and implementation</h2>
+            <div className={style.SecondBlockConent}>
+              <h3>Technical task development</h3>
+              <p>Analysis of business processes of the enterprise, development of a flowchart, a detailed description of the functionality. Selecting the optimal CRM solution for solving your tasks, determining the stages of implementation and the results of each stage.</p>
+            </div>
+            <div className={style.SecondBlockConent}>
+              <h3>Interface design, programming</h3>
+              <p>Interface design development, module programming. Working in a CRM system has its own nuances and features, we will help to optimize the process, make it more understandable for the employee. The execution of all actions in the system will become obvious and intuitive. Using the example of specific tasks, we show how CRM will help simplify the work for him.</p>
+            </div>
+            <div className={style.SecondBlockConent}>
+              <h3>Testing and launching</h3>
+              <p>Project testing, integration, warranty support, staff training. An employee who knows his product well, sales methods and tools that increase efficiency, which is CRM, has great value. Such an employee becomes a much more important combat unit than an employee without CRM skills.</p>
+            </div>
+            <div className={style.SecondBlockConent}>
+              <h3>Further support</h3>
+              <p>The developed CRM systems have the possibility of improvement when new goals and objectives appear. Ensure that all applications and requests (autolids)get into the CRM. Synchronize management and sales department using department reporting. </p>
+            </div>
+          </div>
+          <div className={style.SecondBlockRight}>
+            <Image
+              src={secondBlockIMG}
+              alt="CRM implementation"
+              className={style.SecondBlockIMG}
+            />
+          </div>
+        </div>
+        <div className={style.ThirdBlock}>
         </div>
       </main>
       <footer className={style.Footer}>

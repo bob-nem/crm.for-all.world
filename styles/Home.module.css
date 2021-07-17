@@ -5,7 +5,6 @@
 .HeaderSlider {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 100vh;
   background-image: url(../images/Top-BG.png);
   background-size: cover;
   background-position: bottom;
@@ -20,14 +19,12 @@
 
 .TopHeader {
   font-size: calc(22px + (50 - 22) * ((100vw - 300px) / (1920 - 300)));
-  font-family: Poppins;
   font-weight: bold;
   letter-spacing: 2px;
   filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
 }
 
 .TopDescription {
-  font-family: Lato;
   text-align: justify;
   filter: drop-shadow(3px 3px 5px rgb(89, 45, 98));
 }
@@ -45,7 +42,7 @@
 }
 
 .FirstBlock {
-
+  padding: 0 3% 3rem 3%;
 }
 
 .FirstBlockHeader {
@@ -60,11 +57,12 @@
 
 .FirstBlockSidesDivision{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
 }
 
 .FirstBlockLeft {
-  padding: 1rem 5%;
+  padding: 1rem 0;
+  margin-top: 1rem;
 }
 
 .FirstBlockLeftIMG {
@@ -72,7 +70,8 @@
 }
 
 .FirstBlockRight {
-  padding: 1rem 5% 0 0;
+  padding: 2rem 0;
+  margin: auto;
 }
 
 .FirstBlockRightList {
@@ -82,6 +81,56 @@
 
 .FirstBlockRightListHeader {
   color: #844adb;
+}
+
+.FirstBlockRightListParagraph {
+  text-align: justify;
+}
+
+.FirstBlockRightListIcon {
+  padding: 16%;
+}
+
+.WindowTargetIcon {
+  fill: #844adb;
+}
+
+.SecondBlock {
+  background-image: url(../images/SecondBlock-BG.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  padding: 0 3%
+}
+
+.SecondBlockLeft {
+  filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
+  color: white;
+  padding: 5%;
+  margin: auto 0;
+}
+
+.SecondBlockHeader{
+  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.SecondBlockConent {
+
+}
+
+.SecondBlockRight {
+  padding: 3%;
+  margin: auto;
+}
+
+.SecondBlockIMG {
+  filter: drop-shadow(5px 5px 5px rgb(89, 45, 98));
+}
+
+.ThirdBlock {
+  height: 50vh;
 }
 
 .Footer {
