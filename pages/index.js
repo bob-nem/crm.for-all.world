@@ -5,6 +5,8 @@ import topIMG from '../images/Top-IMG.png';
 import firstBlockIMG from '../images/FirstBlock-IMG.png';
 import secondBlockIMG from '../images/SecondBlock-IMG.png';
 import windowTargetIcon from '../images/window-target1.svg';
+import manyProcessessIcon from '../images/many-processes.svg';
+import employeeStudying from '../images/employee-studying.svg';
 
 export default function Home() {
   return (
@@ -43,7 +45,7 @@ export default function Home() {
               <div className={style.FirstBlockRightList}>
                 <div className={style.FirstBlockRightListIcon}>
                 <Image
-                  className={style.WindowTargetIcon}
+                  className={style.FirstBlockRightIcon}
                   src={windowTargetIcon}
                   alt="design system for you specifics"
                 />
@@ -55,7 +57,11 @@ export default function Home() {
               </div>
               <div className={style.FirstBlockRightList}>
                 <div className={style.FirstBlockRightListIcon}>
-
+                <Image
+                  className={style.FirstBlockRightIcon}
+                  src={manyProcessessIcon}
+                  alt="design non-typical processes"
+                />
                 </div>
                 <div>
                   <h3 className={style.FirstBlockRightListHeader}>Systems for non-typical processes</h3>
@@ -64,7 +70,11 @@ export default function Home() {
               </div>
               <div className={style.FirstBlockRightList}>
               <div className={style.FirstBlockRightListIcon}>
-
+                <Image
+                  className={style.FirstBlockRightIcon}
+                  src={employeeStudying}
+                  alt="Employee training for CRM"
+                />
               </div>
               <div>
                 <h3 className={style.FirstBlockRightListHeader}>Employee training to CRM use</h3>
