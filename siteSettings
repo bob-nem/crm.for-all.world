@@ -45,13 +45,13 @@ https://colorscheme.ru/#4r31TnhMTw0w0
 .secondary-b-3 { color: rgba(255, 219, 116, 1) }
 .secondary-b-4 { color: rgba(255, 228, 153, 1) }
 
-    
-
-
-
-
 
 TEXT:
+initials:
+https://www.1cbit.ru/1s-otrasli/vnedrenie-crm-sistem/
+https://www.completo.ru/crm/
+https://www.fastweb.ru/razrabotka-crm/
+https://integrator.digital/crm-implementation/
 CRM система (Customer Relations Management) – это программа автоматизации процессов документооборота, учёта и анализа данных в организации а также эффективно взаимодействовать с клиентами и партнерами. Интеграция этого программного обеспечения позволяет наладить контроль и планирование любого продуктивного и клиентоориентированного бизнеса.
 Качественно продуманная CRM система позволяет руководителю понимать как движутся процессы в компании, что необходимо сделать для достижения целевых показателей и следить за этапами работы каждого процесса.
 CRM system (Customer Relations Management) is a program for automating document management processes, accounting and data analysis in an organization, as well as effectively interacting with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.
@@ -68,19 +68,11 @@ If you have a complex, multi-level business process, with the help of CRM you ge
 Сотрудники избавляются от рутинных операций освобождая время для более полезных действий.
 
 
-let imageMove = document.getElementByID('SecondBlockRight');
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
-imageMove.addEventListener('mouseenter', hintBrowser);
-imageMove.addEventListener('animationEnd', removeHint);
-
-function hintBrowser() {
-  this.style.willChange = 'transform, transition';
+.SecondBlockIcon {
+  display: inline-block;
+  margin: 0 auto;
+  margin-block-start: 1.5em;
 }
-
-function removeHint() {
-  this.style.willChange = 'auto';
-}
-
-  will-change: transform;
-  transition: all 3000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-  transform: perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
