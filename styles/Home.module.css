@@ -1,5 +1,26 @@
-.Container {
+@keyframes show {
+  from {opacity: 0;} to {opacity: 1;}
+}
 
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes showLeft {
+  from {left:-100%;}
+  to {left:0;}
+}
+
+@keyframes showRight {
+from {right:-100%;}
+to {right:0;}
+}
+
+.Container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .HeaderSlider {
@@ -9,6 +30,7 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  scroll-snap-align: start;
 }
 
 .HeaderSliderLeft {
@@ -20,19 +42,24 @@
 .UnicornTopLogo {
   width: 12vh;
   filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
+  animation: show 3s;
 }
 
 .TopHeader {
+  position: relative;
   font-size: calc(22px + (50 - 22) * ((100vw - 300px) / (1920 - 300)));
   font-weight: bold;
   letter-spacing: 2px;
   filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
   margin-block-start: 0.3em;
+  animation: showLeft .6s;
 }
 
 .TopDescription {
+  position: relative;
   text-align: justify;
   filter: drop-shadow(3px 3px 5px rgb(89, 45, 98));
+  animation: showLeft .8s;
 }
 
 .HeaderSliderRight {
@@ -41,6 +68,9 @@
 
 .HeaderSliderRightIMG {
   filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
 }
 
 .Main {
@@ -49,6 +79,8 @@
 
 .FirstBlock {
   padding: 0 3% 3rem 3%;
+  scroll-snap-align: start;
+  animation: show 2s;
 }
 
 .FirstBlockHeader {
@@ -70,15 +102,20 @@
 .FirstBlockLeft {
   padding: 1rem 0;
   margin-top: 1rem;
-}
+  }
 
 .FirstBlockLeftIMG {
   filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
 }
 
 .FirstBlockRight {
+  position:relative;
   padding: 2rem 0;
   margin: auto;
+  animation: showRight .9s;
 }
 
 .FirstBlockRightList {
@@ -110,7 +147,8 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 55% 45%;
-  padding: 0 3%
+  padding: 0 3%;
+  scroll-snap-align: start;
 }
 
 .SecondBlockLeft {
@@ -163,13 +201,12 @@
   background-position:top;
   background-repeat: no-repeat;
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .ThirdBlockColorBG {
   background-color: rgba(255, 255, 255, 0.4);
-  height: 100vh;
   padding: 3%;
-
 }
 
 .ThirdBlockHeader {
@@ -198,10 +235,12 @@
   grid-template-columns: 40% 60%;
   border-top: 1px solid #854adb;
   border-bottom: 1px solid #854adb;
-  border-radius: .5rem;
+  border-radius: .2rem;
   background: rgba(255, 255, 255, 0.8);
   padding: .5rem 0;
   box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
+  animation: show 2s;
+  animation-delay: .4s;
 }
 
 .ThirdBlockOneCardI {
@@ -225,6 +264,39 @@
 .ThirdBlockOneCardP {
   text-align: justify;
 }
+
+.ThirdBlockDigits {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid #854adb;
+  border-bottom: 1px solid #854adb;
+  border-radius: .2rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1% 0;
+  margin: 0 10% 3%;
+  
+  }
+
+
+
+.ThirdBlockDigitsBlock {
+  border-right: 1px solid #854adb;
+  padding: 0 5%;
+}
+
+.ThirdBlockDigitsBlockL {
+  padding: 0 5%;
+}
+
+.ThirdBlockDigitsH3 {
+  font-size: calc(21px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 500;
+  color: #854adb;
+}
+
+
 
 .Footer {
 

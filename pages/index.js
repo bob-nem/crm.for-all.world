@@ -1,6 +1,8 @@
 import style from '../styles/Home.module.css';
 import Image from 'next/image';
-import { ReactElement } from 'react'
+import Script from 'next/script';
+import Head from 'next/head'
+import React, { ReactElement } from 'react';
 
 import topIMG from '../images/Top-IMG.png';
 import unicornTopLogo from '../images/unicorn-logo-gr.png';
@@ -15,11 +17,16 @@ import employeesKPI from '../images/employees-kpi.svg';
 import telephony from '../images/telephony.svg';
 import systemIntegration from '../images/integration-systems.svg';
 import processesModeling from '../images/processes-modeling.svg';
-import checkWhite from '../images/check-white.svg'
+import checkWhite from '../images/check-white.svg';
+import phoneman from '../images/phoneman-py.svg';
 
 export default function Home() {
   return (
     <div className={style.Container}>
+      <Head>
+        <title>CRM.for-all.world</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <header>
         <div className={style.MainMenu}>
 
@@ -142,8 +149,8 @@ export default function Home() {
         <div className={style.ThirdBlock}>
         <div className={style.ThirdBlockColorBG}>
           <h2 className={style.ThirdBlockHeader}>CAPABILITIES OF CRM SYSTEMS</h2>
-          <p className={style.ThirdBlockParagraph}>An effective CRM system helps a business to sell more, takes control of communication with customers, sales and marketing management.</p>
-          <div className={style.ThirdBlockCards}>
+          <p className={style.ThirdBlockParagraph}>An effective CRM system helps a business to sell more, takes control of communication with customers and suppliers, sales and marketing management.</p>
+          <div loading="lazy" className={style.ThirdBlockCards}>
             <div className={style.ThirdBlockOneCard}>
               <div className={style.ThirdBlockOneCardI}>
                 <Image
@@ -220,6 +227,30 @@ export default function Home() {
                 <h3 className={style.ThirdBlockOneCardH3}>Modeling and automation of processes</h3>
                 <p className={style.ThirdBlockOneCardP}>CRM systems on the 1C platform have a built-in business process editor (BPMN) for automating the organization's processes and regulating key processes.</p>
               </div>
+            </div>
+          </div>
+          <div className={style.ThirdBlockDigits} data-aos="fade-up" data-aos-anchor=".ThirdBlockHeader">
+
+
+            <div className={style.ThirdBlockDigitsBlock}>
+              <h3 className={style.ThirdBlockDigitsH3}>on 36%</h3>
+              <p className={style.ThirdBlockDigitsP}>sales growth on the same flow of incoming requests with the use of a customer heating system by stages.</p>
+            </div>
+            <div className={style.ThirdBlockDigitsBlock}>
+              <h3 className={style.ThirdBlockDigitsH3}>up to 15%</h3>
+              <p className={style.ThirdBlockDigitsP}>the growth of repeat sales on the same basis due to internal promotion.</p>
+            </div>
+            <div className={style.ThirdBlockDigitsBlock}>
+              <h3 className={style.ThirdBlockDigitsH3}>by 1.6 times</h3>
+              <p className={style.ThirdBlockDigitsP}>reducing the processing time of current applications. entering and receiving data, forming documents.</p>
+            </div>
+            <div className={style.ThirdBlockDigitsBlock}>
+              <h3 className={style.ThirdBlockDigitsH3}>100%</h3>
+              <p className={style.ThirdBlockDigitsP}>security against loss of account information (if the conditions for saving backups are met)</p>
+            </div>
+            <div className={style.ThirdBlockDigitsBlockL}>
+              <h3 className={style.ThirdBlockDigitsH3}>by 2.1 times</h3>
+              <p className={style.ThirdBlockDigitsP}>improvements in the speed of generating complex reports (compared to the ability of excel)</p>
             </div>
           </div>
         </div>

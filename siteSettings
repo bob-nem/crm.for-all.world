@@ -52,6 +52,7 @@ https://www.1cbit.ru/1s-otrasli/vnedrenie-crm-sistem/
 https://www.completo.ru/crm/
 https://www.fastweb.ru/razrabotka-crm/
 https://integrator.digital/crm-implementation/
+https://myitlab.ru/1c-crm/
 CRM система (Customer Relations Management) – это программа автоматизации процессов документооборота, учёта и анализа данных в организации а также эффективно взаимодействовать с клиентами и партнерами. Интеграция этого программного обеспечения позволяет наладить контроль и планирование любого продуктивного и клиентоориентированного бизнеса.
 Качественно продуманная CRM система позволяет руководителю понимать как движутся процессы в компании, что необходимо сделать для достижения целевых показателей и следить за этапами работы каждого процесса.
 CRM system (Customer Relations Management) is a program for automating document management processes, accounting and data analysis in an organization, as well as effectively interacting with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.
@@ -75,4 +76,37 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
   display: inline-block;
   margin: 0 auto;
   margin-block-start: 1.5em;
+  
+}
+          <Script
+            src="https://connect.facebook.net/en_US/sdk.js"
+            strategy="lazyOnload"
+          />
+          <Script strategy="lazyOnload" 
+          src={testT}
+          />
+          import testT from './test.js';
+          
+            <Script
+    AOS.init();
+  />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+data-aos="fade-up" 
+@keyframes show {
+  from {opacity: 0;} to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes showLeft {
+  from {left:-100%;}
+  to {left:0;}
+}
+
+@keyframes showRight {
+from {right:-100%;}
+to {right:0;}
 }
