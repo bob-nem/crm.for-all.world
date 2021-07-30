@@ -1,3 +1,6 @@
+Todo:
+delete AOS and Fontawesome packages
+
 COLORS:    
 https://colorscheme.ru/#4r31TnhMTw0w0
     text shadow: rgb(89, 45, 98)
@@ -53,6 +56,9 @@ https://www.completo.ru/crm/
 https://www.fastweb.ru/razrabotka-crm/
 https://integrator.digital/crm-implementation/
 https://myitlab.ru/1c-crm/
+Implementation ideas:
+https://css-tricks.com/aos-css-driven-scroll-animation-library/
+
 CRM система (Customer Relations Management) – это программа автоматизации процессов документооборота, учёта и анализа данных в организации а также эффективно взаимодействовать с клиентами и партнерами. Интеграция этого программного обеспечения позволяет наладить контроль и планирование любого продуктивного и клиентоориентированного бизнеса.
 Качественно продуманная CRM система позволяет руководителю понимать как движутся процессы в компании, что необходимо сделать для достижения целевых показателей и следить за этапами работы каждого процесса.
 CRM system (Customer Relations Management) is a program for automating document management processes, accounting and data analysis in an organization, as well as effectively interacting with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.
@@ -99,7 +105,7 @@ data-aos="fade-up"
 @keyframes fadeIn {
 0% {opacity: 0;}
 100% {opacity: 1;}
-}
+}rgb(89, 45, 98)
 
 @keyframes showLeft {
   from {left:-100%;}
@@ -110,3 +116,19 @@ data-aos="fade-up"
 from {right:-100%;}
 to {right:0;}
 }
+
+import Document, { Main, NextScript } from 'next/document';
+import React, { ReactElement } from 'react';
+
+const navSlide = () => {
+  const burger = document.querySelector('.Burger');
+  const nav = document.querySelector('.Navlinks');
+  const navLinks = document.querySelectorAll('.Navlinks li');
+  //Toggle nav
+  burger.addEventListener('click',()=>{
+    nav.classList.toggle('NavActive');
+  });
+  //Animate
+}
+
+export default navSlide();

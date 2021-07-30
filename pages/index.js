@@ -1,7 +1,8 @@
 import style from '../styles/Home.module.css';
 import Image from 'next/image';
 import Script from 'next/script';
-import Head from 'next/head'
+import Head from 'next/head';
+import Document, { Main, NextScript } from 'next/document';
 import React, { ReactElement } from 'react';
 
 import topIMG from '../images/Top-IMG.png';
@@ -27,10 +28,7 @@ export default function Home() {
         <title>CRM.for-all.world</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header>
-        <div className={style.MainMenu}>
-
-        </div>
+      <div className={style.test}>
         <div className={style.HeaderSlider}>
           <div className={style.HeaderSliderLeft}>
             <div className={style.UnicornTopLogo}>
@@ -49,7 +47,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </header>
+      </div>
       <main className={style.Main}>
         <div className={style.FirstBlock}>
           <h2 className={style.FirstBlockHeader}>Automatization of business processes</h2>
@@ -107,7 +105,7 @@ export default function Home() {
         </div>
         <div className={style.SecondBlock}>
           <div className={style.SecondBlockLeft}>
-            <h2 className={style.SecondBlockHeader}>Stages of CRM development and implementation</h2>
+            <h2 className={style.SecondBlockHeader} id="stages">Stages of CRM development and implementation</h2>
             <div className={style.SecondBlockLine}></div>
             <div className={style.SecondBlockConent}>
               <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>
@@ -229,9 +227,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={style.ThirdBlockDigits} data-aos="fade-up" data-aos-anchor=".ThirdBlockHeader">
-
-
+          <div className={style.ThirdBlockDigits}>
             <div className={style.ThirdBlockDigitsBlock}>
               <h3 className={style.ThirdBlockDigitsH3}>on 36%</h3>
               <p className={style.ThirdBlockDigitsP}>sales growth on the same flow of incoming requests with the use of a customer heating system by stages.</p>

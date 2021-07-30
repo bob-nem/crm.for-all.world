@@ -1,17 +1,10 @@
-import '../styles/globals.css'
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import '../styles/globals.css';
+import Navigation from '../components/navigation';
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: false,
-      duration : 1600
-    });
-  }, []);
-  return <Component {...pageProps} />
+  return <Navigation>
+          <Component {...pageProps} />
+        </Navigation>
 }
 
 export default MyApp
