@@ -1,0 +1,76 @@
+@keyframes show {
+  from {opacity: 0;} to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes showRight {
+from {right:-100%;}
+to {right:0;}
+}
+
+.FirstBlock {
+  padding: 0 3% 3rem 3%;
+  scroll-snap-align: start;
+  animation: show 2s;
+}
+
+.FirstBlockHeader {
+  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  color: #844adb;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(77, 77, 77, 0.5);
+}
+
+.FirstBlockParagraph {
+  text-align: center;
+}
+
+.FirstBlockSidesDivision{
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.FirstBlockLeft {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  }
+
+.FirstBlockLeftIMG {
+  filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+.FirstBlockRight {
+  position:relative;
+  padding: 2rem 0;
+  margin: auto;
+  animation: showRight .9s;
+}
+
+.FirstBlockRightList {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.FirstBlockRightListHeader {
+  color: #844adb;
+  text-shadow: 1px 1px 2px rgba(77, 77, 77, 0.5);
+}
+
+.FirstBlockRightListParagraph {
+  text-align: justify;
+}
+
+.FirstBlockRightListIcon {
+  padding: 16%;
+}
+
+.FirstBlockRightIcon {
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3))
+}

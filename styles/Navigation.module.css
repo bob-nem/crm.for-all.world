@@ -55,7 +55,7 @@
   color: #482ff7;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
   .header {
     border: none;
   }
