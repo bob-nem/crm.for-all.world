@@ -6,17 +6,16 @@ export default function Navigation ({children}) {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   return <>
-    <header className={style.header}>
+    <div className={style.header}>
       <nav className={style.navbar}>
-          <a className={style.navlogo}>[BrandLogo]</a>
           <ul className={isOpen === false ? style.navmenu : style.navmenu +' '+ style.active}>
             <li className={style.navitem}>
-              <Link href='/'>
+              <Link href='/#home'>
                 <a className={style.navlink}>Home</a>
               </Link>
             </li>
             <li className={style.navitem}>
-              <Link href='#stages'>
+              <Link href='/#stages'>
                 <a className={style.navlink}>Stages</a>
               </Link>
             </li>
@@ -33,7 +32,7 @@ export default function Navigation ({children}) {
             <span className={style.bar}></span>
           </button>
         </nav>
-      </header>
+      </div>
     {children}
   </>
 }

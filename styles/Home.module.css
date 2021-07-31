@@ -276,9 +276,7 @@ to {right:0;}
   padding: 1% 0;
   margin: 0 10% 3%;
 
-  }
-
-
+}
 
 .ThirdBlockDigitsBlock {
   border-right: 1px solid #854adb;
@@ -297,8 +295,45 @@ to {right:0;}
   color: #854adb;
 }
 
-
-
 .Footer {
+
+}
+
+@media only screen and (max-width: 1365px) {
+  .HeaderSlider {
+    grid-template-columns: 65% 35%;
+  }
+
+  .HeaderSliderLeft {;
+    padding: 3% 5%;
+  }
+
+  .UnicornTopLogo {
+    width: 8vh;
+  }
+
+  .TopDescription {
+    margin-bottom: 10vw;
+  }
+
+  .HeaderSliderRight {
+    
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .HeaderSlider {
+    grid-template-columns: 1fr;
+    background-image: url(../images/Top-BG-m.png);
+  }
+  .TopHeader {
+    font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  }
+  .HeaderSliderRight {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
 
 }
