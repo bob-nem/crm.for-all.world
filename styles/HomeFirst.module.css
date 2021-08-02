@@ -16,6 +16,7 @@ to {right:0;}
   padding: 0 3% 3rem 3%;
   scroll-snap-align: start;
   animation: show 2s;
+  margin-top: 4%;
 }
 
 .FirstBlockHeader {
@@ -35,9 +36,9 @@ to {right:0;}
 }
 
 .FirstBlockLeft {
-  padding: 1rem 0;
-  margin-top: 1rem;
-  }
+  display: flex;
+  align-items: center;
+}
 
 .FirstBlockLeftIMG {
   filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
@@ -56,6 +57,19 @@ to {right:0;}
 .FirstBlockRightList {
   display: grid;
   grid-template-columns: 25% 75%;
+  margin-bottom: 1em;
+}
+
+.FirstBlockRightListI {
+  justify-self: start;
+  padding: 10% 16%;
+  float: left;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.FirstBlockRightIcon {
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3));
 }
 
 .FirstBlockRightListHeader {
@@ -65,12 +79,69 @@ to {right:0;}
 
 .FirstBlockRightListParagraph {
   text-align: justify;
+  grid-column-start: 2;
+  align-items: start;
 }
 
-.FirstBlockRightListIcon {
-  padding: 16%;
+@media only screen and (max-width: 1365px) {
+  .FirstBlockSidesDivision{
+    grid-template-columns: 65% 35%;
+  }
+  .FirstBlockRightList {
+    display: block;
+  }
+  .FirstBlockRightListI {
+    width: 30%;
+    padding: 2% 5% 2% 0;
+  }
 }
 
-.FirstBlockRightIcon {
-  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3))
+@media only screen and (max-width: 1080px) {
+  .FirstBlock {
+    margin-top: 6%;
+  }
+  .FirstBlockSidesDivision{
+    grid-template-columns: 1fr;
+  }
+  .FirstBlockLeft {
+    display: none;
+  }
+  .FirstBlockRight {
+    padding: 5%;
+  }
+  .FirstBlockRightList {
+    display: grid;
+  }
+  .FirstBlockRightListI {
+    width: auto;
+    padding: 10% 16%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .FirstBlockRight {
+    padding: 2% 0;
+  }
+  .FirstBlockRightList {
+    margin: .5rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .FirstBlock {
+    margin-top: 12%;
+  }
+  .FirstBlockRightListI {
+    padding: 16% 10% 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .FirstBlockRightList {
+    display: block;
+  }
+  .FirstBlockRightListI {
+    width: 30%;
+    padding: 3% 5% 0 0;
+  }
 }

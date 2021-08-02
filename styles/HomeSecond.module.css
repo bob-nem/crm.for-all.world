@@ -19,6 +19,7 @@
 
 .SecondBlockHeader{
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
 }
 
 .SecondBlockLine {
@@ -30,7 +31,7 @@
   display: grid;
   grid-template-columns: 5% 95%;
   text-align: justify;
-  filter: drop-shadow(3px 5px 5px rgba(89, 45, 98, 0.5));
+  filter: drop-shadow(3px 5px 5px rgba(89, 45, 98, .5));
 }
 
 .SecondBlockIcon {
@@ -50,4 +51,60 @@
 
 .SecondBlockIMG {
   filter: drop-shadow(5px 5px 5px rgb(89, 45, 98));
+}
+
+@media only screen and (max-width: 1400px) {
+  .SecondBlockLeft {
+    width: 150%;
+  }
+  .SecondBlockConent {
+    filter: drop-shadow(0 0 1rem rgba(89, 45, 98, 1));
+  }
+  .SecondBlockP {
+    text-shadow: 0 0 1.5rem rgba(89, 45, 98, 1);
+  }
+  .SecondBlockRight {
+    width: 160%;
+    margin-left: -50%
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .SecondBlock {
+    grid-template-columns: 1fr;
+  }
+  .SecondBlockLeft {
+    width: 100%;
+  }
+  .SecondBlockHeader{;
+    filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .1));
+  }
+  .SecondBlockConent {
+    filter: drop-shadow(3px 3px 9px rgba(89, 45, 98, .5));
+  }
+  .SecondBlockP {
+    text-shadow: 2px 2px 20px rgba(89, 45, 98, 0);
+  }
+  .SecondBlockRight {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .SecondBlockLeft {
+    padding: 5% 1% 7% 0;
+  }
+  .SecondBlockConent {
+    margin-top: 1em;
+  }
+  .SecondBlockIcon {
+    padding-right: .2rem;
+  }
+  .SecondBlockH {
+    margin-left: 1em;
+    margin-block-end: .3em;
+  }
+  .SecondBlockP {
+    margin-left: -1.4em;
+  }
 }

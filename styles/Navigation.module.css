@@ -1,12 +1,13 @@
 .header{
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   right: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 1.2rem;
   margin-top: .2rem;
   margin-right: 1rem;
+  box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
 }
 
 .navbar {

@@ -7,14 +7,6 @@ import FirstBlock from '../components/pages/index-first';
 import SecondBlock from '../components/pages/index-second';
 import ThirdBlock from '../components/pages/index-third';
 
-import customerBase from '../images/customer-base.svg';
-import customerSupport from '../images/customer-support.svg';
-import employeesKPI from '../images/employees-kpi.svg';
-import telephony from '../images/telephony.svg';
-import systemIntegration from '../images/integration-systems.svg';
-import processesModeling from '../images/processes-modeling.svg';
-import phoneman from '../images/phoneman-py.svg';
-
 export default function Home() {
   return (
     <div className={style.Container}>

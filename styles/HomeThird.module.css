@@ -43,8 +43,6 @@
   background: rgba(255, 255, 255, 0.8);
   padding: .5rem 0;
   box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
-  animation: show 2s;
-  animation-delay: .4s;
 }
 
 .ThirdBlockOneCardI {
@@ -78,7 +76,6 @@
   background: rgba(255, 255, 255, 0.8);
   padding: 1% 0;
   margin: 0 10% 3%;
-
 }
 
 .ThirdBlockDigitsBlock {
@@ -96,4 +93,26 @@
   margin-block-end: 0;
   font-weight: 500;
   color: #854adb;
+}
+
+@media only screen and (max-width: 768px) {
+  .ThirdBlockParagraph {
+    margin-bottom: 1em;
+  }
+  .ThirdBlockDigits {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ThirdBlockCards {
+    padding: 1% 3%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ThirdBlockCards {
+    padding: 0 1%;
+    margin: 0 auto;
+  }
 }
