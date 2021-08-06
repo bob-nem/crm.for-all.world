@@ -20,6 +20,7 @@ to {right:0;}
 .HeaderSlider {
   display: grid;
   grid-template-columns: 50% 50%;
+  background-image: linear-gradient(to right, #6056e9 , #8f49dd);
   background-image: url(../images/Top-BG.png);
   background-size: cover;
   background-position: bottom;

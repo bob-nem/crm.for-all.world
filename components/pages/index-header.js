@@ -13,8 +13,8 @@ export default function Header() {
             src={unicornTopLogo}
           />
         </div>
-        <h1 className={style.TopHeader}>Customer Relationship Management Systems</h1>
-        <p className={style.TopDescription}>&#10148; <strong>CRM system</strong> (Customer Relations Management) is a program for automating document management processes, accounting and data analysis in an organization, as well as effectively interacting with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.<br />&#10144; A well-thought-out CRM system allows the manager to understand how the processes are moving in the company, what needs to be done to achieve the targets and monitor the stages of each process</p>
+        <h1 className={style.TopHeader}>Enterprise Processes Optimization Systems</h1>
+        <p className={style.TopDescription}>&#10148; Enterprise Resource Planning systems <strong>(ERP)</strong> and Customer Relations Management systems <strong>(CRM)</strong> are software for automating processes and document management, accounting and data analysis within an organization, as well as effective interaction with customers and partners. The integration of this software allows you to establish control and planning of any productive and customer-oriented business.<br />&#10144; A well-thought-out electronic document management system allows employees to understand how the processes are moving in the company, what needs to be done to achieve the targets and monitor the stages of each phase of work.</p>
       </div>
       <div className={style.HeaderSliderRight}>
         <Image

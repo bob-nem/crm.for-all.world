@@ -7,6 +7,7 @@ https://colorscheme.ru/#4r31TnhMTw0w0
     first block blue: #448ef1
     purple text shadow: text-shadow: 1px 1px 2px rgba(77, 77, 77, 0.5);
     image shadow: filter: drop-shadow(3px 3px 3px rgb(89, 45, 98))
+    GRADIENT: left: #6056e9; to right: #8f49dd
 /* HEX коды */
 
 .primary-0 { color: #854adb }		/* Основной Цвет */
@@ -56,6 +57,9 @@ https://www.completo.ru/crm/
 https://www.fastweb.ru/razrabotka-crm/
 https://integrator.digital/crm-implementation/
 https://myitlab.ru/1c-crm/
+https://www.amocrm.ru/tour/
+Posts:
+https://crm.org/crmland/open-source-crm
 Implementation ideas:
 https://css-tricks.com/aos-css-driven-scroll-animation-library/
 
@@ -65,70 +69,14 @@ CRM system (Customer Relations Management) is a program for automating document 
 A well-thought-out CRM system allows the manager to understand how the processes are moving in the company, what needs to be done to achieve the targets and monitor the stages of each process.
 Интеграция в любой сервис. Комплексная автоматизация по сложным алгоритмам с большим количеством вводных данных с тонкой настрокой пользовательских функций для каждого сотруджника.
 Integration into any service. Complex automation using difficult algorithms with a large amount of input data with fine-tuning of user functions for each employee.
-https://www.youtube.com/watch?v=bvFdynyUNB8
-https://ru.enterpriseunix.org/5-best-vector-graphics-editors
-Если у вас сложный, многоуровневый бизнес процесс, с помощью CRM вы получаете контроль не только отдела продаж, но и дилеров, подрядчиков, работу заводов и доставку до конечного потребителя
-If you have a complex, multi-level business process, with the help of CRM you get control not only of the sales department, but also of dealers, contractors, the work of factories and delivery to the final consumer
+Если у вас сложный, многоуровневый бизнес процесс c взаимосвязанными процессами зависимыми друг от друга. Критически важно иметь сформированный корпоративный регламент документооборота, учёт товарно материальных ценностей и выявлять слабые места системы. С помощью нашего программного обеспечения вы получаете контроль не только отдела продаж, но и дилеров, подрядчиков, работу заводов вместе с их складами и доставку до конечного потребителя.
+If you have a complex, multi-level business process with interrelated processes that depend on each other. It is critically important to have a well-formed corporate document management regulations, inventory accounting and identify weaknesses of the system. With the help of our software, you get control not only of the sales department, but also of dealers, contractors, the operation of factories together with their warehouses and delivery to the final consumer.
 Пользователи, прошедшие обученные применению CRM решений знают какие процессы и для чего она автоматизирует, умеют быстро формировать необходимую информацию. Система интуитивно понятна и доступна для восприятия и взаимодействия. 
 Анализ бизнес-процессов предприятия, разработка блок-схемы, подробное описание функционала.
 
 Сотрудники избавляются от рутинных операций освобождая время для более полезных действий.
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+Если у вас сложный, многоуровневый бизнес процесс c взаимосвязанными процессами зависимыми друг от друга. Критически важно иметь сформированный корпоративный регламент документооборота, учёт товарно материальных ценностей и выявлять слабые места системы. С помощью нашего программного обеспечения вы получаете контроль не только отдела продаж, но и дилеров, подрядчиков, работу заводов и доставку до конечного потребителя.
 
-.SecondBlockIcon {
-  display: inline-block;
-  margin: 0 auto;
-  margin-block-start: 1.5em;
-  
-}
-          <Script
-            src="https://connect.facebook.net/en_US/sdk.js"
-            strategy="lazyOnload"
-          />
-          <Script strategy="lazyOnload" 
-          src={testT}
-          />
-          import testT from './test.js';
-          
-            <Script
-    AOS.init();
-  />
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-data-aos="fade-up" 
-@keyframes show {
-  from {opacity: 0;} to {opacity: 1;}
-}
 
-@keyframes fadeIn {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}rgb(89, 45, 98)
-
-@keyframes showLeft {
-  from {left:-100%;}
-  to {left:0;}
-}
-
-@keyframes showRight {
-from {right:-100%;}
-to {right:0;}
-}
-
-import Document, { Main, NextScript } from 'next/document';
-import React, { ReactElement } from 'react';
-
-const navSlide = () => {
-  const burger = document.querySelector('.Burger');
-  const nav = document.querySelector('.Navlinks');
-  const navLinks = document.querySelectorAll('.Navlinks li');
-  //Toggle nav
-  burger.addEventListener('click',()=>{
-    nav.classList.toggle('NavActive');
-  });
-  //Animate
-}
-
-export default navSlide();
