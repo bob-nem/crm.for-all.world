@@ -37,7 +37,7 @@ export default function ThirdBlock () {
             />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
-            <h3 className={style.ThirdBlockOneCardH3}>Supplier support<br />and customer service</h3>
+            <h3 className={style.ThirdBlockOneCardH3}>Supplier support and warehouse accounting</h3>
             <p className={style.ThirdBlockOneCardP}>All requests from customers fall into the sales funnel of the CRM system. In order to ensure prompt work with clients, in CRM the following tools are implemented.</p>
           </div>
         </div>

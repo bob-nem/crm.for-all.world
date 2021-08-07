@@ -30,13 +30,13 @@ to {right:0;}
 
 .HeaderSliderLeft {
   color: white;
+  filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
   padding: 6% 10%;
   margin: 0 auto;
 }
 
 .UnicornTopLogo {
   width: 12vh;
-  filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
   animation: show 3s;
 }
 
@@ -45,7 +45,6 @@ to {right:0;}
   font-size: calc(22px + (50 - 22) * ((100vw - 300px) / (1920 - 300)));
   font-weight: bold;
   letter-spacing: 2px;
-  filter: drop-shadow(3px 5px 5px rgb(89, 45, 98));
   margin-block-start: 0.3em;
   animation: showLeft .6s;
 }
@@ -53,7 +52,6 @@ to {right:0;}
 .TopDescription {
   position: relative;
   text-align: justify;
-  filter: drop-shadow(3px 3px 5px rgb(89, 45, 98));
   animation: showLeft .8s;
 }
 
@@ -68,6 +66,12 @@ to {right:0;}
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-name: fadeIn;
+}
+
+@media only screen and (max-width: 1500px) {
+  .UnicornTopLogo {
+    width: 8vh;
+  }
 }
 
 @media only screen and (max-width: 1365px) {

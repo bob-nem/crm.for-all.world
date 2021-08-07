@@ -57,13 +57,19 @@ to {right:0;}
 .FirstBlockRightList {
   display: grid;
   grid-template-columns: 25% 75%;
-  grid-template-rows: fit-content(auto);
   margin-bottom: 1em;
 }
 
 .FirstBlockRightListI {
   justify-self: start;
   padding: 10% 16%;
+  float: left;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.FirstBlockRightListI3 {
+  padding: 10% 16% 10% 8%;
   float: left;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -86,16 +92,26 @@ to {right:0;}
   grid-column-start: 2;
 }
 
+
 @media only screen and (max-width: 1365px) {
+  .FirstBlock {
+    padding: 0 6% 0 3%;
+  }
   .FirstBlockSidesDivision{
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
-  .FirstBlockRightList {
-    display: block;
+  .FirstBlockLeft {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 1.5em;
   }
-  .FirstBlockRightListI {
+  .FirstBlockRightListI .FirstBlockRightListI3{
     width: 30%;
     padding: 2% 5% 2% 0;
+  }
+  .FirstBlockRightListHeader {
+    margin-block-start: 1.2em;
   }
 }
 
@@ -106,18 +122,18 @@ to {right:0;}
   .FirstBlockSidesDivision{
     grid-template-columns: 1fr;
   }
-  .FirstBlockLeft {
-    display: none;
-  }
   .FirstBlockRight {
     padding: 5%;
   }
   .FirstBlockRightList {
     display: grid;
   }
-  .FirstBlockRightListI {
+  .FirstBlockRightListI .FirstBlockRightListI3{
     width: auto;
     padding: 10% 16%;
+  }
+  .FirstBlockRightListHeader {
+    margin-block-start: .5em;
   }
 }
 
@@ -128,23 +144,33 @@ to {right:0;}
   .FirstBlockRightList {
     margin: .5rem 0;
   }
+  .FirstBlock {
+    margin-bottom: 1em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .FirstBlock {
     margin-top: 12%;
   }
-  .FirstBlockRightListI {
+  .FirstBlockRightListI .FirstBlockRightListI3{
     padding: 16% 10% 0 0;
   }
+
 }
 
 @media only screen and (max-width: 480px) {
-  .FirstBlockRightList {
-    display: block;
+  .FirstBlockRightListParagraph {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 1em;
   }
-  .FirstBlockRightListI {
-    width: 30%;
+  .FirstBlockRightList {
+    margin-bottom: 1.5em;
+  }
+  .FirstBlockRightListI .FirstBlockRightListI3{
+    grid-row-start: 1;
+    grid-row-end: 2;
     padding: 3% 5% 0 0;
   }
 }

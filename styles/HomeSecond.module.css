@@ -8,6 +8,7 @@
   grid-template-columns: 55% 45%;
   padding: 0 3%;
   scroll-snap-align: start;
+  overflow: hidden;
 }
 
 .SecondBlockLeft {
@@ -21,6 +22,7 @@
 .SecondBlockHeader{
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
+  width: 90vw;
 }
 
 .SecondBlockLine {
@@ -43,7 +45,8 @@
 }
 
 .SecondBlockRight {
-  margin: auto;
+  display: flex;
+  align-items: flex-end;
   width: 120%;
   padding: 3%;
   margin-left: -20%;
@@ -62,11 +65,12 @@
     filter: drop-shadow(0 0 1rem rgba(89, 45, 98, 1));
   }
   .SecondBlockP {
-    text-shadow: 0 0 1.5rem rgba(89, 45, 98, 1);
+    text-shadow: 0 0 3rem rgba(58, 19, 66, 1);
   }
   .SecondBlockRight {
-    width: 160%;
-    margin-left: -50%
+    width: 150%;
+    margin-left: -50%;
+    opacity: .6;
   }
 }
 
@@ -79,6 +83,7 @@
   }
   .SecondBlockHeader{;
     filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .1));
+    width: 100%;
   }
   .SecondBlockConent {
     filter: drop-shadow(3px 3px 9px rgba(89, 45, 98, .5));

@@ -43,7 +43,7 @@ export default function FirstBlock() {
             <p className={style.FirstBlockRightListParagraph}>If you have a complex, multi-level business process with interrelated processes that depend on each other. It is critically important to have a well-formed corporate document management regulations, inventory accounting and identify weaknesses of the system. With the help of our software, you get control not only of the sales department, but also of dealers, contractors, the operation of factories together with their warehouses and delivery to the final consumer.</p>
           </div>
           <div className={style.FirstBlockRightList}>
-            <div className={style.FirstBlockRightListI}>
+            <div className={style.FirstBlockRightListI3}>
               <Image
                 className={style.FirstBlockRightIcon}
                 src={employeeStudying}
