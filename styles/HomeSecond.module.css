@@ -64,13 +64,20 @@
   .SecondBlockConent {
     filter: drop-shadow(0 0 1rem rgba(89, 45, 98, 1));
   }
+  .SecondBlockH {
+    text-shadow: 0 0 3rem rgba(58, 19, 66, 1);
+  }
   .SecondBlockP {
     text-shadow: 0 0 3rem rgba(58, 19, 66, 1);
+    background-image: radial-gradient(
+      rgba(89, 45, 98, .2),
+      rgba(0, 0, 0, 0)
+    );
+    padding: 1%;
   }
   .SecondBlockRight {
     width: 150%;
     margin-left: -50%;
-    opacity: .6;
   }
 }
 
@@ -88,8 +95,12 @@
   .SecondBlockConent {
     filter: drop-shadow(3px 3px 9px rgba(89, 45, 98, .5));
   }
+  .SecondBlockH {
+    text-shadow: none;
+  }
   .SecondBlockP {
-    text-shadow: 2px 2px 20px rgba(89, 45, 98, 0);
+    text-shadow: none;
+    background-image: none;
   }
   .SecondBlockRight {
     display: none;

@@ -106,9 +106,15 @@ to {right:0;}
     margin: 0 auto;
     padding-top: 1.5em;
   }
-  .FirstBlockRightListI .FirstBlockRightListI3{
-    width: 30%;
-    padding: 2% 5% 2% 0;
+  .FirstBlockRightListI {
+    display: flex;
+    align-items: flex-start;
+    padding: 12% 25%;
+  }
+  .FirstBlockRightListI3  {
+    display: flex;
+    align-items: flex-start;
+    padding: 12% 25% 12% 20%;
   }
   .FirstBlockRightListHeader {
     margin-block-start: 1.2em;
@@ -128,9 +134,11 @@ to {right:0;}
   .FirstBlockRightList {
     display: grid;
   }
-  .FirstBlockRightListI .FirstBlockRightListI3{
-    width: auto;
+  .FirstBlockRightListI {
     padding: 10% 16%;
+  }
+  .FirstBlockRightListI3 {
+    padding: 10% 16% 10% 10%;
   }
   .FirstBlockRightListHeader {
     margin-block-start: .5em;
@@ -150,27 +158,26 @@ to {right:0;}
 }
 
 @media only screen and (max-width: 600px) {
-  .FirstBlock {
-    margin-top: 12%;
-  }
-  .FirstBlockRightListI .FirstBlockRightListI3{
-    padding: 16% 10% 0 0;
-  }
-
-}
-
-@media only screen and (max-width: 480px) {
   .FirstBlockRightListParagraph {
     grid-column-start: 1;
     grid-column-end: 3;
     padding-left: 1em;
   }
+  .FirstBlock {
+    margin-top: 12%;
+  }
+  .FirstBlockRightListI, .FirstBlockRightListI3{
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .FirstBlockRightList {
     margin-bottom: 1.5em;
   }
-  .FirstBlockRightListI .FirstBlockRightListI3{
+  .FirstBlockRightListI, .FirstBlockRightListI3{
     grid-row-start: 1;
     grid-row-end: 2;
-    padding: 3% 5% 0 0;
+    padding: 10% 16%;
   }
 }

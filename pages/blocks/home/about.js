@@ -1,10 +1,10 @@
-import style from '../../styles/HomeFirst.module.css';
+import style from '../../../styles/HomeFirst.module.css';
 import Image from 'next/image';
 
-import firstBlockIMG from '../../images/FirstBlock-IMG.png';
-import windowTargetIcon from '../../images/window-target1.svg';
-import manyProcessessIcon from '../../images/many-processes.svg';
-import employeeStudying from '../../images/employee-studying.svg';
+import firstBlockIMG from '../../../images/FirstBlock-IMG.png';
+import windowTargetIcon from '../../../images/window-target1.svg';
+import manyProcessessIcon from '../../../images/many-processes.svg';
+import employeeStudying from '../../../images/employee-studying.svg';
 
 export default function FirstBlock() {
   return (

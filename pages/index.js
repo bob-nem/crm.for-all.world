@@ -2,11 +2,11 @@ import style from '../styles/Home.module.css';
 import Image from 'next/image';
 import Head from 'next/head';
 
-import Header from '../components/pages/index-header';
-import FirstBlock from '../components/pages/index-first';
-import SecondBlock from '../components/pages/index-second';
-import ThirdBlock from '../components/pages/index-third';
-import FourthBlock from '../components/pages/index-fourth';
+import Header from './blocks/home/header';
+import About from './blocks/home/about';
+import Stages from './blocks/home/stages';
+import Capabilities from './blocks/home/capabilities';
+import Prices from './blocks/home/prices';
 
 export default function Home() {
   return (
@@ -17,10 +17,10 @@ export default function Home() {
       </Head>
       <Header />
       <main className={style.Main}>
-      <FirstBlock />
-      <SecondBlock />
-      <ThirdBlock />
-      <FourthBlock />
+        <About />
+        <Stages />
+        <Capabilities />
+        <Prices />
       </main>
       <footer className={style.Footer}>
       </footer>
