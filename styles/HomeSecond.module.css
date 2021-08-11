@@ -57,6 +57,15 @@
   filter: drop-shadow(5px 5px 5px rgb(89, 45, 98));
 }
 
+.ButtonWorkGroup {
+  color: #ffcf46;
+  font-size: 1rem;
+}
+
+.ButtonWorkGroup:hover {
+  color: #482ff7;
+}
+
 @media only screen and (max-width: 1400px) {
   .SecondBlockLeft {
     width: 150%;

@@ -1,5 +1,5 @@
 import React, { useImperativeHandle, forwardRef, useRef } from "react";
-import Test from '../pages/blocks/home/modal-windows/implementation-work-group';
+import Test from './module-test';
 
 const modal = {
   position: "fixed",
