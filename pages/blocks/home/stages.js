@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from 'next/image';
 import style from '../../../styles/HomeSecond.module.css';
 import Modal from "./modal-windows/components/Modal";
-{/*import Concept from './stages-modules/concept-definition';*/}
 
 import secondBlockIMG from '../../../images/SecondBlock-IMG.png';
 import checkWhite from '../../../images/check-white.svg';
@@ -52,15 +51,11 @@ export default function SecondBlock () {
               Work on the ERP or CMR implementation project at the enterprise begins with the definition of goals and objectives. This should not be automation for the sake of automation — the customer should clearly know what business effects he ultimately wants to achieve. At the preparatory stage, it is necessary to form a <button onClick={handleClick} className={style.ButtonWorkGroup}> working group </button> on the client side, which together with the integrator will work on creating a voluminous and detailed technical task, thoroughly describing all, even the smallest processes.</p>
           </div>
         </div>
-        {/*<Concept />*/}
         <div className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>
           <div>
             <h3 className={style.SecondBlockH}>Interface design, programming of data processing algorithms</h3>
             <p className={style.SecondBlockP}>
-            {/*<button onClick={handleClick2} style={{ marginBottom: "30px" }}>
-              working group
-            </button>*/}
             Based on the results of the enterprise survey, the functional requirements for the key modules of the system, the needs for downloading, exchanging and accessing data are determined and implemented. Setting up the exchange of information with the software already used. Improvements are being made to the standard functionality for the specifics of the company's activities. The system will program adapted solutions for the company's business processes and develop an interface for them. The execution of all actions in the system will become obvious and intuitive.</p>
           </div>
         </div>

@@ -13,8 +13,8 @@ const content = {
   bottom: 0,
   borderRadius: "1.2rem",
   padding: "2%",
-  width: "50%",
-  height: "50%",
+  width: "65%",
+  height: "65%",
   margin: "auto",
   outline: "1px solid #ffcf46",
   zIndex: 4

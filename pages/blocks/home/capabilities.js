@@ -38,7 +38,7 @@ export default function ThirdBlock () {
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Supplier support and warehouse accounting</h3>
-            <p className={style.ThirdBlockOneCardP}>All requests from customers fall into the sales funnel of the CRM system. In order to ensure prompt work with clients, in CRM the following tools are implemented.</p>
+            <p className={style.ThirdBlockOneCardP}>All external and internal requests fall into the system maintenance funnel. To ensure operational work with the warehouse, the following tools are implemented in ERP:</p>
           </div>
         </div>
         <div className={style.ThirdBlockOneCard}>
@@ -51,7 +51,7 @@ export default function ThirdBlock () {
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Employees, leaderships<br />(tasks, KPI)</h3>
-            <p className={style.ThirdBlockOneCardP}>Make management decisions based on data. In the field of personnel control and management, a modern CRM system based on all platforms allows.</p>
+            <p className={style.ThirdBlockOneCardP}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>
           </div>
         </div>
         <div className={style.ThirdBlockOneCard}>
@@ -77,7 +77,7 @@ export default function ThirdBlock () {
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Integration with other systems and services</h3>
-            <p className={style.ThirdBlockOneCardP}>Integration with other systems and services CRM systems have the ability to integrate with any external programs, services and equipment based on open standards.</p>
+            <p className={style.ThirdBlockOneCardP}>The software used is open for making functional improvements, integration with any external programs, services and equipment based on open standards is available.</p>
           </div>
         </div>
         <div className={style.ThirdBlockOneCard}>
@@ -90,18 +90,18 @@ export default function ThirdBlock () {
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Modeling and automation of processes</h3>
-            <p className={style.ThirdBlockOneCardP}>CRM systems on the 1C platform have a built-in business process editor (BPMN) for automating the organization's processes and regulating key processes.</p>
+            <p className={style.ThirdBlockOneCardP}>Accounting and adaptive regulation of any production processes are configured, from the work of the secretary to the accounting of production productivity indicators.</p>
           </div>
         </div>
       </div>
       <div className={style.ThirdBlockDigits}>
         <div className={style.ThirdBlockDigitsBlock}>
-          <h3 className={style.ThirdBlockDigitsH3}>on 36%</h3>
+          <h3 className={style.ThirdBlockDigitsH3}>on 21%</h3>
           <p className={style.ThirdBlockDigitsP}>sales growth on the same flow of incoming requests with the use of a customer heating system by stages.</p>
         </div>
         <div className={style.ThirdBlockDigitsBlock}>
-          <h3 className={style.ThirdBlockDigitsH3}>up to 15%</h3>
-          <p className={style.ThirdBlockDigitsP}>the growth of repeat sales on the same basis due to internal promotion.</p>
+          <h3 className={style.ThirdBlockDigitsH3}>up to 64%</h3>
+          <p className={style.ThirdBlockDigitsP}>labor productivity growth on the same basis due to optimization of internal processes.</p>
         </div>
         <div className={style.ThirdBlockDigitsBlock}>
           <h3 className={style.ThirdBlockDigitsH3}>by 1.6 times</h3>
@@ -112,7 +112,7 @@ export default function ThirdBlock () {
           <p className={style.ThirdBlockDigitsP}>security against loss of account information (if the conditions for saving backups are met)</p>
         </div>
         <div className={style.ThirdBlockDigitsBlockL}>
-          <h3 className={style.ThirdBlockDigitsH3}>by 2.1 times</h3>
+          <h3 className={style.ThirdBlockDigitsH3}>by 3.14 times</h3>
           <p className={style.ThirdBlockDigitsP}>improvements in the speed of generating complex reports (compared to the ability of excel)</p>
         </div>
       </div>
