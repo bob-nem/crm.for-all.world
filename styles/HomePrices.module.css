@@ -2,6 +2,7 @@
   background-image: linear-gradient(to right, #6056e9 , #8f49dd);
   background-image: url(../images/Prices-BG.png);
   height: 100vh;
+  padding: 0 3%;
 }
 
 .MainHeader {
@@ -17,4 +18,14 @@
   color: white;
   text-align: center;
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
+}
+
+.TabsContainer {
+  margin: 0 4%;
+  margin-top: 2em;
+
+}
+
+.OneTabContainer {
+  border:  2px solid #482ff7;
 }
