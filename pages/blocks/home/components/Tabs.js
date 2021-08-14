@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import style from './Tabs.module.css';
 
 const Tabs = ({children}) => {
-  const [activeTab, setActiveTab] = useState(children[0].props.label);
+  const [activeTab, setActiveTab] = useState(children[1].props.label);
   const handleClick = (e, newActiveTab) => {
     e.preventDefault();
     setActiveTab(newActiveTab);
@@ -18,7 +18,7 @@ const Tabs = ({children}) => {
               className={label == activeTab ? style.current : ""}
               key={label}
             >
-              <a href="#" onClick={(e) => handleClick(e, label)}>{label}</a>
+              <a href="#" onClick={(e) => handleClick(e, label)} className={style.tabLink}>{label}</a>
             </li>
           )
         })}

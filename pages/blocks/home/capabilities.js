@@ -13,8 +13,8 @@ export default function ThirdBlock () {
   return (
     <div className={style.ThirdBlock}>
     <div className={style.ThirdBlockColorBG}>
-      <h2 className={style.ThirdBlockHeader}>CAPABILITIES OF CRM SYSTEMS</h2>
-      <p className={style.ThirdBlockParagraph}>An effective CRM system helps a business to sell more, takes control of communication with customers and suppliers, sales and marketing management.</p>
+      <h2 className={style.ThirdBlockHeader}>CAPABILITIES OF ENTERPRISE SYSTEMS</h2>
+      <p className={style.ThirdBlockParagraph}>All possible areas of automation apply to ERP systems, with the exception of processes in industrial production. Enterprise systems can collect data from production systems like SCADA in real time by connecting via the API.</p>
       <div loading="lazy" className={style.ThirdBlockCards}>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>

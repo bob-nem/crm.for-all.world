@@ -14,6 +14,10 @@
   margin: 0 1em;
 }
 
+.tabLink:hover {
+  color: #482ff7;
+}
+
 .current {
   position: relative;
   top: 2px;
