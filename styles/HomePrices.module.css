@@ -44,8 +44,16 @@
   padding: 1em;
 }
 
-.SoftwareLogo {
+.SoftwareLogoSuite {
   width: 50%;
+  margin: 0 auto;
+}
+
+.SoftwareLogoOro {
+  display: flex;
+  align-items: center;
+  height: 10.6rem;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -53,6 +61,16 @@
   text-indent: 1em;
   padding: 1em 0;
   border-bottom: 2px solid #482ff7;
+}
+
+.PriceCardList ul {
+  padding: 0 1em;
+}
+
+.PriceCardList li {
+  border-bottom: 2px solid rgba(72, 47, 247, 0.5);
+  text-align: center;
+  padding: .3em 0;
 }
 
 .PriceSum {

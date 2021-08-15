@@ -3,6 +3,7 @@ import Image from 'next/image';
 import {Tabs} from './components/Tabs';
 
 import suitecrm from '../../../images/suite-crm-logo.png';
+import orocrm from '../../../images/oroinc-logo.png';
 
 export default function Prices() {
   return (
@@ -17,7 +18,7 @@ export default function Prices() {
             </p>
             <div className={style.PriceCardsContainer}>
               <div className={style.PriceCard}>
-                <div className={style.SoftwareLogo}>
+                <div className={style.SoftwareLogoSuite}>
                   <Image
                     src={suitecrm}
                     alt="suite CRM"
@@ -26,30 +27,75 @@ export default function Prices() {
                 <p className={style.PriceCardD}>
                   <strong>SuiteCRM</strong> handles sales, service, and marketing, with custom module, layout, and relationship development tools that will please your IT department too. Endless modular customizability and add-ons mean you can use it for applications, simple or complex.
                 </p>
-                <div className={style.PriceCardList}>
                 <h3 className={style.PriceSum}>$1200</h3>
+                <div className={style.PriceCardList}>
                   <ul>
-                    <li>open source</li>
-                    <li>Quality guarantee</li>
-                    <li>Producer prices</li>
+                    <li>Open source</li>
+                    <li>API integration</li>
+                    <li>Real time dashboard</li>
                     <li>Safety delivery</li>
                   </ul>
                 </div>
               </div>
               <div className={style.PriceCard}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div className={style.SoftwareLogoOro}>
+                  <Image
+                    src={orocrm}
+                    alt="ORO CRM"
+                  />
+                </div>
+                <p className={style.PriceCardD}>
+                  <strong>OroCRM</strong> is based on the Symfony2 PHP framework for web development. Lots of open source developers find it easy to understand Oro’s code and create new customizations, making it relatively easy and cost-effective to modify the platform to your needs.
                 </p>
+                <h3 className={style.PriceSum}>$1200</h3>
+                <div className={style.PriceCardList}>
+                  <ul>
+                    <li>Open source</li>
+                    <li>API integration</li>
+                    <li>Real time dashboard</li>
+                    <li>Safety delivery</li>
+                  </ul>
+                </div>
               </div>
               <div className={style.PriceCard}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div className={style.SoftwareLogoSuite}>
+                  <Image
+                    src={suitecrm}
+                    alt="suite CRM"
+                  />
+                </div>
+                <p className={style.PriceCardD}>
+                  <strong>SuiteCRM</strong> handles sales, service, and marketing, with custom module, layout, and relationship development tools that will please your IT department too. Endless modular customizability and add-ons mean you can use it for applications, simple or complex.
                 </p>
+                <h3 className={style.PriceSum}>$1200</h3>
+                <div className={style.PriceCardList}>
+                  <ul>
+                    <li>Open source</li>
+                    <li>API integration</li>
+                    <li>Real time dashboard</li>
+                    <li>Safety delivery</li>
+                  </ul>
+                </div>
               </div>
               <div className={style.PriceCard}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div className={style.SoftwareLogoSuite}>
+                  <Image
+                    src={suitecrm}
+                    alt="suite CRM"
+                  />
+                </div>
+                <p className={style.PriceCardD}>
+                  <strong>SuiteCRM</strong> handles sales, service, and marketing, with custom module, layout, and relationship development tools that will please your IT department too. Endless modular customizability and add-ons mean you can use it for applications, simple or complex.
                 </p>
+                <h3 className={style.PriceSum}>$1200</h3>
+                <div className={style.PriceCardList}>
+                  <ul>
+                    <li>Open source</li>
+                    <li>API integration</li>
+                    <li>Real time dashboard</li>
+                    <li>Safety delivery</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
