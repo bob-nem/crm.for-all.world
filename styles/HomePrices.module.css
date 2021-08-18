@@ -1,8 +1,11 @@
 .Container {
   background-image: linear-gradient(to right, #6056e9 , #8f49dd);
   background-image: url(../images/Prices-BG.png);
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0 3%;
+  padding-bottom: 4rem;
 }
 
 .MainHeader {
@@ -10,8 +13,8 @@
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
   color: white;
   text-align: center;
-  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
   padding-top: .8em;
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
 }
 
 .MainHeaderDescription {
@@ -23,10 +26,11 @@
 .TabsContainer {
   margin: 0 4%;
   margin-top: 2em;
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .9));
 }
 
 .OneTabContainer {
-  border: 2px solid #482ff7;
+  border: 2px solid #fff;
 }
 
 .PriceCardsContainer {
@@ -39,12 +43,13 @@
 .PriceCard {
   display: flex;
   flex-direction: column;
-  border: 2px solid #482ff7;
+  border: 2px solid #fff;
   border-radius: .5rem;
   padding: 1em;
 }
 
 .SoftwareLogoSuite {
+  height: 10.6rem;
   width: 50%;
   margin: 0 auto;
 }
@@ -57,26 +62,86 @@
   margin: 0 auto;
 }
 
-.PriceCardD {
-  text-indent: 1em;
+.SoftwareLogoAmo {
+  display: flex;
+  align-items: center;
+  width: 72%;
+  height: 10.6rem;
+  margin: 0 auto;
+}
+
+.SoftwareLogoBitrix {
+  display: flex;
+  align-items: center;
+  width: 51%;
+  margin: 0 auto;
+  height: 10.6rem;
+}
+
+.CardD {
+  text-align: justify;
+  filter: drop-shadow(3px 0px 5px rgba(89, 45, 98, .3));
   padding: 1em 0;
-  border-bottom: 2px solid #482ff7;
+  border-bottom: 2px solid #fff;
+}
+
+.CardDN {
+  font-family: Poppins;
+  font-size: 1.2rem;
+}
+
+.PriceRow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  padding: .3em 0;
+  margin-bottom: .5em;
+}
+
+.PriceRow2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgba(255, 255, 255, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  padding: .3em 0;
+  margin: .5em 0;
+}
+
+.PriceRowD {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.Sum {
+  display: flex;
+  justify-content: center;
+  font-family: Goldman;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffcf46;
+  transform: scaleY(1.2);
+}
+
+.CardSpecification {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .PriceCardList ul {
+  font-family: Poppins;
+  font-weight: 500;
   padding: 0 1em;
 }
 
 .PriceCardList li {
-  border-bottom: 2px solid rgba(72, 47, 247, 0.5);
-  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(3px 0px 5px rgba(89, 45, 98, .3));
   padding: .3em 0;
-}
-
-.PriceSum {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: 500;
-  border-bottom: 2px solid #482ff7;
+  padding-left: ;
 }
