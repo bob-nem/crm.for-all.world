@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import style from './Tabs.module.css';
 
 const Tabs = ({children}) => {
-  const [activeTab, setActiveTab] = useState(children[1].props.label);
+  const [activeTab, setActiveTab] = useState(children[0].props.label);
   const handleClick = (e, newActiveTab) => {
     e.preventDefault();
     setActiveTab(newActiveTab);

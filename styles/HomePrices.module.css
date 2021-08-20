@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 0 3%;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .MainHeader {
@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-gap: 2rem;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .PriceCard {
@@ -88,6 +88,15 @@
 .CardDN {
   font-family: Poppins;
   font-size: 1.2rem;
+  color: #ffcf46;
+}
+
+.CardDN:hover a{
+  color: #482ff7;
+}
+
+.CardOpenSource:hover {
+  color: #482ff7;
 }
 
 .PriceRow {
@@ -131,6 +140,11 @@
   font-family: Poppins;
   font-size: 1.3rem;
   font-weight: 500;
+  transform: scaleX(1.07);
+}
+
+.CardSpecification:hover a {
+  color: #ffcf46;
 }
 
 .PriceCardList ul {

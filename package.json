@@ -1,13 +1,13 @@
 {
   "name": "enterprize-optimization.for-all.world",
-  "version": "0.1.1",
+  "version": "0.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev": "next -p 8080" 
+    "dev": "next -p 8080"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
