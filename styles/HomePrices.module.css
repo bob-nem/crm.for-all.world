@@ -4,8 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0 3%;
-  padding-bottom: 3rem;
+  padding: 2% 3%;
 }
 
 .MainHeader {
@@ -13,7 +12,6 @@
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
   color: white;
   text-align: center;
-  padding-top: .8em;
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
 }
 
@@ -33,14 +31,15 @@
   border: 2px solid #fff;
 }
 
-.PriceCardsContainer {
+.CardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  justify-content: space-around;
   grid-gap: 2rem;
   padding: 1rem 0;
 }
 
-.PriceCard {
+.Card {
   display: flex;
   flex-direction: column;
   border: 2px solid #fff;
@@ -48,34 +47,19 @@
   padding: 1em;
 }
 
-.SoftwareLogoSuite {
-  height: 10.6rem;
-  width: 50%;
+.Logo {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-items: center;
+  max-width: 12rem;
   margin: 0 auto;
 }
 
-.SoftwareLogoOro {
-  display: flex;
-  align-items: center;
-  height: 10.6rem;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.SoftwareLogoAmo {
-  display: flex;
-  align-items: center;
-  width: 72%;
-  height: 10.6rem;
-  margin: 0 auto;
-}
-
-.SoftwareLogoBitrix {
-  display: flex;
-  align-items: center;
-  width: 51%;
-  margin: 0 auto;
-  height: 10.6rem;
+.Logo img {
+  max-width: 100%;
+	padding: 1rem;
+  height: 12rem;
 }
 
 .CardD {
@@ -147,15 +131,55 @@
   color: #ffcf46;
 }
 
-.PriceCardList ul {
-  font-family: Poppins;
-  font-weight: 500;
-  padding: 0 1em;
+@media only screen and (max-width: 1900px) {
+  .Container {
+    padding: 0;
+    padding-bottom: 3rem;
+  }
 }
 
-.PriceCardList li {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  filter: drop-shadow(3px 0px 5px rgba(89, 45, 98, .3));
-  padding: .3em 0;
-  padding-left: ;
+@media only screen and (max-width: 1850px) {
+  .Container {
+    padding: 3% 6%;
+  }
+  .MainHeaderDescription {
+    padding: 0 4%;
+  }
+  .CardsContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 10%
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .Container {
+    padding: 3% 3%;
+  }
+  .CardsContainer {
+    padding: 1rem 5%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .Container {
+    padding: 3% 1%;
+  }
+  .CardsContainer {
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Container {
+    padding: 3% 0;
+  }
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
 }

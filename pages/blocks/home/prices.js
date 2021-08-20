@@ -4,9 +4,9 @@ import Link from 'next/link'
 import {Tabs} from './components/Tabs'
 
 import suitecrm from '../../../images/suite-crm-logo.png'
-import orocrm from '../../../images/oroinc-logo.png'
+import orocrm from '../../../images/oroinc-logo-s.png'
 import bitrix24 from '../../../images/bitrix24-logo.png'
-import amocrm from '../../../images/amocrm.png'
+import amocrm from '../../../images/amocrm-logo-dark-r.png'
 
 export default function Prices() {
   return (
@@ -19,9 +19,9 @@ export default function Prices() {
             <p>
               These systems are built to make customers happy, whether it’s through improved ad targeting or tailored sales communications. CRM software is a front-office tool that is used by employees in departments such as sales and marketing to increase revenue through an improvement in customer experience. After all, without a solid customer base, your company doesn’t have much to go on. These programs are available as either standalone software or as part of an ERP solution. These are some of the most popular CRM systems in the world. The general functionality of all the proposed solutions, with the exception of some details, is the same.
             </p>
-            <div className={style.PriceCardsContainer}>
-              <div className={style.PriceCard}>
-                <div className={style.SoftwareLogoSuite}>
+            <div className={style.CardsContainer}>
+              <div className={style.Card}>
+                <div className={style.Logo}>
                   <Image
                     src={suitecrm}
                     alt="suite CRM"
@@ -44,15 +44,15 @@ export default function Prices() {
                   <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://suitecrm.com/solutions/compare-with-microsoft-dynamics/"><a target="_blank">technical specifications</a></Link>
                 </p>
               </div>
-              <div className={style.PriceCard}>
-                <div className={style.SoftwareLogoBitrix}>
+              <div className={style.Card}>
+                <div className={style.Logo}>
                   <Image
                     src={bitrix24}
                     alt="Bitrix24 site & CRM"
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://www.bitrix24.ru"><a target="_blank">Bitrix24</a></Link></strong> it combines communication channels with an excellent opportunity for full integration with <Link href="https://www.bitrix24.ru/features/sites.php"><a className={style.CardOpenSource} target="_blank">sites</a></Link> created on its proprietary platform.
+                  <strong className={style.CardDN}><Link href="https://www.bitrix24.ru"><a target="_blank">Bitrix24</a></Link></strong> combines communication channels with an opportunity for full integration with <Link href="https://www.bitrix24.ru/features/sites.php"><a className={style.CardOpenSource} target="_blank">sites</a></Link> created on its proprietary platform.
                 </p>
                 <div className={style.PriceRow}>
                   <h3 className={style.Sum}>$1280&nbsp;</h3>
@@ -68,8 +68,8 @@ export default function Prices() {
                   <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://www.bitrix24.ru/features/"><a target="_blank">technical specifications</a></Link>
                 </p>
               </div>
-              <div className={style.PriceCard}>
-                <div className={style.SoftwareLogoAmo}>
+              <div className={style.Card}>
+                <div className={style.Logo}>
                   <Image
                     src={amocrm}
                     alt="amoCRM"
@@ -92,15 +92,15 @@ export default function Prices() {
                   <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://www.amocrm.ru/buy/"><a target="_blank">technical specifications</a></Link>
                 </p>
               </div>
-              <div className={style.PriceCard}>
-                <div className={style.SoftwareLogoOro}>
+              <div className={style.Card}>
+                <div className={style.Logo}>
                   <Image
                     src={orocrm}
                     alt="OROCRM"
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://oroinc.com/"><a target="_blank">OROCRM</a></Link></strong> is based on the Symfony2 PHP web framework. It relatively easy and cost-effective <Link href="https://github.com/oroinc/crm"><a className={style.CardOpenSource} target="_blank">to modify the platform</a></Link> to your special needs.
+                  <strong className={style.CardDN}><Link href="https://oroinc.com/"><a target="_blank">OROCRM</a></Link></strong> is based on the Symfony2 PHP framework. It relatively easy and cost-effective <Link href="https://github.com/oroinc/crm"><a className={style.CardOpenSource} target="_blank">to modify the platform</a></Link> to your special needs.
                 </p>
                 <div className={style.PriceRow}>
                   <h3 className={style.Sum}>$3140&nbsp;</h3>
@@ -117,7 +117,7 @@ export default function Prices() {
                 </p>
               </div>
             </div>
-            <p>We conduct a comprehensive audit of the enterprise for the possibility of optimizing work processes, improving production indicators and reducing costs.</p>
+            <p style={{paddingTop: "1rem"}}>We conduct a comprehensive audit of the enterprise for the possibility of optimizing work processes, improving production indicators and reducing costs.</p>
           </div>
           <div label="ERP - Enterprise Resource Planning">
             <p>

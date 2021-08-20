@@ -7,7 +7,6 @@
   padding: 0;
   margin: 0;
   border-bottom: 2px solid #fff;
-
 }
 
 .tabs > li {
@@ -41,5 +40,10 @@
   border-bottom-right-radius: .8rem;
   text-align: justify;
   padding: 1em 2em;
+}
 
+@media only screen and (max-width: 600px) {
+  .tabs {
+
+  }
 }
