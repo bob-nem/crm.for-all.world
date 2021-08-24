@@ -1,0 +1,70 @@
+.Container {
+  height: 100vh;
+  padding: 3%;
+}
+
+.MainHeader {
+  text-transform: uppercase;
+  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 600;
+  color: #854adb;
+  text-align: center;
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
+}
+
+.MainHeaderDescription {
+  text-align: center;
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
+}
+
+.Separator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 2rem;
+}
+
+.ContactData {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgba(133,  74, 219, 1);
+  border-bottom: 2px solid rgba(133,  74, 219, 1);
+  border-radius: .25rem;
+  width: auto;
+  width: fit-content;
+  filter: drop-shadow(.1rem .1rem .25rem rgba(89, 45, 98, .5));
+  padding: 1em;
+}
+
+.ContactRow {
+  display: inline-flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(133,  74, 219, .5);
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .2));
+  padding: .3em 0 .3em;
+}
+
+.ContactRow1 {
+  display: inline-flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(133,  74, 219, .5);
+  padding: .3em 0 .3em;
+}
+
+.Left, .Right{
+  display: inline-flex;
+}
+
+.ContactRow2 {
+  display: inline-flex;
+  justify-content: center;
+  border-bottom: none;
+  padding: .5em 0 0em .5em;
+
+}
+
+.ContactData p {
+  align-items: center;
+  font-size: calc(16px + (3) * ((100vw - 300px) / (1920 - 300)));
+  padding: .5rem;
+
+}

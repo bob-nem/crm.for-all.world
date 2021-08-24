@@ -1,7 +1,7 @@
 import style from '../../../styles/HomePrices.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import {Tabs} from './components/Tabs'
+import {Tabs} from './tabs/Tabs'
 
 import suitecrm from '../../../images/suite-crm-logo.png'
 import orocrm from '../../../images/oroinc-logo-s.png'
@@ -103,7 +103,7 @@ export default function Prices() {
                   <strong className={style.CardDN}><Link href="https://oroinc.com/"><a target="_blank">OROCRM</a></Link></strong> is based on the Symfony2 PHP framework. It relatively easy and cost-effective <Link href="https://github.com/oroinc/crm"><a className={style.CardOpenSource} target="_blank">to modify the platform</a></Link> to your special needs.
                 </p>
                 <div className={style.PriceRow}>
-                  <h3 className={style.Sum}>$3140&nbsp;</h3>
+                  <h3 className={style.Sum}>$3141&nbsp;</h3>
                   <p className={style.PriceRowD}>&nbsp;for configuration service</p>
                 </div>
                 <p>Versatility with the ability to evolve into a large ERP ecosystem. Lots of open source developers find it easy to understand Oro’s code.</p>

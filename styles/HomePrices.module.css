@@ -4,12 +4,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2% 3%;
+  padding: 3%;
 }
 
 .MainHeader {
   text-transform: uppercase;
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 600;
   color: white;
   text-align: center;
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
@@ -45,6 +46,7 @@
   border: 2px solid #fff;
   border-radius: .5rem;
   padding: 1em;
+  box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
 }
 
 .Logo {
@@ -52,7 +54,6 @@
 	flex-wrap: wrap;
 	justify-content: center;
   align-items: center;
-  max-width: 12rem;
   margin: 0 auto;
 }
 
@@ -181,5 +182,5 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
+
 }

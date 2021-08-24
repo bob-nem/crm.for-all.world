@@ -76,6 +76,7 @@
   background: rgba(255, 255, 255, 0.8);
   padding: 1% 0;
   margin: 0 10% 3%;
+  box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
 }
 
 .ThirdBlockDigitsBlock {

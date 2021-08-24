@@ -7,6 +7,7 @@ import About from './blocks/home/about';
 import Stages from './blocks/home/stages';
 import Capabilities from './blocks/home/capabilities';
 import Prices from './blocks/home/prices';
+import Contacts from './blocks/home/contacts';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Stages />
         <Capabilities />
         <Prices />
+        <Contacts />
       </main>
       <footer className={style.Footer}>
       </footer>
