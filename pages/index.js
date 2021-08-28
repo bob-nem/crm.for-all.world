@@ -1,13 +1,14 @@
-import style from '../styles/Home.module.css';
-import Image from 'next/image';
-import Head from 'next/head';
+import style from '../styles/Home.module.css'
+import Image from 'next/image'
+import Head from 'next/head'
 
-import Header from './blocks/home/header';
-import About from './blocks/home/about';
-import Stages from './blocks/home/stages';
-import Capabilities from './blocks/home/capabilities';
-import Prices from './blocks/home/prices';
-import Contacts from './blocks/home/contacts';
+import Header from './blocks/home/header'
+import About from './blocks/home/about'
+import Stages from './blocks/home/stages'
+import Capabilities from './blocks/home/capabilities'
+import Prices from './blocks/home/prices'
+import Contacts from './blocks/home/contacts'
+import Footer from './blocks/home/footer'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Capabilities />
         <Prices />
         <Contacts />
+        <Footer />
       </main>
       <footer className={style.Footer}>
       </footer>

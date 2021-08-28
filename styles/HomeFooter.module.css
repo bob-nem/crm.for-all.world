@@ -1,0 +1,11 @@
+.Container {
+  height: 60vh;
+  background-image: url(../images/footer-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 2% 10%;
+}
+
+.Wrapper {
+  
+}
