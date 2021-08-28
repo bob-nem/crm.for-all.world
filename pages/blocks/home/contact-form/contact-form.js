@@ -1,20 +1,60 @@
-import { useForm } from 'react-hook-form';
-import axios from 'axios';
-import { useRouter } from 'next/router';
+import Image from 'next/image'
+import style from './form.module.css'
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
+import { useRouter } from 'next/router'
 
 
 export default function ContactForm () {
   return (
-    <div className="b py-16 bg-gray-50 px-4 sm:px-6 h-screen w-screen flex justify-center items-center">
-      <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
-      <form className="grid grid-cols-1 gap-y-6">
-        <div>
-        <label for="name" className="sr-only">
-          Full name
-        </label>
+    <div className={style.Container}>
+      <h2>Any question or remarks? Just write us a message!</h2>
+      <form>
+        <div className={style.Row}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full name"
+          />
+        </div>
+        <div className={style.Row}>
+          <input
+            type="text"
+            name="email"
+            placeholder="E-mail"
+          />
+        </div>
+        <div className={style.Row}>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone"
+          />
+        </div>
+        <div className={style.RowWithRB}>
+          <label className={style.OptiTypes}>What Type Of Optimization Do You Need?</label>
+          <div className={style.RBs}>
+            <div className={style.RB}>
+              <input type="radio" id="radiopersonal" name="type" value="personal"/>
+              <label for="radiopersonal">Sales</label>
+            </div>
+            <div className={style.RB}>
+              <input type="radio" id="radioecommerce" name="type" value="ecommerce"/>
+              <label for="radioecommerce">Corporate</label>
+            </div>
+            <div className={style.RB}>
+              <input type="radio" id="radiolandingpage" name="type" value="landingpage"/>
+              <label for="radiolandingpage">Industry</label>
+            </div>
+          </div>
+        </div>
+        <div className={style.Row}>
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Message"></textarea>
         </div>
       </form>
-      </div>
     </div>
   )
 }

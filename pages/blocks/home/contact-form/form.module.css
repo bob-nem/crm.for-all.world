@@ -1,0 +1,58 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid rgba(133,  74, 219, 1);
+  border-bottom: 2px solid rgba(133,  74, 219, 1);
+  border-radius: .25rem;
+  box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
+  padding: 1em;
+  margin-top: 3rem;
+}
+
+.Container h2 {
+  color: rgba(133,  74, 219, 1);
+  font-weight: 500;
+  font-size: calc(20px + (3) * ((100vw - 300px) / (1920 - 300)));
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+}
+
+.Row {
+  padding: .5em 0;
+
+}
+
+.Row input, .Row textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(133,  74, 219, 1);
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+  padding: .5em;
+}
+
+.RowWithRB {
+  display: flex;
+  flex-direction: column;
+  padding: .75em 0;
+}
+
+.OptiTypes {
+  font-family: Poppins;
+  color: rgba(133,  74, 219, 1);
+  font-weight: 500;
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+}
+
+.RBs {
+  display: inline-flex;
+  padding-top: .5em;
+}
+
+.RB {
+  padding: 0 .5em;
+}
+
+.RB label{
+  padding-left: .25em;
+}

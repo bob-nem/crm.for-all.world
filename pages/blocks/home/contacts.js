@@ -6,6 +6,7 @@ import map from '../../../images/map.svg'
 import mail from '../../../images/mail.svg'
 import phone from '../../../images/phone.svg'
 import clock from '../../../images/clock.svg'
+import bg from '../../../images/dropshipping-consult.png'
 
 export default function Contacts () {
   return (
@@ -14,7 +15,7 @@ export default function Contacts () {
       <p className={style.MainHeaderDescription}>We are waiting for your questions and are ready to help in solving tasks on automation of document flow and technological processes of any complexity.</p>
       <div className={style.Separator}>
         <div className={style.Map}>
-
+        
         </div>
         <div className={style.Contacts}>
           <div className={style.ContactData}>
@@ -57,7 +58,7 @@ export default function Contacts () {
                 <p>&nbsp;Sunday - Thuesday, 08:00 - 17:00 (reception by appointment)</p>
             </div>
           </div>
-        <ContactForm />
+          <ContactForm />
         </div>
       </div>
     </div>
