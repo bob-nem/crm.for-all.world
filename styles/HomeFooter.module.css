@@ -1,5 +1,6 @@
 .Container {
   background-image: url(../images/footer-bg.png);
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   padding: 4% 12%;
@@ -25,27 +26,33 @@
 }
 
 .Logo {
-  width: 12vh;
+  width: 7rem;
   padding-bottom: .5em;
 }
 
 .SocialMedia {
-  margin-top: 1em;
+  display: inline-flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: .5em;
 }
 
 .IconCircle {
+  display: flex;
+  flex: 0 0 2.5rem;
+  justify-content: center;
+  align-items: center;
   height: 2.5rem;
   border-radius: 50%;
   transition: .3s all ease-in-out;
 }
 
 .IconCircle:hover {
-  background: #05f7ff;
+  background: #482ff7;
 }
 
 .SocialIcon {
   font-size: 1.6rem;
-  margin-right: .5em;
 }
 
 .Products {
@@ -63,7 +70,7 @@
 
 .Products h2 {
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 2.1rem;
 }
 
 .Products p {
@@ -83,10 +90,6 @@
   margin-bottom: 1.5rem;
 }
 
-.InputEmail {
-  width: 100%;
-}
-
 .Subscribe input {
   width: 100%;
   line-height: 1.5;
@@ -94,17 +97,20 @@
   border: none;
   border-bottom: 1px solid white;
   padding: .5em;
-  margin-bottom: 5.3rem;
+  margin-bottom: 5.4rem;
 }
 
 .InputEmail {
   position: relative;
+}
+
+.InputEmail input::placeholder {
   color: white;
 }
 
 .InputEmail a {
   position: absolute;
-  top: 1px;
+  top: 4px;
   right: 10px;
   font-size: 1.6rem;
 }
@@ -112,4 +118,20 @@
 .Subscribe p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 1400px) {
+  .Container {
+    background-image: url(../images/footer-bg-sm.png);
+    padding: 2% 4% 4%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Container {
+    padding: 1% 10% 4%;
+  }
+  .Subscribe {
+    display: none;
+  }
 }

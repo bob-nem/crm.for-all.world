@@ -93,3 +93,15 @@
   filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
   padding: .5rem;
 }
+
+@media only screen and (max-width: 1200px) {
+  .Separator {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .Map {
+    margin: 0 auto;
+  }
+}
