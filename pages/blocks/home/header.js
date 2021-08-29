@@ -11,6 +11,7 @@ export default function Header() {
         <div className={style.UnicornTopLogo}>
           <Image
             src={unicornTopLogo}
+            alt="company logo unicorn"
           />
         </div>
         <h1 className={style.TopHeader}>Enterprise Processes Optimization Systems</h1>
