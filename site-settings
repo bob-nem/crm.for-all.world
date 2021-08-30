@@ -9,6 +9,9 @@ https://colorscheme.ru/#4r31TnhMTw0w0
     image shadow: filter: drop-shadow(3px 3px 3px rgb(89, 45, 98))
     GRADIENT: left: #6056e9; to right: #8f49dd
     hover: #482ff7;
+    2f57ac
+    
+    
     
 /* HEX коды */
 .primary-0 { color: #854adb }		/* Основной Цвет */

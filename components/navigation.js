@@ -15,12 +15,14 @@ export default function Navigation ({children}) {
               </Link>
             </li>
             <li className={style.navitem}>
-              <Link href='/#stages'>
-                <a className={style.navlink}>Stages</a>
+              <Link href='/#prices'>
+                <a className={style.navlink}>Prices</a>
               </Link>
             </li>
             <li className={style.navitem}>
+              <Link href='/#contacts'>
                 <a className={style.navlink}>Contact</a>
+              </Link>
             </li>
           </ul>
           <button className={isOpen === false ?

@@ -54,6 +54,9 @@ export default function ContactForm () {
             rows="4"
             placeholder="Message"></textarea>
         </div>
+        <div className={style.RowB}>
+          <button className="primary">Send Message</button>
+        </div>
       </form>
     </div>
   )

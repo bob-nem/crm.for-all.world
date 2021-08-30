@@ -19,7 +19,6 @@
 
 .Row {
   padding: .5em 0;
-
 }
 
 .Row input, .Row textarea {
@@ -55,4 +54,25 @@
 
 .RB label{
   padding-left: .25em;
+}
+
+.RowB {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+
+.RowB button {
+  width: 12rem;
+  height: 2rem;
+  color: white;
+  cursor: pointer;
+  background: #1a377c;
+  border: none;
+  text-transform: uppercase;
+  border-radius: .25rem;
+}
+
+.RowB button:hover {
+  background: #2f57ac;
 }

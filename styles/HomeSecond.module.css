@@ -21,7 +21,6 @@
 
 .SecondBlockHeader{
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
-  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
   width: 90vw;
   margin-block-end: .6em;
 }
@@ -35,7 +34,6 @@
   display: grid;
   grid-template-columns: 5% 95%;
   text-align: justify;
-  filter: drop-shadow(3px 5px 5px rgba(89, 45, 98, .5));
 }
 
 .SecondBlockIcon {

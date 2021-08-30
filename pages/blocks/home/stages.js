@@ -41,7 +41,7 @@ export default function SecondBlock () {
     <div className={style.SecondBlock}>
     {modal && <Modal ref={_modal} onClick={closeModal} />}
       <div className={style.SecondBlockLeft}>
-        <h2 className={style.SecondBlockHeader} id="stages">Stages of enterpize optimization development and implementation</h2>
+        <h2 className={style.SecondBlockHeader}>Stages of enterpize optimization development and implementation</h2>
         <div className={style.SecondBlockLine}></div>
         <div className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>

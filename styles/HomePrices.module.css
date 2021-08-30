@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
   padding: 3%;
 }
 
@@ -182,5 +183,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-
+  .OneTabContainer::label {
+    Content: "CRM";
+  }
 }

@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.2rem;
+  padding: 0 1em;
 }
 
 .hamburger {
@@ -37,18 +37,21 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  padding-left: 1.5em;
+  margin: .5em 0;
 }
 
 .navitem {
-  padding: 0 1.5rem;
+  padding: 0 1em;
 }
 
 .navlink{
+  font-family: Poppins;
   font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
-  filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
+  filter: drop-shadow(0px 0px 8px rgb(89, 45, 98));
   -webkit-text-stroke: .5px #854adb;
 }
 
@@ -70,22 +73,29 @@
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-image: linear-gradient(to right, #6056e9 , #8f49dd);
+    background-image: url(../images/Top-BG.png);
+    background-size: cover;
+    background-position: top;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow:
-    0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 2em 0;
   }
-
 
   .navmenu.active {
     left: 0;
   }
 
   .navitem {
-    margin: 2.5rem 0;
+    margin: .5em 0;
+  }
+
+  .navlink{
+    font-size: 2rem;
+    font-weight: 600;
   }
 
   .hamburger {

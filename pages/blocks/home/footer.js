@@ -34,7 +34,7 @@ export default function Footer () {
         </div>
         <div className={style.Products}>
           <h2>Products</h2>
-          <p>Discower Features</p>
+          <p>Parsing service</p>
           <p>CMS Integration</p>
           <p>ERP Integration</p>
           <p>Industrial automatization</p>

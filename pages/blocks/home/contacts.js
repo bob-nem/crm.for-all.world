@@ -10,7 +10,7 @@ import bg from '../../../images/dropshipping-consult.png'
 
 export default function Contacts () {
   return (
-    <div className={style.Container}>
+    <div className={style.Container}  id="contacts">
     <div className={style.BG}>
       <h2 className={style.MainHeader}>contacts</h2>
       <p className={style.MainHeaderDescription}>We are waiting for your questions and are ready to help in solving tasks on automation of document flow and technological processes of any complexity.</p>
