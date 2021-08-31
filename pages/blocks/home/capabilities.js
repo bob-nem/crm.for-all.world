@@ -64,7 +64,7 @@ export default function ThirdBlock () {
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Communication<br />and calltracking</h3>
-            <p className={style.ThirdBlockOneCardP}>With the help of end-to-end multi-channel analytics and call tracking , you will be able to track the client's path from viewing an ad to getting into the sales funnel.</p>
+            <p className={style.ThirdBlockOneCardP}>With the help of end-to-end multi-channel analytics and call tracking, you will be able to track the client&apos;s path from viewing an ad to getting into the sales funnel.</p>
           </div>
         </div>
         <div className={style.ThirdBlockOneCard}>

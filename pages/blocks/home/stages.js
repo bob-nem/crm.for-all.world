@@ -56,7 +56,7 @@ export default function SecondBlock () {
           <div>
             <h3 className={style.SecondBlockH}>Interface design, programming of data processing algorithms</h3>
             <p className={style.SecondBlockP}>
-            Based on the results of the enterprise survey, the functional requirements for the key modules of the system, the needs for downloading, exchanging and accessing data are determined and implemented. Setting up the exchange of information with the software already used. Improvements are being made to the standard functionality for the specifics of the company's activities. The system will program adapted solutions for the company's business processes and develop an interface for them. The execution of all actions in the system will become obvious and intuitive.</p>
+            Based on the results of the enterprise survey, the functional requirements for the key modules of the system, the needs for downloading, exchanging and accessing data are determined and implemented. Setting up the exchange of information with the software already used. Improvements are being made to the standard functionality for the specifics of the company&apos;s activities. The system will program adapted solutions for the company&apos;s business processes and develop an interface for them. The execution of all actions in the system will become obvious and intuitive.</p>
           </div>
         </div>
         <div className={style.SecondBlockConent}>

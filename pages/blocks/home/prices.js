@@ -1,7 +1,7 @@
 import style from '../../../styles/HomePrices.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import {Tabs} from './tabs/Tabs'
+import {Tabs} from '../../../components/tabs/Tabs'
 
 import suitecrm from '../../../images/suite-crm-logo.png'
 import orocrm from '../../../images/oroinc-logo-s.png'
@@ -76,7 +76,7 @@ export default function Prices() {
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://www.amocrm.com/"><a target="_blank">amoCRM</a></Link></strong> If other CRM is multifunctional and complex, then amoCRM is the complete opposite: only the "cloud", and only simplicity.
+                  <strong className={style.CardDN}><Link href="https://www.amocrm.com/"><a target="_blank">amoCRM</a></Link></strong> If other CRM is multifunctional and complex, then amoCRM is the complete opposite: only the &quot;cloud&quot;, and only simplicity.
                 </p>
                 <div className={style.PriceRow}>
                   <h3 className={style.Sum}>$520&nbsp;</h3>

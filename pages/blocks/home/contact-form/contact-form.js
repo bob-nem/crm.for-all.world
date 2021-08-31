@@ -36,15 +36,15 @@ export default function ContactForm () {
           <div className={style.RBs}>
             <div className={style.RB}>
               <input type="radio" id="radiopersonal" name="type" value="personal"/>
-              <label for="radiopersonal">Sales</label>
+              <label htmlFor="radiopersonal">Sales</label>
             </div>
             <div className={style.RB}>
               <input type="radio" id="radioecommerce" name="type" value="ecommerce"/>
-              <label for="radioecommerce">Corporate</label>
+              <label htmlFor="radioecommerce">Corporate</label>
             </div>
             <div className={style.RB}>
               <input type="radio" id="radiolandingpage" name="type" value="landingpage"/>
-              <label for="radiolandingpage">Industry</label>
+              <label htmlFor="radiolandingpage">Industry</label>
             </div>
           </div>
         </div>
