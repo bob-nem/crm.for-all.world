@@ -10,6 +10,7 @@ import amocrm from '../../../images/amocrm-logo-dark-r.png'
 import cerp from '../../../images/1C-ERP.png'
 import saperp from '../../../images/saperp.png'
 import msdynamics from '../../../images/ms-dynamics.png'
+import erpnext from '../../../images/erpnext-logo.png'
 
 export default function Prices() {
   return (
@@ -148,7 +149,7 @@ export default function Prices() {
                   <p className={style.PriceRowD}>&nbsp;per AWP</p>
                 </div>
                 <p className={style.CardSpecification}>
-                  <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://suitecrm.com/solutions/compare-with-microsoft-dynamics/"><a target="_blank">technical specifications</a></Link>
+                  <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://v8.1c.ru/erp/cena-1s-erp/"><a target="_blank">technical specifications</a></Link>
                 </p>
               </div>
               <div className={style.Card}>
@@ -172,7 +173,7 @@ export default function Prices() {
                   <p className={style.PriceRowD}>&nbsp;per user in month</p>
                 </div>
                 <p className={style.CardSpecification}>
-                  <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://www.bitrix24.ru/features/"><a target="_blank">technical specifications</a></Link>
+                  <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://www.sap.com/products/erp-financial-management/products.html"><a target="_blank">technical specifications</a></Link>
                 </p>
               </div>
               <div className={style.Card}>
@@ -183,7 +184,7 @@ export default function Prices() {
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://dynamics.microsoft.com/en-us/what-is-dynamics365/"><a target="_blank">MS dynamics</a></Link></strong> Microsoft Dynamics AX was one of Microsoft's enterprise resource planning software products. It is part of the Microsoft Dynamics family. After 2018 product was rebranded as a part of Microsoft's Dynamics 365 suite for Finance and Operations .
+                  <strong className={style.CardDN}><Link href="https://dynamics.microsoft.com/en-us/what-is-dynamics365/"><a target="_blank">MS Dynamics</a></Link></strong> AX was one of Microsoft's enterprise resource planning software products. It is part of the Microsoft Dynamics family. After 2018 product was rebranded as a part of Microsoft's Dynamics 365 suite for Finance and Operations .
                 </p>
                 <div className={style.PriceRow}>
                   <h3 className={style.Sum}>$5600&nbsp;</h3>
@@ -202,25 +203,25 @@ export default function Prices() {
               <div className={style.Card}>
                 <div className={style.Logo}>
                   <Image
-                    src={orocrm}
-                    alt="OROCRM"
+                    src={erpnext}
+                    alt="ERPnext logo"
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://oroinc.com/"><a target="_blank">OROCRM</a></Link></strong> is based on the Symfony2 PHP framework. It relatively easy and cost-effective <Link href="https://github.com/oroinc/crm"><a className={style.CardOpenSource} target="_blank">to modify the platform</a></Link> to your special needs.
+                  <strong className={style.CardDN}><Link href="https://erpnext.com"><a target="_blank">ERPnext</a></Link></strong> is built on the Frappe Framework, a full-stack web app framework built with Python &#38; JavaScript. 100% <Link href="https://github.com/frappe/erpnext"><a className={style.CardOpenSource} target="_blank">open source</a></Link> system that supports multiple verticals. The platform enables administrators to manage processes using a centralized dashboard in real time. 
                 </p>
                 <div className={style.PriceRow}>
-                  <h3 className={style.Sum}>$3141&nbsp;</h3>
+                  <h3 className={style.Sum}>$6250&nbsp;</h3>
                   <p className={style.PriceRowD}>&nbsp;for configuration service</p>
                 </div>
-                <p>Versatility with the ability to evolve into a large ERP ecosystem. Lots of open source developers find it easy to understand Oro’s code.</p>
+                <p>You can start with the Cloud Plan ($25 per user in one month). If you are planning to host the software on your own server it is will be free and open source forever</p>
                 <div className={style.PriceRow2}>
                   <p className={style.PriceRowD}>is&nbsp;</p>
                   <h3 className={style.Sum}>FREE</h3>
                   <p className={style.PriceRowD}>&nbsp;for open source edition</p>
                 </div>
                 <p className={style.CardSpecification}>
-                  <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://oroinc.com/oroplatform/"><a target="_blank">technical specifications</a></Link>
+                  <span style={{color: "#ffcf46", fontSize: "1.6rem", marginTop: "-0.25rem"}}>&#10149;&nbsp;</span><Link href="https://erpnext.com/pricing"><a target="_blank">technical specifications</a></Link>
                 </p>
               </div>
             </div>

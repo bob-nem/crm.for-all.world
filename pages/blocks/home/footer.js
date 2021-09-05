@@ -35,10 +35,10 @@ export default function Footer () {
         <div className={style.Products}>
           <h2>Products</h2>
           <p>Parsing service</p>
-          <p>CMS Integration</p>
-          <p>ERP Integration</p>
+          <p>CMS &#38; ERP Integration</p>          
           <p>Industrial automatization</p>
           <p>Blockchain solutions</p>
+          <p>Artificial Intelligence</p>
         </div>
         <div className={style.Products}>
           <h2>Company</h2>
