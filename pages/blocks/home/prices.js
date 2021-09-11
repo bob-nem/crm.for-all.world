@@ -136,7 +136,7 @@ export default function Prices() {
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://www.1ci.com/applications/1c-erp/"><a target="_blank">1C:ERP</a></Link></strong> The best international methods and long-term domestic practice, which guarantees flexibility of configuration, ease of use and a significant economic effect. The line of solutions "1C: ERP" covers all major industries, has a large set of functions and software tools.
+                  <strong className={style.CardDN}><Link href="https://www.1ci.com/applications/1c-erp/"><a target="_blank">1C:ERP</a></Link></strong> The best international methods and long-term domestic practice, which guarantees flexibility of configuration, ease of use and a significant economic effect. The line of solutions &ldquo;1C: ERP&ldquo; covers all major industries, has a large set of functions and software tools.
                 </p>
                 <div className={style.PriceRow}>
                   <h3 className={style.Sum}>$7580&nbsp;</h3>
@@ -184,7 +184,7 @@ export default function Prices() {
                   />
                 </div>
                 <p className={style.CardD}>
-                  <strong className={style.CardDN}><Link href="https://dynamics.microsoft.com/en-us/what-is-dynamics365/"><a target="_blank">MS Dynamics</a></Link></strong> AX was one of Microsoft's enterprise resource planning software products. It is part of the Microsoft Dynamics family. After 2018 product was rebranded as a part of Microsoft's Dynamics 365 suite for Finance and Operations .
+                  <strong className={style.CardDN}><Link href="https://dynamics.microsoft.com/en-us/what-is-dynamics365/"><a target="_blank">MS Dynamics</a></Link></strong> AX was one of Microsoft&lsquo;s enterprise resource planning software products. It is part of the Microsoft Dynamics family. After 2018 product was rebranded as a part of Microsoft&lsquo;s Dynamics 365 suite for Finance and Operations .
                 </p>
                 <div className={style.PriceRow}>
                   <h3 className={style.Sum}>$5600&nbsp;</h3>

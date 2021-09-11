@@ -1,34 +1,30 @@
 {
-  "name": "enterprize-optimization.for-all.world",
-  "version": "0.21",
+  "name": "optimization.for-all.world",
   "private": true,
+  "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gcp-predeploy": "find ./build -name '\\[...*' -exec bash -c 'mv \"$1\" \"${1/.../@@@}\"' -- {} \\;",
+    "gcp-build": "find ./build -name '\\[@@@*' -exec bash -c 'mv \"$1\" \"${1/@@@/...}\"' -- {} \\;",
+    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "start": "next start -p 8080",
+    "deploy": "npm run build && gcloud app deploy"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "aos": "^3.0.0-beta.6",
     "axios": "^0.21.1",
-    "next": "^11.1.0",
+    "chokidar": "^3.5.2",
+    "next": "^11.0.1",
     "nodemailer": "^6.6.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.13.0",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "resolve-url": "^0.2.1"
   },
   "devDependencies": {
     "@zeit/next-css": "^1.0.1",
-    "autoprefixer": "^10.3.3",
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.8"
+    "eslint": "^7.30.0",
+    "eslint-config-next": "11.0.1"
   }
 }
