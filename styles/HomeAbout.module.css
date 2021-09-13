@@ -61,22 +61,23 @@ to {right:0;}
   margin-bottom: 1em;
 }
 
-.FirstBlockRightListI {
+.RightListIcon {
   justify-self: start;
   padding: 10% 16%;
   float: left;
   grid-row-start: 1;
   grid-row-end: 3;
+  overflow: hidden;
 }
 
-.FirstBlockRightListI3 {
+.RightListI3 {
   padding: 10% 16% 10% 8%;
   float: left;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.FirstBlockRightIcon {
+.RightIcon {
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3));
 }
 

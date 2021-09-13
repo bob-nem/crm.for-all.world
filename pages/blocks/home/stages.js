@@ -1,11 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
-import Link from "next/link";
-import Image from 'next/image';
-import style from '../../../styles/HomeSecond.module.css';
-import Modal from "./modal-windows/components/Modal";
+import React, { useState, useRef, useEffect } from "react"
+import Image from 'next/image'
+import style from '../../../styles/HomeStages.module.css'
+import Modal from "./modal-windows/components/Modal"
 
-import secondBlockIMG from '../../../images/SecondBlock-IMG.png';
-import checkWhite from '../../../images/check-white.svg';
+import secondBlockIMG from '../../../images/SecondBlock-IMG.png'
+import SvgCheckWhite from '../../../images/icons/CheckWhite'
 
 export default function SecondBlock () {
   const [modal, setModal] = useState(false);
@@ -44,7 +43,7 @@ export default function SecondBlock () {
         <h2 className={style.SecondBlockHeader}>Stages of enterpize optimization development and implementation</h2>
         <div className={style.SecondBlockLine}></div>
         <div className={style.SecondBlockConent}>
-          <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>
+          <div className={style.SecondBlockIcon}><SvgCheckWhite className={style.CheckIcon} alt="check icon"/></div>
           <div>
             <h3 className={style.SecondBlockH}>Definition of the general concept, approval of the technical task</h3>
             <p className={style.SecondBlockP}>
@@ -52,7 +51,7 @@ export default function SecondBlock () {
           </div>
         </div>
         <div className={style.SecondBlockConent}>
-          <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>
+          <div className={style.SecondBlockIcon}><SvgCheckWhite alt="check icon"/></div>
           <div>
             <h3 className={style.SecondBlockH}>Interface design, programming of data processing algorithms</h3>
             <p className={style.SecondBlockP}>
@@ -60,14 +59,14 @@ export default function SecondBlock () {
           </div>
         </div>
         <div className={style.SecondBlockConent}>
-          <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>
+          <div className={style.SecondBlockIcon}><SvgCheckWhite alt="check icon"/></div>
           <div>
             <h3 className={style.SecondBlockH}>Implementation and adaptation of the system to direct activities</h3>
             <p className={style.SecondBlockP}>Deployment of software in the enterprise at the workplaces of employees (often with intermediate testing), training in the use of administrators by the system or the conclusion of a service contract. Access rights and reports are configured, management and executive corporate departments are synchronized. Work data and reference information are loaded from the old system, excel files, etc.</p>
           </div>
         </div>
         <div className={style.SecondBlockConent}>
-          <div className={style.SecondBlockIcon}><Image src={checkWhite} alt="check icon"/></div>
+          <div className={style.SecondBlockIcon}><SvgCheckWhite alt="check icon"/></div>
           <div>
             <h3 className={style.SecondBlockH}>Commissioning into commercial operation, further maintenance</h3>
             <p className={style.SecondBlockP}>Upon completion of automation, a key group of users is trained, instructions for working in the system are developed. In the process of full-fledged operation, will necessarily appear current improvements, finding ways to increase the efficiency and return on the system, adding new modules to it. Take into account the aspects of information security - identifying risks and ways to respond to them.</p>

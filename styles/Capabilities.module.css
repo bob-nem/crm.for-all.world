@@ -96,12 +96,6 @@
   color: #854adb;
 }
 
-@media only screen and (max-width: 1400px) {
-  .ThirdBlockColorBG {
-    
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .ThirdBlockParagraph {
     margin-bottom: 1em;

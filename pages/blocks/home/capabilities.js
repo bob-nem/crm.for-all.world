@@ -1,13 +1,11 @@
-import style from '../../../styles/HomeThird.module.css';
-import Image from 'next/image';
+import style from '../../../styles/Capabilities.module.css'
 
-import customerBase from '../../../images/customer-base.svg';
-import customerSupport from '../../../images/customer-support.svg';
-import employeesKPI from '../../../images/employees-kpi.svg';
-import telephony from '../../../images/telephony.svg';
-import systemIntegration from '../../../images/integration-systems.svg';
-import processesModeling from '../../../images/processes-modeling.svg';
-import phoneman from '../../../images/phoneman-py.svg';
+import SvgCustomerBase from '../../../images/icons/CustomerBase'
+import SvgCustomerSupport from '../../../images/icons/CustomerSupport'
+import SvgEmployeesKpi from '../../../images/icons/EmployeesKpi'
+import SvgTelephony from '../../../images/icons/Telephony'
+import SvgIntegrationSystems from '../../../images/icons/IntegrationSystems'
+import SvgProcessesModeling from '../../../images/icons/ProcessesModeling'
 
 export default function ThirdBlock () {
   return (
@@ -18,10 +16,7 @@ export default function ThirdBlock () {
       <div className={style.ThirdBlockCards}>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
-            <Image
-              src={customerBase}
-              alt="customer base"
-            />
+            <SvgCustomerBase />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Customer base and sales management</h3>
@@ -30,11 +25,7 @@ export default function ThirdBlock () {
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
-            <Image
-              src={customerSupport}
-              alt="customer support"
-              height={220}
-            />
+            <SvgCustomerSupport />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Supplier support and warehouse accounting</h3>
@@ -43,11 +34,7 @@ export default function ThirdBlock () {
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
-            <Image
-              src={employeesKPI}
-              alt="employees KPI"
-              height={220}
-            />
+            <SvgEmployeesKpi />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Employees, leaderships<br />(tasks, KPI)</h3>
@@ -56,11 +43,7 @@ export default function ThirdBlock () {
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
-            <Image
-              src={telephony}
-              alt="telephony CRM"
-              height={220}
-            />
+            <SvgTelephony />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Communication<br />and calltracking</h3>
@@ -69,11 +52,7 @@ export default function ThirdBlock () {
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
-            <Image
-              src={systemIntegration}
-              alt="integration CRM with other systems"
-              height={180}
-            />
+            <SvgIntegrationSystems />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Integration with other systems and services</h3>
@@ -82,11 +61,7 @@ export default function ThirdBlock () {
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
-            <Image
-              src={processesModeling}
-              alt="integration CRM with other systems"
-              height={180}
-            />
+            <SvgProcessesModeling />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Modeling and automation of processes</h3>

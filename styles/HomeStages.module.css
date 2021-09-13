@@ -37,7 +37,8 @@
 }
 
 .SecondBlockIcon {
-  display: inline-block;
+  display: inline-flex;
+  align-items: flex-start;
   width: 1.5em;
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.5));
   margin-block-start: 1.5em;
@@ -78,7 +79,7 @@
     filter: drop-shadow(0 0 1rem #7258e7);
   }
   .SecondBlockH {
-    text-shadow: 0 0 3rem #7258e7);
+    text-shadow: 0 0 3rem #7258e7;
   }
   .SecondBlockP {
     text-shadow: 0 0 3rem #7258e7;
@@ -101,7 +102,7 @@
   .SecondBlockLeft {
     width: 100%;
   }
-  .SecondBlockHeader{;
+  .SecondBlockHeader{
     filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .1));
     width: 100%;
   }
