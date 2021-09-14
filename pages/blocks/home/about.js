@@ -1,12 +1,8 @@
-import style from '../../../styles/HomeAbout.module.css'
-import Image from 'next/image'
+import style from '../../../styles/About.module.css'
 
-import firstBlockIMG from '../../../images/FirstBlock-IMG.png'
 import SvgTarget from '../../../images/icons/Target'
 import SvgProcesses from '../../../images/icons/Processes'
 import SvgEmployeeStudy from '../../../images/icons/EmployeeStudy'
-
-
 
 export default function FirstBlock() {
   return (
@@ -15,11 +11,7 @@ export default function FirstBlock() {
       <p className={style.FirstBlockParagraph}>Electronic document management systems development and configuration for your technical task for any business. Integration of both ready-made and individual solutions.</p>
       <div className={style.FirstBlockSidesDivision}>
         <div className={style.FirstBlockLeft}>
-          <Image
-            className={style.FirstBlockLeftIMG}
-            src={firstBlockIMG}
-            alt="CRM development"
-          />
+
         </div>
         <div className={style.FirstBlockRight}>
           <div className={style.FirstBlockRightList}>

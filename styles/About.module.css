@@ -39,6 +39,10 @@ to {right:0;}
 .FirstBlockLeft {
   display: flex;
   align-items: center;
+  background-image: url(../images/backgrounds/about.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .FirstBlockLeftIMG {

@@ -1,6 +1,6 @@
 .Container {
   background-image: linear-gradient(to right, #6056e9 , #8f49dd);
-  background-image: url(../images/Prices-BG.png);
+  background-image: url(../images/backgrounds/prices.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,6 +39,14 @@
   justify-content: space-around;
   grid-gap: 2rem;
   padding: 1rem 0;
+}
+
+.CardsContainerSCADA {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: space-around;
+  grid-gap: 2rem;
+  padding: 1rem 0;  
 }
 
 .Card {
@@ -152,6 +160,7 @@
     grid-template-rows: 1fr 1fr;
     padding: 1rem 10%
   }
+
 }
 
 @media only screen and (max-width: 1365px) {
@@ -173,17 +182,27 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .Container {
-    padding: 3% 0;
-  }
-  .CardsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  }
+  
 }
 
 @media only screen and (max-width: 600px) {
-  .OneTabContainer::label {
-    Content: "CRM";
+  .Container {
+    padding: 4% 0;
+  }
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+  .TabsContainer {
+    margin: 0 1%;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }  
+}
+
+
