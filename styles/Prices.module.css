@@ -23,10 +23,14 @@
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
 }
 
-.TabsContainer {
+.TabsContainerDesk {
   margin: 0 4%;
   margin-top: 2em;
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .9));
+}
+
+.TabsContainerMobile {
+  display: none;
 }
 
 .OneTabContainer {
@@ -172,6 +176,14 @@
   }
 }
 
+@media only screen and (max-width: 1365px) {
+  .CardsContainerSCADA {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1rem 16%
+  }
+}
+
 @media only screen and (max-width: 1080px) {
   .Container {
     padding: 3% 1%;
@@ -182,27 +194,45 @@
 }
 
 @media only screen and (max-width: 800px) {
-  
+  .CardsContainerSCADA {
+    padding: 1rem 3%
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .TabsContainerMobile {
+    display: block;
+    margin-top: 1em;
+  }
+  .TabsContainerDesk {
+    display: none;
+  }
   .Container {
-    padding: 4% 0;
+    padding: 4% 1%;
   }
   .CardsContainer {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   }
-  .TabsContainer {
-    margin: 0 1%;
+  .CardsContainerSCADA {
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    padding: 1rem 1%
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .CardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  .CardsContainerSCADA {
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   }
 }
 
 @media only screen and (max-width: 320px) {
   .CardsContainer {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  }  
+  }
+  .CardsContainerSCADA {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
 }
-
-

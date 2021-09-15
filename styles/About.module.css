@@ -43,9 +43,6 @@ to {right:0;}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.FirstBlockLeftIMG {
   filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
   animation-duration: 4s;
   animation-fill-mode: both;

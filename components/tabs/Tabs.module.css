@@ -21,7 +21,6 @@
 .current {
   position: relative;
   top: 2px;
-  background: ;
   color: #fff;
   font-weight: bold;
   border: 2px solid #fff;
@@ -31,7 +30,6 @@
 }
 
 .content {
-  background-color:;
   color: #fff;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
@@ -43,7 +41,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .tabs {
-
+  .content {
+    padding: 1em;
+  }
+  .tabs > li {
+    margin: 0 .5em;
   }
 }
