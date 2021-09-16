@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react"
 import Image from 'next/image'
-import style from '../../../styles/HomeStages.module.css'
+import style from '../../../styles/Stages.module.css'
 import Modal from "./modal-windows/components/Modal"
 
 import secondBlockIMG from '../../../images/SecondBlock-IMG.png'

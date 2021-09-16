@@ -47,7 +47,7 @@
 
 .navlink{
   font-family: Poppins;
-  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  font-size: 2rem;
   font-weight: 500;
   color: white;
   text-transform: uppercase;

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import style from '../../../styles/Contacts.module.css'
 import ContactForm from './contact-form/contact-form'
+import SimpleMap from './map/map'
 
 import Map from '../../../images/icons/Map'
 import Mail from '../../../images/icons/Mail'
@@ -15,7 +16,7 @@ export default function Contacts () {
       <p className={style.MainHeaderDescription}>We are waiting for your questions and are ready to help in solving tasks on automation of document flow and technological processes of any complexity.</p>
       <div className={style.Separator}>
         <div className={style.Map}>
-
+          <SimpleMap />
         </div>
         <div className={style.Contacts}>
           <div className={style.ContactData}>
