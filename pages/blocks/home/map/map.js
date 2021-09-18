@@ -1,5 +1,5 @@
-import GoogleMapReact from 'google-map-react';
-import MAP_API_KEY from '../../../../apikey'
+import GoogleMapReact from 'google-map-react'
+import MAP_API_KEY from './apikey'
 
 const GoogleMaps = ({ latitude, longitude }) => {
   const renderMarkers = (map, maps) => {
