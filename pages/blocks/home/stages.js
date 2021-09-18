@@ -7,38 +7,8 @@ import secondBlockIMG from '../../../images/backgrounds/stages-right.webp'
 import SvgCheckWhite from '../../../images/icons/CheckWhite'
 
 export default function SecondBlock () {
-  const [modal, setModal] = useState(false);
-
-  const _modal = useRef(null);
-
-  const handleClick = () => {
-    setModal(true);
-    window.history.pushState("", "", "/implementation-work-group");
-  };
-
-  const closeModal = e => {
-    if (!modal) return;
-    if (_modal.current._content.current.contains(e.target)) return;
-    setModal(false);
-    window.history.go(-1);
-  };
-
-  const handleChange = e => {
-    if (e.target.location.pathname === "/implementation-work-group") {
-      setModal(true);
-    }
-    if (e.target.location.pathname === "/") {
-      setModal(false);
-    }
-  };
-
-  useEffect(() => {
-    window.onpopstate = handleChange;
-    () => window.removeEventListener("popstate", handleChange);
-  });
   return (
     <div className={style.SecondBlock}>
-    {modal && <Modal ref={_modal} onClick={closeModal} />}
       <div className={style.SecondBlockLeft}>
         <h2 className={style.SecondBlockHeader}>Stages of enterpize optimization development and implementation</h2>
         <div className={style.SecondBlockLine}></div>
@@ -47,7 +17,7 @@ export default function SecondBlock () {
           <div>
             <h3 className={style.SecondBlockH}>Definition of the general concept, approval of the technical task</h3>
             <p className={style.SecondBlockP}>
-              Work on the ERP or CMR implementation project at the enterprise begins with the definition of goals and objectives. This should not be automation for the sake of automation — the customer should clearly know what business effects he ultimately wants to achieve. At the preparatory stage, it is necessary to form a <button onClick={handleClick} className={style.ButtonWorkGroup}> working group </button> on the client side, which together with the integrator will work on creating a voluminous and detailed technical task, thoroughly describing all, even the smallest processes.</p>
+              Work on the ERP or CMR implementation project at the enterprise begins with the definition of goals and objectives. This should not be automation for the sake of automation — the customer should clearly know what business effects he ultimately wants to achieve. At the preparatory stage, it is necessary to form a working group on the client side, which together with the integrator will work on creating a voluminous and detailed technical task, thoroughly describing all, even the smallest processes.</p>
           </div>
         </div>
         <div className={style.SecondBlockConent}>
