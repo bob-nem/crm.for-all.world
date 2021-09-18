@@ -26,7 +26,6 @@ yarn-error.log*
 
 # local env files
 ./pages/blocks/home/map/apikey.js
-apikey.js
 .env.local
 .env.development.local
 .env.test.local
