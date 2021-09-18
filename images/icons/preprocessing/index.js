@@ -1,1 +1,1 @@
-export { default as YokogawaLogo } from './YokogawaLogo'
+export { default as Navigator } from './Navigator'

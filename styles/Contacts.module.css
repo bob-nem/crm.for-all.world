@@ -1,6 +1,6 @@
 .Container {
   margin-bottom: 3rem;
-  background-image: url(../images/dropshipping-consult.png);
+  background-image: url(../images/backgrounds/dropshipping-consult.png);
   background-position: right;
   background-repeat: no-repeat;
   padding: 3%;
@@ -33,8 +33,6 @@
 
 .Map {
   width: 80%;
-  background-image: url(../images/tempmap.png);
-  background-position: center;
   border-top: 2px solid rgba(133,  74, 219, 1);
   border-bottom: 2px solid rgba(133,  74, 219, 1);
   border-radius: .25rem;
@@ -43,6 +41,8 @@
 }
 
 .Contacts {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,10 +88,87 @@
 
 }
 
-.ContactData p {
+.ContactData p, .ContactSocial p {
   align-items: center;
   filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
   padding: .5rem;
+}
+
+.ContactSocial {
+  flex-direction: column;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid rgba(133,  74, 219, 1);
+  border-bottom: 2px solid rgba(133,  74, 219, 1);
+  border-radius: .25rem;
+  box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
+  padding: .75em;
+  margin-left: auto;
+}
+
+.ContactSocialCoordinates {
+  display: inline-flex;
+  border-bottom: 1px solid rgba(133,  74, 219, .5);
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+  padding: .3em 0 .3em;
+}
+
+.NavigatorIcon {
+  margin-top: -0.3em;
+}
+
+.ContactSocialWe {
+  font-weight: 700;
+  color: #854adb;
+  text-align: center;
+  margin-top: .25em;
+}
+
+.SocialMedia {
+  display: inline-flex;
+  color: #854adb;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 1em;
+
+}
+
+.IconCircle {
+  display: flex;
+  flex: 0 0 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border: 1px solid #854adb;
+  border-radius: 50%;
+  transition: .3s all ease-in-out;
+}
+
+.IconCircle:hover {
+  color: white;
+  background: #482ff7;
+}
+
+.SocialIcon {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1800px) {
+  .ContactSocial {
+    display: none;
+  }
+  .ContactData {
+    width: 100%;
+  }
+  .ContactRow1 {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .Map {
+    width: 95%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -102,6 +179,7 @@
     grid-gap: 2em;
   }
   .Map {
+    width: 100%;
     margin: 0 auto;
   }
 }

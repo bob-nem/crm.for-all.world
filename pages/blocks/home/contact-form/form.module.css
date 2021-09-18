@@ -1,6 +1,7 @@
 .Container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   background: rgba(255, 255, 255, 0.8);
   border-top: 2px solid rgba(133,  74, 219, 1);
   border-bottom: 2px solid rgba(133,  74, 219, 1);

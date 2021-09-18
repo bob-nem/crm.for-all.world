@@ -1,12 +1,13 @@
-import Image from 'next/image'
 import style from '../../../styles/Contacts.module.css'
 import ContactForm from './contact-form/contact-form'
-import SimpleMap from './map/map'
+import GoogleMaps from './map/map'
+import { FiFacebook, FiTwitter, FiGithub, FiYoutube } from 'react-icons/fi';
 
 import Map from '../../../images/icons/Map'
 import Mail from '../../../images/icons/Mail'
 import Phone from '../../../images/icons/Phone'
 import Clock from '../../../images/icons/Clock'
+import Navigator from '../../../images/icons/Navigator'
 
 export default function Contacts () {
   return (
@@ -16,10 +17,10 @@ export default function Contacts () {
       <p className={style.MainHeaderDescription}>We are waiting for your questions and are ready to help in solving tasks on automation of document flow and technological processes of any complexity.</p>
       <div className={style.Separator}>
         <div className={style.Map}>
-          <SimpleMap />
+          <GoogleMaps />
         </div>
         <div className={style.Contacts}>
-          <div className={style.ContactData}>
+            <div className={style.ContactData}>
             <div className={style.ContactRow}>
               <Map />
               <p>Nasir Trade Center, 89 Bir Uttam, CR Dutta Rd, Dhaka 1205</p>
@@ -39,6 +40,29 @@ export default function Contacts () {
                 <p>&nbsp;Sunday - Thuesday, 08:00 - 17:00 (reception by appointment)</p>
             </div>
           </div>
+            <div className={style.ContactSocial}>
+              <div className={style.ContactSocialCoordinates}>
+                <Navigator className={style.NavigatorIcon} />
+                <p>GPS: 23.746497, 90.392484</p>
+              </div>
+              <div className={style.ContactSocialWe}>
+                <p>WE ARE IN SOCIAL:</p>
+              </div>
+              <div className={style.SocialMedia}>
+                <a href="#" className={style.IconCircle}>
+                  <FiFacebook className={style.SocialIcon}/>
+                </a>
+                <a href="#" className={style.IconCircle}>
+                  <FiTwitter  className={style.SocialIcon}/>
+                </a>
+                <a href="#" className={style.IconCircle}>
+                  <FiGithub  className={style.SocialIcon}/>
+                </a>
+                <a href="#" className={style.IconCircle}>
+                  <FiYoutube  className={style.SocialIcon}/>
+                </a>
+              </div>
+            </div>
           <ContactForm />
         </div>
       </div>

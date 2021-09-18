@@ -3,7 +3,7 @@ import Image from 'next/image'
 import style from '../../../styles/Stages.module.css'
 import Modal from "./modal-windows/components/Modal"
 
-import secondBlockIMG from '../../../images/SecondBlock-IMG.png'
+import secondBlockIMG from '../../../images/backgrounds/stages-right.webp'
 import SvgCheckWhite from '../../../images/icons/CheckWhite'
 
 export default function SecondBlock () {

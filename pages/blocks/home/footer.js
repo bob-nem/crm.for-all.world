@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import style from '../../../styles/HomeFooter.module.css'
-import { FiMail, FiPhone, FiMap, FiFacebook, FiTwitter, FiGithub, FiYoutube } from 'react-icons/fi';
+import style from '../../../styles/Footer.module.css'
+import { FiMail, FiFacebook, FiTwitter, FiGithub, FiYoutube } from 'react-icons/fi';
 
 import unicornTopLogo from '../../../images/unicorn-logo-gr.png';
 
@@ -34,8 +34,8 @@ export default function Footer () {
         </div>
         <div className={style.Products}>
           <h2>Products</h2>
-          <p>Parsing service</p>
-          <p>CMS &#38; ERP Integration</p>          
+          <p>Multi platform app dev</p>
+          <p>Parsing service</p>          
           <p>Industrial automatization</p>
           <p>Blockchain solutions</p>
           <p>Artificial Intelligence</p>
