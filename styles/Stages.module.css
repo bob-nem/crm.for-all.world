@@ -11,6 +11,12 @@
   overflow: hidden;
 }
 
+.ButtonWrapper {
+  position: relative;
+  color: #ffcf46;
+  font-size: 1rem;
+}
+
 .SecondBlockLeft {
   filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
   color: white;
