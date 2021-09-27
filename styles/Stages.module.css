@@ -11,10 +11,42 @@
   overflow: hidden;
 }
 
-.ButtonWrapper {
-  position: relative;
+.ButtonModal {
   color: #ffcf46;
   font-size: 1rem;
+}
+
+.ButtonModal:hover {
+  color:  #482ff7;
+}
+
+.ModalGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.CloseModal {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.CloseModal:hover {
+  color: #ffcf46;
+}
+
+.ModalContent {
+  margin: 3%;
+}
+
+.ModalP {
+  text-align: justify;
+  margin-top: 1em;
+}
+
+.WorkGroupBG {
+  margin: 0 auto;
+  width: 45vw;
 }
 
 .SecondBlockLeft {
