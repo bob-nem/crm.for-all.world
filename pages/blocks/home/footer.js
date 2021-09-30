@@ -34,11 +34,11 @@ export default function Footer () {
         </div>
         <div className={style.Products}>
           <h2>Products</h2>
-          <p>Multi platform app dev</p>
-          <p>Parsing service</p>          
-          <p>Industrial automatization</p>
-          <p>Blockchain solutions</p>
           <p>Artificial Intelligence</p>
+          <p>Blockchain solutions</p>
+          <p>Industrial automatization</p>
+          <p>Multi platform app dev</p>
+          <p>Parsing service</p>
         </div>
         <div className={style.Products}>
           <h2>Company</h2>

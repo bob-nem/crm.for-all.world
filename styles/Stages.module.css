@@ -20,7 +20,7 @@
   color:  #482ff7;
 }
 
-.ModalGroup {
+.ModalWrapper {
   display: flex;
   flex-direction: column;
 }
@@ -36,17 +36,43 @@
 }
 
 .ModalContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  
   margin: 3%;
 }
 
 .ModalP {
-  text-align: justify;
   margin-top: 1em;
+  text-align: justify;
 }
 
 .WorkGroupBG {
-  margin: 0 auto;
+  align-self: center;
   width: 45vw;
+  margin-top: -6rem;
+  z-index: -1;
+}
+
+.SurveyBG {
+  align-self: center;
+  margin-top: -2rem;
+  width: 40vw;
+}
+
+.metodologyBG {
+  align-self: center;
+  width: 40vw;
+  margin-top: -4rem;
+  z-index: -1;
+}
+
+.ConceptualBG {
+  align-self: center;
+  width: 40vw;
+  margin-top: -3rem;
+  z-index: -1;
 }
 
 .SecondBlockLeft {
@@ -131,6 +157,17 @@
     width: 150%;
     margin-left: -50%;
   }
+  .WorkGroupBG {
+    margin-top: -2rem;
+  }
+  .metodologyBG {
+    width: 45vw;
+    margin-top: 0;
+  }
+  .ConceptualBG {
+    width: 45vw;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -157,6 +194,13 @@
   .SecondBlockRight {
     display: none;
   }
+  .WorkGroupBG {
+    margin-top: -1rem;
+  }
+  .SurveyBG {
+    width: 60vw;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -175,5 +219,14 @@
   }
   .SecondBlockP {
     margin-left: -1.4em;
+  }
+  .WorkGroupBG {
+    margin-top: 0;
+  }
+  .metodologyBG {
+    width: 60vw;
+  }
+  .ConceptualBG {
+    width: 60vw;
   }
 }
