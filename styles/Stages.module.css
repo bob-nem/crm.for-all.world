@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  
   margin: 3%;
 }
 
@@ -69,6 +68,18 @@
 }
 
 .ConceptualBG {
+  align-self: center;
+  width: 40vw;
+  margin-top: -3rem;
+  z-index: -1;
+}
+
+.RobotBG {
+  align-self: center;
+  width: 40vw;
+}
+
+.personnelBG {
   align-self: center;
   width: 40vw;
   margin-top: -3rem;
@@ -168,6 +179,13 @@
     width: 45vw;
     margin-top: 0;
   }
+  .RobotBG {
+    width: 45vw;
+  }
+  .personnelBG {
+    width: 45vw;
+    margin-top: -2rem;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -198,6 +216,13 @@
     margin-top: -1rem;
   }
   .SurveyBG {
+    width: 60vw;
+    margin-top: 0;
+  }
+  .RobotBG {
+    width: 60vw;
+  }
+  .personnelBG {
     width: 60vw;
     margin-top: 0;
   }

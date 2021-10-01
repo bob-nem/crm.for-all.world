@@ -79,7 +79,7 @@ to {right:0;}
     grid-template-columns: 65% 35%;
   }
 
-  .HeaderSliderLeft {;
+  .HeaderSliderLeft {
     padding: 3% 5%;
   }
 
@@ -89,10 +89,6 @@ to {right:0;}
 
   .TopDescription {
     margin-bottom: 10vw;
-  }
-
-  .HeaderSliderRight {
-
   }
 }
 
