@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  padding: 4% 12%;
+  padding: 4% 12% 1.2%;
 }
 
 .Wrapper {
@@ -118,6 +118,16 @@
 .Subscribe p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+}
+
+.UnderFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.UnderFooterLink:hover {
+  color: #482ff7;
 }
 
 @media only screen and (max-width: 1400px) {
