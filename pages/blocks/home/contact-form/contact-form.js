@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import style from './form.module.css'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
@@ -7,8 +6,28 @@ import { useRouter } from 'next/router'
 
 export default function ContactForm () {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
-  function onSubmitForm(values) {
-    console.log(values);
+  const router = useRouter();
+  async function onSubmitForm(values) {
+    let config = {
+      method: 'post',
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact.js`,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: values,
+    };
+
+    try {
+      const response = await axios(config);
+      console.log(response);
+      if (response.status == 200) {
+        reset();
+        toast(
+          'success',
+          'Thank you for contacting us, we will be in touch soon.'
+        );
+      }
+    } catch (err) {console.log(err);}
   }
   return (
     <div className={style.Container}>

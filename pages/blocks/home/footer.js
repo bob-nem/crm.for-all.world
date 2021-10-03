@@ -58,7 +58,7 @@ export default function Footer () {
         </div>
       </div>
       <div className={style.UnderFooter}>
-        <p style={{color: "white", marginTop: "3rem"}}>© Copyright 2020  |   Development by <a href="https://it.for-all.world" className={style.UnderFooterLink}>IT_Department</a>   |   All Rights Reserved   |   Powered by <a href="https://reactjs.org" className={style.UnderFooterLink}>React</a> with <a href="https://nextjs.org" className={style.UnderFooterLink}>NextJS</a></p>
+        <p style={{color: "white", marginTop: "3rem"}}>© Copyright 2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Development by <a href="https://it.for-all.world" className={style.UnderFooterLink}>IT_Department</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Powered by <a href="https://reactjs.org" className={style.UnderFooterLink}>React</a> with <a href="https://nextjs.org" className={style.UnderFooterLink}>NextJS</a></p>
       </div>
     </div>
   )
