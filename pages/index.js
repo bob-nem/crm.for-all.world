@@ -6,6 +6,7 @@ import Header from './blocks/home/header'
 import About from './blocks/home/about'
 import Stages from './blocks/home/stages'
 import Capabilities from './blocks/home/capabilities'
+import Articles from './blocks/home/articles' 
 import Prices from './blocks/home/prices'
 import Contacts from './blocks/home/contacts'
 import Footer from './blocks/home/footer'
@@ -24,6 +25,7 @@ export default function Home() {
         <Stages />
         <Capabilities />
         <Prices />
+        <Articles />
         <Contacts />
         <Footer />
       </main>

@@ -20,6 +20,11 @@ export default function Navigation ({children}) {
               </Link>
             </li>
             <li className={style.navitem}>
+              <Link href='/#articles'>
+                <a className={style.navlink}>Articles</a>
+              </Link>
+            </li>
+            <li className={style.navitem}>
               <Link href='/#contacts'>
                 <a className={style.navlink}>Contact</a>
               </Link>

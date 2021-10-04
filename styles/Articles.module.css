@@ -1,0 +1,62 @@
+.Wrapper {
+    padding: 3%;
+}
+
+.Header {
+    text-transform: uppercase;
+    font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+    font-weight: 600;
+    color: #854adb;
+    text-align: center;
+    filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
+}
+
+.Container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+    margin: 2.5rem;
+}
+
+.Box {
+    display: grid;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    place-items: center;
+    transition: .5s;
+}
+
+.Box:hover {
+    background: #854adb !important;
+}
+
+.Box:nth-child(1) {
+    grid-column: span 2;
+}
+
+.Box:nth-child(2) {
+    grid-row: span 2;
+}
+
+.Box:nth-child(4) {
+    grid-row: span 2;
+}
+
+.Box:nth-child(5) {
+    grid-column: span 3;
+}
+
+@media only screen and (max-width: 1080px) {
+    .Container {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto);
+    }
+    .Box {
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}

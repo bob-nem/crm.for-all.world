@@ -74,7 +74,6 @@
     top: 5rem;
     flex-direction: column;
     background-image: linear-gradient(to right, #6056e9 , #8f49dd);
-    background-image: url(../images/Top-BG.png);
     background-size: cover;
     background-position: top;
     width: 100%;
@@ -82,7 +81,7 @@
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    padding: 2em 0;
+    padding: 3em 0;
   }
 
   .navmenu.active {
