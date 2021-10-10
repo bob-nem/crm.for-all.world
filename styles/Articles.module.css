@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .Wrapper {
     padding: 3%;
 }
 
 .Header {
     text-transform: uppercase;
-    font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+    font-size: calc(20px + 16 * ((100vw - 300px) / (1920 - 300)));
     font-weight: 600;
     color: #854adb;
     text-align: center;
@@ -18,7 +20,22 @@
     grid-template-rows: minmax(100px, auto);
     grid-auto-flow: dense;
     grid-gap: 1rem;
-    margin: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.Content h3 {
+    font-family: Lobster two;
+    font-size: 2.12em;
+    font-weight: 700;
+}
+
+.Content:hover {
+    color: white !important;
+}
+
+.Content p {
+    font-family: Lobster two;
+    font-weight: 400;
 }
 
 .Box {
@@ -28,10 +45,12 @@
     border-radius: .5rem;
     place-items: center;
     transition: .5s;
+    border: 1px solid #854adb;
 }
 
 .Box:hover {
     background: #854adb !important;
+    color: white;
 }
 
 .Box:nth-child(1) {
