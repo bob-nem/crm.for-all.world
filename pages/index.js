@@ -1,5 +1,4 @@
 import style from '../styles/Home.module.css'
-import Image from 'next/image'
 import Head from 'next/head'
 
 import Header from './blocks/home/header'

@@ -6,7 +6,7 @@
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 1.2rem;
   margin-top: .2rem;
-  margin-right: 1rem;
+  padding-right: 1rem;
   box-shadow: 0 0 10px rgba(89, 45, 98, 0.5);
 }
 
@@ -46,9 +46,8 @@
 }
 
 .navlink{
-  font-family: Poppins;
+  font-family: Righteous;
   font-size: 2rem;
-  font-weight: 500;
   color: white;
   text-transform: uppercase;
   filter: drop-shadow(0px 0px 8px rgb(89, 45, 98));
@@ -62,6 +61,7 @@
 @media only screen and (max-width: 1080px) {
   .header {
     border: none;
+    padding-right: 0;
   }
 
   .navbar {
@@ -94,7 +94,6 @@
 
   .navlink{
     font-size: 2rem;
-    font-weight: 600;
   }
 
   .hamburger {

@@ -1,8 +1,5 @@
 .Container {
   
-  overflow-y: scroll;
-  height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .Main {

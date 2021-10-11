@@ -1,0 +1,22 @@
+.Introduction {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.IntroductionI {
+    justify-self: right;
+    padding: 1em 0 1em 2em;
+}
+
+@media only screen and (max-width: 1600px) {
+    .Introduction {
+        grid-template-columns: 1fr;
+    }
+    .IntroductionI {
+        justify-self: center;
+        padding: 1em 0;
+    }
+}
+
+
+
