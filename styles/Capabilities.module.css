@@ -14,11 +14,13 @@
 }
 
 .ThirdBlockHeader {
-  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
-  font-weight: 600;
+  font-family: Righteous;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+  font-size: calc(20px + 31 * ((100vw - 300px) / (1920 - 300)));
   color: #844adb;
   text-align: center;
-  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
+  filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
 }
 
 .ThirdBlockParagraph {

@@ -41,8 +41,10 @@ to {right:0;}
 }
 
 .TopHeader {
+  text-transform: uppercase;
+  font-family: Righteous;
   position: relative;
-  font-size: calc(22px + (50 - 22) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(22px + 36 * ((100vw - 300px) / (1920 - 300)));
   font-weight: bold;
   letter-spacing: 2px;
   margin-block-start: 0.3em;

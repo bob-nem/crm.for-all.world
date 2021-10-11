@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 .Wrapper {
-    padding: 3%;
+    padding: 3% 3% 0;
 }
 
 .Header {
+    font-family: Righteous;
     text-transform: uppercase;
-    font-size: calc(20px + 16 * ((100vw - 300px) / (1920 - 300)));
-    font-weight: 600;
+    -webkit-text-stroke: 1px white;
+    font-size: calc(20px + 31 * ((100vw - 300px) / (1920 - 300)));
     color: #854adb;
     text-align: center;
     filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
@@ -23,24 +22,8 @@
     margin-top: 1.5rem;
 }
 
-.Content h3 {
-    font-family: Lobster two;
-    font-size: 2.12em;
-    font-weight: 700;
-}
-
-.Content:hover {
-    color: white !important;
-}
-
-.Content p {
-    font-family: Lobster two;
-    font-weight: 400;
-}
-
 .Box {
     display: grid;
-    padding: 1.2rem;
     font-size: 1.2rem;
     border-radius: .5rem;
     place-items: center;
@@ -67,6 +50,26 @@
 
 .Box:nth-child(5) {
     grid-column: span 3;
+}
+
+.Content {
+    padding: 1.2rem
+}
+
+.Content h3 {
+    font-family: Righteous;
+    font-size: 2.1em;
+    font-weight: 700;
+}
+
+.Content:hover {
+    color: white !important;
+}
+
+.Content p {
+    font-family: Arima Madurai;
+    font-weight: 400;
+    line-height: 1.1;
 }
 
 @media only screen and (max-width: 1080px) {

@@ -95,7 +95,10 @@
 }
 
 .SecondBlockHeader{
-  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  font-family: Righteous;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #854adb;
+  font-size: calc(20px + 21 * ((100vw - 300px) / (1920 - 300)));
   width: 90vw;
   margin-block-end: .6em;
 }

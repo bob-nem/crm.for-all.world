@@ -9,8 +9,10 @@
 }
 
 .MainHeader {
+  font-family: Righteous;
+  -webkit-text-stroke: 1px #854adb;
   text-transform: uppercase;
-  font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(20px + 31 * ((100vw - 300px) / (1920 - 300)));
   font-weight: 600;
   color: white;
   text-align: center;

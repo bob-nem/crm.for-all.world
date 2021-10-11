@@ -1,4 +1,4 @@
-import style from '../../../styles/HomeHeader.module.css';
+import style from '../../../styles/Header.module.css';
 import Image from 'next/image';
 
 import topIMG from '../../../images/Top-IMG.png';
