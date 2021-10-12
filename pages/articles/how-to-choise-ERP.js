@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import style from '../../styles/articles/HowToChoise.module.css'
 
-import chooseERP from '../../images/backgrounds/chooseERP.webp'
+import chooseERP from '../../images/articles/chooseERP.webp'
 
 export default function HowToChoise() {
     return (
