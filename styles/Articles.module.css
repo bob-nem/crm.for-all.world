@@ -13,7 +13,6 @@
 }
 
 .Container {
-    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
     grid-template-rows: minmax(100px, auto);
@@ -82,7 +81,9 @@
 }
 
 .DifferensesBottom {
+    display: flex;
     margin-bottom: -21rem;
+    flex: 1;
 }
 
 @media only screen and (max-width: 1080px) {
