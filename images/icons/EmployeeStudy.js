@@ -5,6 +5,7 @@ function SvgEmployeeStudy(props) {
     <svg
       width={"100%"}
       height={"100%"}
+      alt="emloyees icon"
       viewBox="0 0 66.42 55.259"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

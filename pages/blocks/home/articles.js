@@ -8,6 +8,7 @@ import ERPDifferenceImg from '../../../images/articles/erp-difference.webp'
 import OpenSourceImg from '../../../images/articles/opensource.webp'
 import CloudAdvantages from '../../../images/articles/data-warehouse-scaled.webp'
 import BugFix from '../../../images/icons/bug-fix.webp'
+import SvgForkliftTruck from '../../../images/icons/ForkliftTruck'
 
 export default function Articles() {
     return (
@@ -43,7 +44,7 @@ export default function Articles() {
                                     />
                                 </div>
                                 <h3 style={{ color: "#ffcf46", WebkitTextStroke: "1px black", fontSize: "2.1em", margin: "2rem 0" }}>Differences between <span style={{ color: "#ffa48a" }}>ERP</span> and <span style={{ color: "#67d869" }}>CRM</span> systems</h3>
-                                <div className={style.DifferensesBottom}>
+                                <div>
                                     <Image
                                         src={CRMDifferenceImg}
                                         alt="CRM differences"
@@ -99,14 +100,26 @@ export default function Articles() {
                     </Link>
                 </div>
                 <div className={style.Box}>
-                    <div className={style.Content}>
-                        <h3>Synchronization of the SCADA system with the corporate ERP</h3>
-                    </div>
+                    <Link href="/articles/scada-with-erp">
+                        <a title="SCADA with ERP integration">
+                            <div className={style.ContentScada}>
+                                <h3 style={{ padding: ".5em 0", color: "white", WebkitTextStroke: "2px black" }}>Integration of SCADA systems and enterprise management systems</h3>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
                 <div className={style.Box}>
-                    <div className={style.Content}>
-                        <h3>Power and strength of top paid ERP systems</h3>
-                    </div>
+                    <Link href="/articles/wms-systems">
+                        <a title="Warehouse Management Systems">
+                            <div className={style.Content}>
+                                <div style={{ display: "inline-flex" }}>
+                                    <h3 style={{ color: "#ffcf46", WebkitTextStroke: "1px black", fontSize: "2.1em" }}>Warehouse logistics with <span style={{ color: "#67d869" }}>WMS</span></h3>
+                                    <span style={{ padding: " 0 .5rem 0 0" }}><SvgForkliftTruck /></span>
+                                </div>
+                                <p>WMS-system (Warehouse Management System– is a software that is designed to automate the operation of a warehouse. With its help, you can significantly speed up logistics processes, minimize costs and improve warehouse management.</p>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>
