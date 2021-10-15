@@ -1,0 +1,66 @@
+.Cover {
+    display: flex;
+    background: linear-gradient(90deg, #243958, #1e6ead, #5c4a9e, #8a288b);
+    align-items: center;
+    box-sizing: content-box;
+    padding: 3rem 30%;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 25%;
+    min-height: 100vh;
+}
+
+.Content p {
+    text-align: justify;
+}
+
+.Possibilities {
+    padding: 2em 7%;
+}
+
+.Capabilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 2rem;
+    padding: 2em;
+}
+
+.CapabilitiesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CapabilitiesBox p {
+    text-align: center;
+}
+
+.CapabilitiesBox h4 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border-bottom: 1px dashed grey;
+    margin: 1em;
+}
+
+.Icon {
+    padding: 0 3rem;
+    filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3));
+}
+
+.CapabilitiesBoxS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CapabilitiesBoxS h3 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: Righteous;
+    font-size: 4rem;
+}
