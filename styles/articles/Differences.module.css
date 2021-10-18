@@ -1,16 +1,20 @@
 .Cover {
     display: flex;
     background: linear-gradient(90deg, #243958, #1e6ead, #5c4a9e, #8a288b);
-    align-items: center;
-    box-sizing: content-box;
-    padding: 3rem 30%;
+    padding: 3rem 0;
+}
+
+.Cover h1 {
+    font-size: 2.1rem;
+    -webkit-text-stroke: 1px #854adb;
 }
 
 .Content {
     display: flex;
     flex-direction: column;
-    padding: 3% 25%;
-    min-height: 100vh;
+    width: 60rem;
+    margin: 0 auto;
+    padding: 3% 0;
 }
 
 .Content p {
@@ -49,6 +53,7 @@
 .Icon {
     padding: 0 3rem;
     filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3));
+    height: 8rem;
 }
 
 .CapabilitiesBoxS {
@@ -56,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3));
 }
 
 .CapabilitiesBoxS h3 {
@@ -63,4 +69,30 @@
     text-orientation: upright;
     font-family: Righteous;
     font-size: 4rem;
+}
+
+@media only screen and (max-width: 62rem) {
+    .Cover {
+        padding: 3rem;
+    }
+    .Content {
+        width: auto;
+        padding: 3%;
+    }
+    .Possibilities {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .Cover h1 {
+        font-size: 1.6rem;
+        -webkit-text-stroke: 0px #854adb;
+    }
+}
+
+@media only screen and (max-width: 30rem) {
+    .Cover div {
+        display: none;
+    }
 }

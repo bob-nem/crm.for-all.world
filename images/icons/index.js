@@ -1,0 +1,8 @@
+export { default as CodeLabel } from './CodeLabel'
+export { default as DistridutionsChannels } from './DistridutionsChannels'
+export { default as FinanceReports } from './FinanceReports'
+export { default as HumanResources } from './HumanResources'
+export { default as Inventory } from './Inventory'
+export { default as MaterialResources } from './MaterialResources'
+export { default as Production } from './Production'
+export { default as Truck } from './Truck'
