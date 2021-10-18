@@ -8,7 +8,7 @@
   padding: 3%;
 }
 
-.MainHeader {
+.Header {
   font-family: Righteous;
   -webkit-text-stroke: 1px #854adb;
   text-transform: uppercase;
@@ -199,6 +199,9 @@
   .CardsContainerSCADA {
     padding: 1rem 3%
   }
+  .Header {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -218,6 +221,9 @@
   .CardsContainerSCADA {
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     padding: 1rem 1%
+  }
+  .Header {
+    font-size: 1.6rem;
   }
 }
 

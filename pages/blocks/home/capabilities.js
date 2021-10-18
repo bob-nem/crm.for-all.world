@@ -9,11 +9,11 @@ import SvgProcessesModeling from '../../../images/icons/ProcessesModeling'
 
 export default function ThirdBlock () {
   return (
-    <div className={style.ThirdBlock}>
-    <div className={style.ThirdBlockColorBG}>
-      <h2 className={style.ThirdBlockHeader}>CAPABILITIES OF ENTERPRISE SYSTEMS</h2>
-      <p className={style.ThirdBlockParagraph}>All possible areas of automation apply to ERP systems, with the exception of processes in industrial production. Enterprise systems can collect data from production systems like SCADA in real time by connecting via the API.</p>
-      <div className={style.ThirdBlockCards}>
+    <div className={style.Container}>
+    <div className={style.Background}>
+      <h2 className={style.Header}>CAPABILITIES OF ENTERPRISE SYSTEMS</h2>
+      <p className={style.Description}>All possible areas of automation apply to ERP systems, with the exception of processes in industrial production. Enterprise systems can collect data from production systems like SCADA in real time by connecting via the API.</p>
+      <div className={style.CardsWrapper}>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgCustomerBase />
@@ -22,6 +22,7 @@ export default function ThirdBlock () {
             <h3 className={style.ThirdBlockOneCardH3}>Customer base and sales management</h3>
             <p className={style.ThirdBlockOneCardP}>One of the most important functions of CRM is to save the necessary customer data in an ordered form. For example, contacts, banking details, purchase history.</p>
           </div>
+          <p className={style.CardParagraphMobile}>One of the most important functions of CRM is to save the necessary customer data in an ordered form. For example, contacts, banking details, purchase history.</p>
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
@@ -31,24 +32,27 @@ export default function ThirdBlock () {
             <h3 className={style.ThirdBlockOneCardH3}>Supplier support and warehouse accounting</h3>
             <p className={style.ThirdBlockOneCardP}>All external and internal requests fall into the system maintenance funnel. To ensure operational work with the warehouse, the following tools are implemented in ERP:</p>
           </div>
+          <p className={style.CardParagraphMobile}>All external and internal requests fall into the system maintenance funnel. To ensure operational work with the warehouse, the following tools are implemented in ERP:</p>
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgEmployeesKpi />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
-            <h3 className={style.ThirdBlockOneCardH3}>Employees, leaderships<br />(tasks, KPI)</h3>
+            <h3 className={style.ThirdBlockOneCardH3}>Financial flow mamgment, reports</h3>
             <p className={style.ThirdBlockOneCardP}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>
           </div>
+          <p className={style.CardParagraphMobile}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgTelephony />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
-            <h3 className={style.ThirdBlockOneCardH3}>Communication<br />and calltracking</h3>
+            <h3 className={style.ThirdBlockOneCardH3}>Communication and calltracking</h3>
             <p className={style.ThirdBlockOneCardP}>With the help of end-to-end multi-channel analytics and call tracking, you will be able to track the client&apos;s path from viewing an ad to getting into the sales funnel.</p>
           </div>
+          <p className={style.CardParagraphMobile}>With the help of end-to-end multi-channel analytics and call tracking, you will be able to track the client&apos;s path from viewing an ad to getting into the sales funnel.</p>
         </div>
         <div className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
@@ -56,17 +60,19 @@ export default function ThirdBlock () {
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Integration with other systems and services</h3>
-            <p className={style.ThirdBlockOneCardP}>The software used is open for making functional improvements, integration with any external programs, services and equipment based on open standards is available.</p>
+            <p className={style.ThirdBlockOneCardP}>The software used is open for making functional improvements, integration with any external programs, services and equipment based on open standards.</p>
           </div>
+          <p className={style.CardParagraphMobile}>The software used is open for making functional improvements, integration with any external programs, services and equipment based on open standards is available.</p>
         </div>
         <div className={style.ThirdBlockOneCard}>
-          <div className={style.ThirdBlockOneCardI}>
+          <div className={style.ThirdBlockOneCardI} style={{paddingRight: "1rem"}}>
             <SvgProcessesModeling />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
             <h3 className={style.ThirdBlockOneCardH3}>Modeling and automation of processes</h3>
             <p className={style.ThirdBlockOneCardP}>Accounting and adaptive regulation of any production processes are configured, from the work of the secretary to the accounting of production productivity indicators.</p>
           </div>
+          <p className={style.CardParagraphMobile}>Accounting and adaptive regulation of any production processes are configured, from the work of the secretary to the accounting of production productivity indicators.</p>
         </div>
       </div>
       <div className={style.ThirdBlockDigits}>

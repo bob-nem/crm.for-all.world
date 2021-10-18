@@ -19,7 +19,7 @@ to {right:0;}
   margin-top: 4%;
 }
 
-.MainHeader {
+.Header {
   font-family: Righteous;
   -webkit-text-stroke: 1px white;
   text-transform: uppercase;
@@ -143,6 +143,12 @@ to {right:0;}
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .Header {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .Container {
     margin-top: 3rem;
@@ -153,6 +159,9 @@ to {right:0;}
 }
 
 @media only screen and (max-width: 600px) {
+  .Header {
+    font-size: 1.6rem;
+  }
   .RightBlock {
     padding: 0 1%;
   }

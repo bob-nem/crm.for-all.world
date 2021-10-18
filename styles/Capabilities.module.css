@@ -1,4 +1,4 @@
-.ThirdBlock {
+.Container {
   display: grid;
   background-image: url(../images/ThirdBlock-BG.jpg);
   background-color: white;
@@ -8,12 +8,12 @@
   scroll-snap-align: start;
 }
 
-.ThirdBlockColorBG {
+.Background {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 3%;
 }
 
-.ThirdBlockHeader {
+.Header {
   font-family: Righteous;
   -webkit-text-stroke: 1px white;
   text-transform: uppercase;
@@ -23,12 +23,12 @@
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .5));
 }
 
-.ThirdBlockParagraph {
+.Description {
   text-align: center;
   filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
 }
 
-.ThirdBlockCards {
+.CardsWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   grid-gap: 2rem;
@@ -37,8 +37,9 @@
 }
 
 .ThirdBlockOneCard {
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content:flex-start;
   border-top: 1px solid #854adb;
   border-bottom: 1px solid #854adb;
   border-radius: .2rem;
@@ -48,25 +49,37 @@
 }
 
 .ThirdBlockOneCardI {
-  padding: 1rem;
+  width: 25%;
+	align-self: flex-start;
+  align-content:flex-start;
   filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, 0.3));
+  padding: .5rem;
 }
 
 .ThirdBlockOneCardRight {
-  padding-right: 1em;
+  width: 75%;
+  padding: 0 1em 0 .5em;
 }
 
 .ThirdBlockOneCardH3 {
   font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 500;
   color: #854adb;
-  margin-block-start: 0;
-  margin-block-end: 0.5em;
   filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.9));
 }
 
 .ThirdBlockOneCardP {
   text-align: justify;
+  flex: 1 auto;
+	align-self: auto;
+}
+
+.CardParagraphMobile {
+  display: none;
+  text-align: justify;
+  flex: 1 auto;
+	align-self: auto;
+  padding: 0 .5em;
 }
 
 .ThirdBlockDigits {
@@ -98,23 +111,63 @@
   color: #854adb;
 }
 
-@media only screen and (max-width: 768px) {
-  .ThirdBlockParagraph {
-    margin-bottom: 1em;
+@media only screen and (max-width: 1200px) {
+  .ThirdBlockDigits {
+    margin: 0 auto;
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .CardsWrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: .5rem;
+  }
+  .ThirdBlockOneCard {
+    padding: 2% 1%;
+  }
+  .ThirdBlockOneCardI {
+    width: 15%;
+  }
+  .ThirdBlockOneCardRight {
+    width: 80%;
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Header {
+    font-size: 2rem;
   }
   .ThirdBlockDigits {
     display: none;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .Description {
+    margin-bottom: 1em;
+  }
+  .ThirdBlockOneCardP {
+    display: none;
+  }
+  .CardParagraphMobile {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .ThirdBlockCards {
+  .CardsWrapper {
     padding: 1% 3%;
+  }
+  .Header {
+    font-size: 1.6rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .ThirdBlockCards {
+  .CardsWrapper {
     padding: 0 1%;
     margin: 0 auto;
   }

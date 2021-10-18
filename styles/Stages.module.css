@@ -94,7 +94,7 @@
   z-index: 1;
 }
 
-.SecondBlockHeader{
+.Header{
   font-family: Righteous;
   text-transform: uppercase;
   -webkit-text-stroke: 1px #854adb;
@@ -111,6 +111,9 @@
 .SecondBlockConent {
   display: grid;
   grid-template-columns: 5% 95%;
+}
+
+.SecondBlockConent p {
   text-align: justify;
 }
 
@@ -198,7 +201,7 @@
   .SecondBlockLeft {
     width: 100%;
   }
-  .SecondBlockHeader{
+  .Header{
     filter: drop-shadow(3px 3px 3px rgba(89, 45, 98, .1));
     width: 100%;
   }
@@ -231,6 +234,13 @@
   }
 }
 
+
+@media only screen and (max-width: 800px) {
+  .Header {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .SecondBlockLeft {
     padding: 5% 1% 7% 0;
@@ -246,7 +256,7 @@
     margin-block-end: .3em;
   }
   .SecondBlockP {
-    margin-left: -1.4em;
+    margin-left: -1em;
   }
   .WorkGroupBG {
     margin-top: 0;
@@ -256,5 +266,11 @@
   }
   .ConceptualBG {
     width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Header {
+    font-size: 1.6rem;
   }
 }

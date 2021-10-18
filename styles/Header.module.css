@@ -40,7 +40,7 @@ to {right:0;}
   animation: show 3s;
 }
 
-.TopHeader {
+.Header {
   text-transform: uppercase;
   font-family: Righteous;
   position: relative;
@@ -80,15 +80,12 @@ to {right:0;}
   .HeaderSlider {
     grid-template-columns: 65% 35%;
   }
-
   .HeaderSliderLeft {
     padding: 3% 5%;
   }
-
   .UnicornTopLogo {
     width: 8vh;
   }
-
   .TopDescription {
     margin-bottom: 10vw;
   }
@@ -100,18 +97,23 @@ to {right:0;}
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .Header {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .HeaderSlider {
     grid-template-columns: 1fr;;
-  }
-  .TopHeader {
-    font-size: calc(20px + (33 - 20) * ((100vw - 300px) / (1920 - 300)));
   }
   .HeaderSliderRight {
     display: none;
   }
 }
 
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 600px) {
+  .Header {
+    font-size: 1.6rem;
+  }
 }

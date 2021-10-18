@@ -275,7 +275,7 @@ export default function SecondBlock() {
         </div>
       </Modal>
       <div className={style.SecondBlockLeft}>
-        <h2 className={style.SecondBlockHeader}>Stages of enterpize optimization development and implementation</h2>
+        <h2 className={style.Header}>Stages of enterpize optimization development and implementation</h2>
         <div className={style.SecondBlockLine}></div>
         <div className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><SvgCheckWhite className={style.CheckIcon} alt="check icon" /></div>

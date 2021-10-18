@@ -113,3 +113,18 @@
     transform: translateY(-11px) rotate(-45deg);
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    padding: .5rem 1rem;
+  }
+  .bar {
+    width: 2.5rem;
+  }
+}

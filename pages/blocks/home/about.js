@@ -7,7 +7,7 @@ import SvgEmployeeStudy from '../../../images/icons/EmployeeStudy'
 export default function FirstBlock() {
   return (
     <div className={style.Container}>
-      <h2 className={style.MainHeader}>Automatization of business processes</h2>
+      <h2 className={style.Header}>Automatization of business processes</h2>
       <p className={style.MainHeaderDescription}>Electronic document management systems development and configuration for your technical task for any business. Integration of both ready-made and individual solutions.</p>
       <div className={style.Divider}>
         <div className={style.LeftBlock}>

@@ -54,7 +54,6 @@
 
 .Content {
     padding: 1.2rem;
-
 }
 
 .Content h3 {
@@ -81,6 +80,10 @@
     max-width: 33vw;
 }
 
+.AdvantagesImageSmall {
+    display: none;
+}
+
 .ContentScada {
     padding: 1.2rem;
     background-image: url(../images/articles/SCADA-integration.webp);
@@ -98,6 +101,12 @@
 
 .ContentScada h3:hover {
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 77rem) {
+    .ForkLiftTruck {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -118,5 +127,41 @@
     }
     .ChoiseIMG {
         max-width: 100%;
+    }
+    .ContentScada h3:hover {
+        transform: scale(1.03);
+    }
+    .Advantages {
+        display: flex;
+        justify-items: space-between;
+        align-items: center;
+     }
+    .AdvantagesImageSmall {
+        display: flex;
+        width: 9rem;
+    }
+    .AdvantagesImageBig {
+        display: none;
+    }
+    .Advantages h3 {
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Header {
+      font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .Header {
+        font-size: 1.6rem;
+    }
+    .Content h3 {
+        font-size: 1.6em;
+    }
+    .ContentScada h3 {
+        font-size: 1.6em;
     }
 }
