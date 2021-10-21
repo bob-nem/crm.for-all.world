@@ -32,7 +32,7 @@ export default function Contacts () {
               </div>
               <div className={style.Right}>
                 <Phone />
-                <p>&nbsp;+880 1313-714-182</p>
+                <p>&nbsp;+880 1756-995-889</p>
               </div>
             </div>
             <div className={style.ContactRow2}>

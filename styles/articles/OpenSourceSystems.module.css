@@ -5,7 +5,7 @@
 }
 
 .Cover h1 {
-    font-size: 3.1rem;
+    font-size: 3.6rem;
     -webkit-text-stroke: 1px #854adb;
     width: 130%;
 }
@@ -20,26 +20,23 @@
 
 .Content p {
     text-align: justify;
+    padding-top: 1em;
 }
 
-.Introduction {
-    display: grid;
-    grid-template-columns: 60% 40%;
+.Content h2 {
+    padding-top: 1em;
+    font-weight: bold;
 }
 
-.IntroductionI {
-    justify-self: right;
-    padding: 1em 0 1em 2em;
+
+.Content h3 {
+    padding-top: 1em;
+    font-weight: bold;
 }
 
-@media only screen and (max-width: 1600px) {
-    .Introduction {
-        grid-template-columns: 1fr;
-    }
-    .IntroductionI {
-        justify-self: center;
-        padding: 1em 0;
-    }
+.Interface {
+    text-align: center;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 62rem) {
@@ -60,10 +57,7 @@
 }
 
 @media only screen and (max-width: 30rem) {
-    
     .Cover div {
         display: none;
     }
 }
-
-

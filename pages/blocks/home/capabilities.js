@@ -39,7 +39,7 @@ export default function ThirdBlock () {
             <SvgEmployeesKpi />
           </div>
           <div className={style.ThirdBlockOneCardRight}>
-            <h3 className={style.ThirdBlockOneCardH3}>Financial flow mamgment, reports</h3>
+            <h3 className={style.ThirdBlockOneCardH3}>Financial flow managment, reports</h3>
             <p className={style.ThirdBlockOneCardP}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>
           </div>
           <p className={style.CardParagraphMobile}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>

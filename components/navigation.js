@@ -11,7 +11,7 @@ export default function Navigation ({children}) {
           <ul className={isOpen === false ? style.navmenu : style.navmenu +' '+ style.active}>
             <li className={style.navitem}>
               <Link href='/#home'>
-                <a className={style.navlink}>Home</a>
+                <a className={style.navlink}>About</a>
               </Link>
             </li>
             <li className={style.navitem}>

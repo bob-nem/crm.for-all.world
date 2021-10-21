@@ -80,6 +80,17 @@
     max-width: 33vw;
 }
 
+.ContentOpenSource {
+    padding: 1.2rem;
+}
+
+.ContentOpenSource h3 {
+    color: #ffcf46;
+    font-family: Righteous;
+    font-size: 2.1em;
+    -webkit-text-stroke: 1px black;
+}
+
 .AdvantagesImageSmall {
     display: none;
 }
@@ -133,6 +144,7 @@
     }
     .Advantages {
         display: flex;
+        width: 85vw;
         justify-items: space-between;
         align-items: center;
      }
@@ -146,22 +158,55 @@
     .Advantages h3 {
         margin-right: 1em;
     }
+
+    .DifferenceImg {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .OpenSourceImg {
+        display: none;
+    }
+
+    .ContentOpenSource {
+        background-image: url(../images/articles/opensource.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .ContentOpenSource h3 {
+        -webkit-text-stroke: 1.5px black;
+        filter: drop-shadow(3px 3px 3px rgb(89, 45, 98));
+        transition: .5s;
+    }
+    .ContentOpenSource h3:hover {
+        transform: scale(1.025);
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .Header {
       font-size: 2rem;
     }
+    .ChoiseIMG {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 608px) {
-    .Header {
-        font-size: 1.6rem;
-    }
     .Content h3 {
         font-size: 1.6em;
     }
     .ContentScada h3 {
         font-size: 1.6em;
+    }
+    .Advantages h3 {
+        margin-right: 1em;
+    }
+    .Advantages h3 {
+        margin-right: .5em;
+    }
+    .ContentOpenSource h3 {
+        font-size: 1.6em;
+        color: white;
     }
 }

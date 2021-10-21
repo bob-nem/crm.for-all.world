@@ -16,6 +16,7 @@ export default function Articles() {
         <div className={style.Wrapper} id="articles">
             <h2 className={style.Header}>ARTICLES</h2>
             <div className={style.Container}>
+
                 <div className={style.Box}>
                     <Link href="/articles/how-to-choise-ERP">
                         <a title="How to choise ERP system">
@@ -38,14 +39,14 @@ export default function Articles() {
                     <Link href="/articles/differences-between-erp-and-crm">
                         <a title="Differences between ERP and CRM systems">
                             <div className={style.Content} style={{ display: "flex", flexDirection: "column", flex: "1" }}>
-                                <div style={{ paddingTop: "1em" }}>
+                                <div style={{ paddingTop: "1em" }} className={style.DifferenceImg}>
                                     <Image
                                         src={ERPDifferenceImg}
                                         alt="ERP differences"
                                     />
                                 </div>
-                                <h3 style={{ color: "#ffcf46", WebkitTextStroke: "1px black", fontSize: "2.1em", margin: "2rem 0" }}>Differences between <span style={{ color: "#ffa48a" }}>ERP</span> and <span style={{ color: "#67d869" }}>CRM</span> systems</h3>
-                                <div>
+                                <h3 style={{ color: "#ffcf46", WebkitTextStroke: "1px black", margin: "2rem 0" }}>Differences between <span style={{ color: "#ffa48a" }}>ERP</span> and <span style={{ color: "#67d869" }}>CRM</span> systems</h3>
+                                <div className={style.DifferenceImg}>
                                     <Image
                                         src={CRMDifferenceImg}
                                         alt="CRM differences"
@@ -56,11 +57,11 @@ export default function Articles() {
                     </Link>
                 </div>
                 <div className={style.Box}>
-                    <Link href="/articles/open-source-systems">
+                    <Link href="/articles/open-source-corporate-systems">
                         <a title="Open source corporate systems">
-                            <div className={style.Content}>
-                                <h3 style={{ color: "#ffcf46", WebkitTextStroke: "1px black", fontSize: "2.1em" }}>Open source corporate systems review</h3>
-                                <div>
+                            <div className={style.ContentOpenSource}>
+                                <h3>Open source corporate systems review</h3>
+                                <div className={style.OpenSourceImg}>
                                     <Image
                                         src={OpenSourceImg}
                                         alt="Open source systems"
@@ -97,7 +98,7 @@ export default function Articles() {
                     <Link href="/articles/implementation-errors">
                         <a title="Implementation errors">
                             <div className={style.Content} style={{ display: "inline-flex" }}>
-                                <div style={{ width: "7%", alignSelf: "center", minWidth: "5rem" }}>
+                                <div style={{ width: "7%", alignSelf: "center", minWidth: "4rem" }}>
                                     <Image
                                         src={BugFix}
                                         alt="Bug fix"
