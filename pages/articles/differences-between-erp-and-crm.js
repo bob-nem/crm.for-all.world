@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import style from '../../styles/articles/Differences.module.css'
+import Footer from './footer'
 
 import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 import SvgOrders from '../../images/icons/Orders'
@@ -257,6 +258,7 @@ export default function Differences() {
                 <p>Thus, CRM systems with advanced capabilities can compete with ERP in certain market segments. This is typical, for example, in the sphere of trade and services — but only where it is not necessary to ensure the work of huge enterprises with thousands of employees. This option is suitable, for example, for a company with 50 employees, which has several outlets, a warehouse with goods and a sales department. Instead of implementing a complex ERP with a lot of unclaimed functions, you can take a CRM with a module for managing turnover — such a program will be cheaper and easier to learn.</p>
                 <p style={{padding: "1em 0 .1em"}}><strong>So, both IT products are engaged in business process automation, but CRM is at the level of the relationship between the company and customers, and ERP is at the level of the internal organization of the entire enterprise. If you need the capabilities of both programs, then even at the stage of choosing a system, you should think about which of the integration options will be most convenient.</strong></p>
             </div>
+            <Footer />
         </div>
     )
 }

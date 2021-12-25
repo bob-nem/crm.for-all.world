@@ -7,6 +7,8 @@ function SvgProcessesAutomation(props) {
       xmlns="http://www.w3.org/2000/svg"
       x={0}
       y={0}
+      width={131}
+      height={131}
       viewBox="0 0 171.7 173.1"
       xmlSpace="preserve"
       {...props}

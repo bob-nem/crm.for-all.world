@@ -1,0 +1,161 @@
+.Container {
+  background: linear-gradient(90deg, #243958, #1e6ead, #5c4a9e, #8a288b);
+  padding: 4% 12% 1.2%;
+}
+
+.Wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.Address {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.Address p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding: .25em 0;
+}
+
+.Logo {
+  width: 7rem;
+  padding-bottom: .5em;
+}
+
+.SocialMedia {
+  display: inline-flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: .5em;
+}
+
+.IconCircle {
+  display: flex;
+  flex: 0 0 2.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: .3s all ease-in-out;
+}
+
+.IconCircle:hover {
+  background: #8a288b;
+}
+
+.SocialIcon {
+  font-size: 1.6rem;
+}
+
+.Products {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0 1em;
+  margin-top: 3rem;
+}
+
+.Products h2, .Products p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.Products h2 {
+  text-transform: uppercase;
+  margin-bottom: 2.1rem;
+}
+
+.Products p {
+  padding: .25em 0;
+}
+
+.Subscribe {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 3rem;
+}
+
+.Subscribe h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.Subscribe input {
+  width: 100%;
+  line-height: 1.5;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: .5em;
+  margin-bottom: 5.4rem;
+}
+
+.InputEmail {
+  position: relative;
+}
+
+.InputEmail input::placeholder {
+  color: white;
+}
+
+.InputEmail a {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 1.6rem;
+}
+
+.Subscribe p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.UnderFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.UnderFooterLink:hover {
+  color: #482ff7;
+}
+
+@media only screen and (max-width: 1400px) {
+  .Container {
+    padding: 2% 4%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Container {
+    padding: 1% 10% 4%;
+  }
+  .Subscribe {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .Container {
+    padding: 1% 2% 4%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Container {
+    padding: 1% 1rem 4%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .Address {
+    display: none;
+  }
+}
