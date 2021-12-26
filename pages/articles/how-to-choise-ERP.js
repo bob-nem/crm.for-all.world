@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import style from '../../styles/articles/HowToChoise.module.css'
+import Footer from './footer'
 
 import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 import chooseERP from '../../images/articles/find-best-erp.webp'
@@ -81,6 +82,7 @@ export default function HowToChoise() {
                 <p>8. Make your choice.</p>
                 <p style={{fontWeight: "bold", paddingTop: "1em"}}>And most importantly, remember: the chosen ERP system should simplify and speed up your work, and not vice versa</p>
             </div>
+            <Footer />
         </div>
     )
 } 

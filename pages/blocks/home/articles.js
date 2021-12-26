@@ -72,7 +72,7 @@ export default function Articles() {
                     </Link>
                 </div>
                 <div className={style.Box}>
-                    <Link href="/articles/advantages-of-cloud-infrastructure">
+                    <Link href="/articles/cloud-infrstructure-advantages">
                         <a title="Advantages of cloud infrastructure">
                             <div className={style.Content}>
                                 <div className={style.Advantages}>

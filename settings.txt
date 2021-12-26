@@ -1,0 +1,4 @@
+main colors: 
+purple #854adb;
+orange #ffcf46;
+blue #482ff7;
