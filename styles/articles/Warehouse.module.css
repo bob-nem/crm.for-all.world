@@ -19,11 +19,11 @@
 }
 
 .Content a {
-    color: #482ff7;
+    color: black;
 }
 
 .Content a:hover {
-    color: #854adb;
+    color: #482ff7;
 }
 
 .Content p {
@@ -40,6 +40,10 @@
 .Content h3 {
     padding-top: 1em;
     font-weight: bold;
+}
+
+.FirstTable {
+    padding: 1em;
 }
 
 @media only screen and (max-width: 62rem) {
