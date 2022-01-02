@@ -1,0 +1,121 @@
+.Cover {
+    display: flex;
+    background: linear-gradient(90deg, #243958, #1e6ead, #5c4a9e, #8a288b);
+    padding: 3rem 0;
+}
+
+.Cover h1 {
+    font-size: 3.6rem;
+    -webkit-text-stroke: 1px #854adb;
+    width: 130%;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.Content a {
+    color: black;
+}
+
+.Content a:hover {
+    color: #482ff7;
+}
+
+.Content p {
+    text-align: justify;
+    padding-top: 1em;
+}
+
+.Content h2 {
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+
+.Content h3 {
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+.Triangle {
+    margin: 0 auto;
+}
+
+.Triangle p {
+    transform: perspective(10px) rotateX(-1deg);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 1.5em;
+}
+
+.Trapezoid1 {
+    display: flex;
+    justify-content: center;
+    width: 342px;
+    height: 70px;
+    background: #b6c9dd;
+    transform: perspective(10px) rotateX(1deg);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Trapezoid2 {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    background: #a3c79f;
+    transform: perspective(10px) rotateX(1deg);
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.Trapezoid3 {
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    height: 100px;
+    background: #a69ecf;
+    transform: perspective(10px) rotateX(1deg);
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 62rem) {
+    .Cover {
+        padding: 3rem;
+    }
+    .Content {
+        width: auto;
+        padding: 3%;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .Cover h1 {
+        font-size: 2.1rem;
+        -webkit-text-stroke: 0px #854adb;
+    }
+    .Trapezoid1 {
+        width: 222px;
+    }
+    .Trapezoid2 {
+        width: 260px;
+    }
+    .Trapezoid3 {
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 30rem) {
+    .Cover div {
+        display: none;
+    }
+}
