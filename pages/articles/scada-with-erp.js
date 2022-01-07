@@ -5,7 +5,7 @@ import Footer from './footer'
 
 import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
-export default function ScadaWithErp () {
+export default function ScadaWithErp() {
     return (
         <div>
             <div className={style.Cover}>
@@ -26,11 +26,11 @@ export default function ScadaWithErp () {
                 <p>This article provides answers to some pressing issues of integration of automated process control systems and ERP systems, as well as describes the benefits obtained from integration.</p>
                 <h2>ENTERPRISE INFORMATION SYSTEM</h2>
                 <p>A complex (corporate) information system of an enterprise can generally be represented in the form of a hierarchy of levels (Fig. 1), covering all types of organizational and managerial activities at the enterprise, from collecting data on technological processes to monitoring he execution of orders.</p>
-                <div style={{margin: "0 auto"}} className={style.Triangle}>
+                <div style={{ margin: "0 auto" }} className={style.Triangle}>
                     <div className={style.Trapezoid1}><p>ERP (finance,contracts, supplies)</p></div>
                     <div className={style.Trapezoid2}><p>MES (coordination, analysis and optimization of output, planning of repair work)</p></div>
                     <div className={style.Trapezoid3}><p>SCADA (Automated process control system, dispatching)</p></div>
-                    <label style={{display: "flex", justifyContent: "center", margin: "0 auto", fontSize: ".9em", paddingTop: "1em"}}><i style={{fontWeight: "bold"}}>Fig. 1. Complex information system of the enterprise</i></label>
+                    <label style={{ display: "flex", justifyContent: "center", margin: "0 auto", fontSize: ".9em", paddingTop: "1em" }}><i style={{ fontWeight: "bold" }}>Fig. 1. Complex information system of the enterprise</i></label>
                 </div>
                 <p>The first level of the hierarchy is various automated accounting and management systems (Automated process control system - automated process control system, ACS E is an automated power supply management system, ASKUE is an automated system for commercial accounting of energy resources). Their task is the collection and primary processing of data on the technical processes and resources of the enterprise, as well as the provision of dispatching control and equipment management.</p>
                 <p>The second level is production execution systems, or production process control systems (MES - manufacturing execution system). Their purpose is to solve problems of synchronization, coordination, analysis and optimization of output. Also, these systems include software for planning repairs, maintaining a stock reserve of spare parts and managing personnel performing maintenance.</p>
@@ -38,6 +38,34 @@ export default function ScadaWithErp () {
                 <p>Often, only the first and second levels are present at most domestic enterprises, the third is sketchy. At the same time, it is worth noting that the presence of the first level is a prerequisite for building a high–quality information system of the company. Without obtaining comprehensive information about the technical processes performed, it is impossible to form a complete picture of the company's activities. The second level is no less important, but it is often performed not with the help of specialized applications that use data from the previous level, but is represented by disparate applications that automate the activities of the planning department of the enterprise. The third and last level of the hierarchy has found active use only in the last ten years. But the implementation of ERP systems took place and is still very often carried out without connection with the previous levels, and the ERP systems themselves, consisting of a large number of disparate modules, do not take into account the specifics of enterprises. Only in the last few years, customers began to gain an understanding of the essence of ERP systems and, as a result, there were requirements for integrators to organize the relationship between ERP and lower-level systems.</p>
                 <h2>SOME INTEGRATION ISSUES</h2>
                 <p>Traditionally, integrator firms are engaged in the implementation of SCADA systems, which, based on the developments of their partners, manufacturers of software and hardware, create ready-made solutions for end users. Sometimes they compete with IT departments of enterprises. At the same time, the most diverse software and hardware of world manufacturers, as well as their own software developments, are used. Often tasks are solved locally, without a systematic approach and taking into account the requirements for further integration of these subsystems in corporate information system, which ultimately has to pay dearly.</p>
+                <label style={{ display: "flex", justifyContent: "center", margin: "0 auto", fontSize: ".9em", paddingTop: "1em" }}><i style={{ fontWeight: "bold" }}>Table 1. Sources of information for dispatch accounting systems</i></label>
+                <p className={style.TableI}><b>!To see table turn your phone</b></p>
+                <table className={style.Table}>
+                    <tr>
+                        <th>Dispatcher accounting system data level</th>
+                        <td>Summary information transmitted to the next level</td>
+                        <td>Detailed information</td>
+                        <td>Information source</td>
+                    </tr>
+                    <tr>
+                        <th>Automated control system level</th>
+                        <td>Statistics on equipment loading, deviations, and resource availability</td>
+                        <td>Equipment operation log, deviations from technological parameters</td>
+                        <td>SCADA systems, direct connection to equipment via controllers</td>
+                    </tr>
+                    <tr>
+                        <th>Workshop level</th>
+                        <td>Statistics on the implementation of the plan, on the level of marriage, on the level of work in progress, on specially accounted products</td>
+                        <td>Data on the history of the actual movement of inventory items with the indication of specific equipment at each stage. Marriage data. Deficit data</td>
+                        <td>MES-systems, dispatch control systems</td>
+                    </tr>
+                    <tr>
+                        <th>Production management level</th>
+                        <td>Execution of the schedule for orders. Problematic divisions. Bottlenecks in the execution of orders</td>
+                        <td>Data on orders, on inter-shop deficit</td>
+                        <td>ERP systems, dispatch control systems</td>
+                    </tr>
+                </table>
                 <p>Most of the well-known and popular SCADA systems, at first glance, already contain the implementation of all the necessary functions of operational control and process control (data collection, processing, storage and visualization, notification of personnel about events and alarms, transmission of control commands). At the same time, there is a situation when using one or another SCADA package causes problems when integrating with other systems.</p>
                 <p>One of these problems <i>is the lack of modules in the SCADA system responsible for aggregating data from heterogeneous sources</i> (the SCADA system itself, OPC, SQL database, and a number of others). Without such functionality, it will be impossible to prepare and transfer data to MES and ERP systems.The module should support the following aggregation functions: averaging, sampling of max/min values, summation, determination of percentages, etc. At the same time, it is necessary to maintain a high-level namespace (the formation of the full name of the variable, for example, plant-shop-line-machine-parameter) and the organization of access to data through database management systems (DBMS): MS SQL Server, Oracle, etc. In this case, MES and ERP systems can easily access the history and operational data from the SCADA system level by means of ordinary SQL queries to the DBMS.</p>
                 <p>Another aspect of integration within a corporate information system is the heterogeneity of information flows in modern dispatch systems. There are two types of information flows: technological exchanges and business information exchanges. The first are real-time exchanges of values of measured and monitored parameters. Such exchanges relate to SCADA systems and are carried out by control rooms with local automation systems, and they also go between control rooms. Business exchanges are exchanges in the temporary mode of the processes of economic activity (not the processes of technological equipment operation) of indicators related to the production activity of the enterprise. In other words, these are data exchanges mainly between components of the MES system, MES exchanges with the ERP system, exchanges with automation systems of external organizations.</p>
@@ -63,7 +91,7 @@ export default function ScadaWithErp () {
                     <li>integration with administrative systems.</li>
                 </ul>
                 <p>During the project, the following ICONICS software products were implemented: SCADA system package GENESIS32, including GraphWorX32, TrendWorX32, AlarmWorX32 and DataWorX32; BizViz intelligent solution and programs for business presentation of information, including PortalWorX, ReportWorX, BridgeWorX and MobileHMI.</p>
-                <ul><label>The following results of implementation and integration were obtained:</label>
+                <ul><label><i>The following results of implementation and integration were obtained:</i></label>
                     <li>full integration of the entire value chain, from the production level to the enterprise level</li>
                     <li>organization of access to information in real time, which allowed employees and managers to work and interact with greater productivity</li>
                     <li>providing management personnel with information to make better operational decisions</li>
@@ -71,7 +99,7 @@ export default function ScadaWithErp () {
                     <li>excellent communication capabilities, flexibility of the resulting project and high-quality visualization.</li>
                 </ul>
                 <p>Additional profit was obtained due to the integration of an intelligent production management system with all modules used in the value chain. The solution is integrated with SAP (PP/DS, EM, BW SEM, SD &#38; LES), RFID systems and already existing systems.</p>
-                <ul><label>The ICONICS BizViz product ensured the fulfillment of strict visualization and connection requirements, which allowed:</label>
+                <ul><label><i>The ICONICS BizViz product ensured the fulfillment of strict visualization and connection requirements, which allowed:</i></label>
                     <li>create personalized dashboards with relevant content from various systems</li>
                     <li>enter customizable key performance indicators to track performance in real time for set goals</li>
                     <li>provide reporting (automatic and on-demand) with advanced analytical functions</li>

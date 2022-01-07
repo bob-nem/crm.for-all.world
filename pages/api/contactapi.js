@@ -1,22 +1,23 @@
 import nodemailer from 'nodemailer'
+import API_KEY from '../../apikey'
 
 export default async (req, res) => {
   const { name, email, message, phone } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
+    service: 'Gmail',
     port: 465,
     secure: true,
     auth: {
-      user: process.env.user,
-      pass: process.env.pass,
+      user: API_KEY.user,
+      pass: API_KEY.pass
     },
   });
 
   try {
     const emailRes = await transporter.sendMail({
     from: email,
-    to: 'bob.nem.79278500916@gmail.com',
+    to: '79278500916@ya.ru',
     subject: `Contact form submission from ${name}`,
     html: `<p>You have a new contact form submission</p><br>
     <p><strong>Name: </strong> ${name} </p><br>

@@ -2,33 +2,32 @@ import style from './form.module.css'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import { useRouter } from 'next/router'
-
+import API_KEY from '../../../../apikey'
 
 export default function ContactForm () {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
-  const router = useRouter();
-  async function onSubmitForm(values) {
-    let config = {
-      method: 'post',
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact.js`,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: values,
-    };
+    const router = useRouter();
+    
+    async function onSubmitForm(values) {
+        
+        let config = {
+            method: 'post',
+            url: `${API_KEY.url}/api/contactapi`,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            data: values,
+        };
 
-    try {
-      const response = await axios(config);
-      console.log(response);
-      if (response.status == 200) {
-        reset();
-        toast(
-          'success',
-          'Thank you for contacting us, we will be in touch soon.'
-        );
-      }
-    } catch (err) {console.log(err);}
-  }
+        try {
+            const response = await axios(config);
+            console.log(response);
+            if (response.status == 200) {
+                reset();
+                router.push('/');
+            }
+        } catch (err) { console.log(err); }
+    }
   return (
     <div className={style.Container}>
       <h2>Any question or remarks? Just write us a message!</h2>
@@ -84,7 +83,7 @@ export default function ContactForm () {
           <textarea
             name="message"
             rows="4"
-            {...register("Message", { required: {value: true, message: "You need to enter your message"},
+            {...register("message", { required: {value: true, message: "You need to enter your message"},
             maxLength: {value: 1618, message: "Your message can't be more than 1618 characters"},
             minLength: {value: 31, message: "Your message must be longer than this"} 
             })}

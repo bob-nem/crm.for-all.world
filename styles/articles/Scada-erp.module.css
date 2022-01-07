@@ -42,6 +42,10 @@
     font-weight: bold;
 }
 
+.Content ul, .Content li {
+    list-style: circle;
+}
+
 .Triangle {
     margin: 0 auto;
 }
@@ -88,6 +92,22 @@
     margin-top: 2px;
 }
 
+.Table td, .TableI th {
+    height: 2rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: .5em 1em;
+}
+
+.Table th {
+    background: lightblue;
+    border-color: white;
+}
+
+.TableI {
+    display: none;
+}
+
 @media only screen and (max-width: 62rem) {
     .Cover {
         padding: 3rem;
@@ -96,6 +116,7 @@
         width: auto;
         padding: 3%;
     }
+
 }
 
 @media only screen and (max-width: 40rem) {
@@ -111,6 +132,12 @@
     }
     .Trapezoid3 {
         width: 310px;
+    }
+    .Table {
+        display: none;
+    }
+    .TableI {
+        display: block;
     }
 }
 
