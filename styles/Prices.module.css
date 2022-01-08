@@ -147,6 +147,12 @@
   color: #ffcf46;
 }
 
+@media only screen and (min-width: 120rem) {
+  .Header {
+    font-size: 4rem;
+  }
+}
+
 @media only screen and (max-width: 1900px) {
   .Container {
     padding: 0;

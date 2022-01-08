@@ -111,6 +111,17 @@
   color: #854adb;
 }
 
+@media only screen and (min-width: 120rem) {
+  .Header {
+    font-size: 4rem;
+  }
+  .CardsWrapper {
+    max-width: 1443px;
+    padding: .5rem;
+    margin: 1rem auto;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .ThirdBlockDigits {
     margin: 0 auto;

@@ -58,6 +58,12 @@
   color: #482ff7;
 }
 
+@media only screen and (min-width: 120rem) {
+  .header{
+    right: calc((100% - 120rem)/2);
+  }
+}
+
 @media only screen and (max-width: 1080px) {
   .header {
     border: none;

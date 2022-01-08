@@ -1,6 +1,7 @@
 .Container {
   background: linear-gradient(90deg, #243958, #1e6ead, #5c4a9e, #8a288b);
   padding: 4% 12% 1.2%;
+  
 }
 
 .Wrapper {
@@ -8,6 +9,8 @@
   align-items: stretch;
   justify-content: space-between;
   margin-top: 1rem;
+  max-width: 1460px;
+  margin: 0 auto;
 }
 
 .Address {

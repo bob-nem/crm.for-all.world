@@ -1,13 +1,28 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import style from '../../styles/articles/Warehouse.module.css'
-import Footer from './footer'
+import Footer from '../blocks/articles/footer'
 
 import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
 export default function WmsSystems() {
     return (
         <>
+            <Head>
+                <title>Warehose management systems</title>
+                <meta name="description" content="WMS software integration in Bangladesh business." />
+                <link rel="canonical" href="https://optimization.for-all.world/articles/wms-systems" key="canonical" />
+                <meta property="og:title" content="Warehose management systems" />
+                <meta property="og:description" content="WMS software integration in Bangladesh business." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://optimization.for-all.world/articles/wms-systems" />
+                <meta property="og:image" content="https://optimization.for-all.world/images/opti.webp" />
+                <meta property="og:image:alt" content="Production analysis to find optimization ways" />
+                <meta property="og:image:type" content="image/webp" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:locale:alternate" content="bn_BD" />
+            </Head>
             <div className={style.Cover}>
                 <div style={{ display: "flex", maxWidth: "60rem", alignItems: "center", margin: "0 auto" }}>
                     <h1 style={{ fontFamily: "Righteous", textTransform: "uppercase", color: "white", paddingRight: "2em" }}>warehose management systems</h1>

@@ -114,6 +114,12 @@
     transform: scale(1.05);
 }
 
+@media only screen and (min-width: 120rem) {
+    .Header {
+      font-size: 4rem;
+    }
+}
+
 @media screen and (max-width: 77rem) {
     .ForkLiftTruck {
         display: none;

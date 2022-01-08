@@ -113,6 +113,12 @@ to {right:0;}
 	align-self: auto;
 }
 
+@media only screen and (min-width: 120rem) {
+  .Header {
+    font-size: 4rem;
+  }
+}
+
 @media only screen and (max-width: 1365px) {
   .FirstBlock {
     padding: 0 6% 0 3%;

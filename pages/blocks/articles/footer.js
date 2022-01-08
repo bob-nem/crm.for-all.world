@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import style from '../../styles/articles/Footer.module.css'
+import style from '../../../styles/articles/Footer.module.css'
 import { FiMail, FiFacebook, FiTwitter, FiGithub, FiYoutube } from 'react-icons/fi';
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import { useRouter } from 'next/router'
-import API_KEY from '../../apikey'
+import API_KEY from '../../../apikey'
 
-import unicornTopLogo from '../../images/unicorn-logo-gr.png';
+import unicornTopLogo from '../../../images/unicorn-logo-gr.png';
 
 export default function Footer() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();

@@ -1,4 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Quintessential&family=Goldman&family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Righteous';
+  src: url(/fonts/Righteous-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(/fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(/fonts/Lato-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Goldman';
+  src: url(/fonts/Goldman-Regular.ttf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arima Madurai';
+  src: url(/fonts/ArimaMadurai-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;

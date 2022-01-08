@@ -152,6 +152,12 @@
   color: #482ff7;
 }
 
+@media only screen and (min-width: 120rem) {
+  .Header {
+    font-size: 3rem;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .SecondBlockLeft {
     width: 150%;

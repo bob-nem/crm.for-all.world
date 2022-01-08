@@ -1,8 +1,9 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import style from '../../styles/articles/OpenSourceSystems.module.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Footer from './footer'
+import Footer from '../blocks/articles/footer'
 
 import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 import MetasfreshInterface from '../../images/articles/Open-Source-ERP-Metasfresh-interface.webp'
@@ -17,6 +18,20 @@ import AxelorInterface from '../../images/articles/Open-Source-ERP-Axelor-interf
 export default function OpenSourceSystems() {
     return (
         <div>
+            <Head>
+                <title>Open source corporate systems</title>
+                <meta name="description" content="enterprise ERP systems software integration in Bangladesh business." />
+                <link rel="canonical" href="https://optimization.for-all.world/articles/open-source-corporate-systems" key="canonical" />
+                <meta property="og:title" content="Open source corporate systems" />
+                <meta property="og:description" content="enterprise ERP systems software integration in Bangladesh business." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://optimization.for-all.world/articles/open-source-corporate-systems" />
+                <meta property="og:image" content="https://optimization.for-all.world/images/opti.webp" />
+                <meta property="og:image:alt" content="Production analysis to find optimization ways" />
+                <meta property="og:image:type" content="image/webp" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:locale:alternate" content="bn_BD" />
+            </Head>
             <div className={style.Cover}>
                 <div style={{ display: "flex", maxWidth: "60rem", alignItems: "center", margin: "0 auto" }}>
                     <h1 style={{ fontFamily: "Righteous", textTransform: "uppercase", color: "white", paddingRight: "2em" }}>Open source corporate systems</h1>
@@ -35,7 +50,7 @@ export default function OpenSourceSystems() {
                 <ul><label><h3>Table of contents</h3></label>
                     <li><AnchorLink href='#whatis'>What is Open Source ERP?</AnchorLink></li>
                     <li><AnchorLink href='#howto'>How to choose an Open Source ERP?</AnchorLink></li>
-                    <li><label><h3>The Best Open Source ERP Systems</h3></label></li>
+                    <label><h3>The Best Open Source ERP Systems</h3></label>
                     <ul>
                         <li><AnchorLink href='#metafresh'>Metafresh</AnchorLink></li>
                         <li><AnchorLink href='#Odoo'>Odoo</AnchorLink></li>
@@ -44,9 +59,9 @@ export default function OpenSourceSystems() {
                         <li><AnchorLink href='#tryton'>Tryton</AnchorLink></li>
                         <li><AnchorLink href='#erp5'>ERP5</AnchorLink></li>
                         <li><AnchorLink href='#flectra'>Flectra</AnchorLink></li>
-                        <li><AnchorLink href='#axelor'>Axelor</AnchorLink></li>                        
+                        <li><AnchorLink href='#axelor'>Axelor</AnchorLink></li>
                     </ul>
-                    <li><label><h3>General questions about Open Source ERP</h3></label></li>
+                    <label><h3>General questions about Open Source ERP</h3></label>
                     <ul>
                         <li><AnchorLink href='#sapandoracle'>Are SAP and Oracle Open Source ERP systems?</AnchorLink></li>
                         <li><AnchorLink href='#besterp'>Which Open Source ERP is the best?</AnchorLink></li>
@@ -80,7 +95,7 @@ export default function OpenSourceSystems() {
                     <Image
                         src={MetasfreshInterface}
                         alt="Metasfresh ERP interface"
-                        
+
                     />
                 </div>
                 <p><Link href="https://metasfresh.com/en/"><a title="metasfresh developer" target="_blank">Metasfresh</a></Link> ERP includes all the advantages of <Link href="https://github.com/metasfresh/metasfresh"><a title="metasfresh github account" target="_blank">open source software</a></Link> development, extended by comprehensive functionalities for industries such as e-commerce, IT, wholesale, mail order, fruit trade, food, manufacturing, pharmaceuticals, engineering, associations or publishing and supplemented by services such as quality assurance, training, warranty and planning security for our customers.</p>
@@ -92,7 +107,7 @@ export default function OpenSourceSystems() {
                     <Image
                         src={OdooInterface}
                         alt="Odoo ERP interface"
-                        
+
                     />
                 </div>
                 <p><Link href="http://odoo.com/"><a title="Odoo developer" target="_blank">Odoo</a></Link> — one of the most famous ERP systems in the world. The source code is written in Python. It offers proprietary SaaS (software as a service) for those who want to directly and easily pay for the use of the service.</p>

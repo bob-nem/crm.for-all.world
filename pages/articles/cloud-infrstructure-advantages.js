@@ -1,13 +1,28 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import style from '../../styles/articles/OpenSourceSystems.module.css'
-import Footer from './footer'
+import Footer from '../blocks/articles/footer'
 
 import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
 export default function CloudAdvantages() {
     return (
         <>
+            <Head>
+                <title>Advantages of cloud corporate systems</title>
+                <meta name="description" content="Installation methods for ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
+                <link rel="canonical" href="http://localhost:8080/articles/cloud-infrstructure-advantages" key="canonical" />
+                <meta property="og:title" content="Advantages of cloud corporate systems" />
+                <meta property="og:description" content="Installation methods for ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="http://localhost:8080/articles/cloud-infrstructure-advantages" />
+                <meta property="og:image" content="https://optimization.for-all.world/images/opti.webp" />
+                <meta property="og:image:alt" content="Production analysis to find optimization ways" />
+                <meta property="og:image:type" content="image/webp" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:locale:alternate" content="bn_BD" />
+            </Head>
             <div className={style.Cover}>
                 <div style={{ display: "flex", maxWidth: "60rem", alignItems: "center", margin: "0 auto" }}>
                     <h1 style={{ fontFamily: "Righteous", textTransform: "uppercase", color: "white", paddingRight: "2em" }}>Advantages of cloud corporate systems</h1>
@@ -33,7 +48,7 @@ export default function CloudAdvantages() {
                     Pooling of resources — a service provider combines resources for servicing a large number of consumers into a single pool for dynamic redistribution of capacity between consumers in conditions of constant changes in demand for capacity;
                     Elasticity - services can be provided, expanded, reduced at any time, without additional costs for interaction with the supplier, as a rule, in automatic mode;
                     Consumption accounting — the service provider automatically calculates the resources consumed (for example, by the amount of data stored, bandwidth, number of users, number of transactions) and based on these data estimates the volume of services provided to consumers.
-                    </p>
+                </p>
                 <p><b>Models of &quot;clouds&quot;.</b> From the point of view of equipment ownership and access provision, &quot;clouds&quot; are divided into three types: public, private and hybrid.</p>
                 <p><b>A public &quot;cloud&quot;</b> is an infrastructure designed for free use by a wide range of customers. The public &quot;cloud&quot; belongs to and physically exists in the jurisdiction of the owner/service provider.</p>
                 <p>The largest cloud service providers in the world are: Amazon Web Services, Google Cloud Platform, Alibaba Cloud, IBM, Dell Technologies/VMware, Hewlett Packard Enterprise, Cisco Systems, Oracle.</p>

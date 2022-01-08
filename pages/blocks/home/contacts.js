@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from '../../../styles/Contacts.module.css'
 import ContactForm from './contact-form/contact-form'
 import GoogleMaps from './map/map'
@@ -9,37 +10,41 @@ import Phone from '../../../images/icons/Phone'
 import Clock from '../../../images/icons/Clock'
 import Navigator from '../../../images/icons/Navigator'
 
-export default function Contacts () {
+export default function Contacts() {
   return (
-    <div className={style.Container}  id="contacts">
-    <div className={style.BG}>
-      <h2 className={style.Header}>contacts</h2>
-      <p className={style.MainHeaderDescription}>We are waiting for your questions and are ready to help in solving tasks on automation of document flow and technological processes of any complexity.</p>
-      <div className={style.Separator}>
-        <div className={style.Map}>
-          <GoogleMaps />
-        </div>
-        <div className={style.Contacts}>
-            <div className={style.ContactData}>
-            <div className={style.ContactRow}>
-              <Map />
-              <p>Nasir Trade Center, 89 Bir Uttam, CR Dutta Rd, Dhaka 1205</p>
-            </div>
-            <div className={style.ContactRow1}>
-              <div className={style.Left}>
-                <Mail />
-                <p>&nbsp;optimization@for-all.world&nbsp;</p>
-              </div>
-              <div className={style.Right}>
-                <Phone />
-                <p>&nbsp;+880 1756-995-889</p>
-              </div>
-            </div>
-            <div className={style.ContactRow2}>
-              <Clock />
-                <p>&nbsp;Sunday - Thuesday, 08:00 - 17:00 (reception by appointment)</p>
-            </div>
+    <div className={style.Container} id="contacts">
+      <div className={style.BG}>
+        <Link href="/contact">
+          <a>
+            <h2 className={style.Header}>contacts</h2>
+          </a>
+        </Link>
+        <p className={style.MainHeaderDescription}>We are waiting for your questions and are ready to help in solving tasks on automation of document flow and technological processes of any complexity.</p>
+        <div className={style.Separator}>
+          <div className={style.Map}>
+            <GoogleMaps />
           </div>
+          <div className={style.Contacts}>
+            <div className={style.ContactData}>
+              <div className={style.ContactRow}>
+                <Map />
+                <p>Nasir Trade Center, 89 Bir Uttam, CR Dutta Rd, Dhaka 1205</p>
+              </div>
+              <div className={style.ContactRow1}>
+                <div className={style.Left}>
+                  <Mail />
+                  <p>&nbsp;optimization@for-all.world&nbsp;</p>
+                </div>
+                <div className={style.Right}>
+                  <Phone />
+                  <p>&nbsp;+880 1756-995-889</p>
+                </div>
+              </div>
+              <div className={style.ContactRow2}>
+                <Clock />
+                <p>&nbsp;Sunday - Thuesday, 08:00 - 17:00 (reception by appointment)</p>
+              </div>
+            </div>
             <div className={style.ContactSocial}>
               <div className={style.ContactSocialCoordinates}>
                 <Navigator className={style.NavigatorIcon} />
@@ -50,23 +55,23 @@ export default function Contacts () {
               </div>
               <div className={style.SocialMedia}>
                 <a href="#" className={style.IconCircle}>
-                  <FiFacebook className={style.SocialIcon}/>
+                  <FiFacebook className={style.SocialIcon} />
                 </a>
                 <a href="#" className={style.IconCircle}>
-                  <FiTwitter  className={style.SocialIcon}/>
+                  <FiTwitter className={style.SocialIcon} />
                 </a>
                 <a href="#" className={style.IconCircle}>
-                  <FiGithub  className={style.SocialIcon}/>
+                  <FiGithub className={style.SocialIcon} />
                 </a>
                 <a href="#" className={style.IconCircle}>
-                  <FiYoutube  className={style.SocialIcon}/>
+                  <FiYoutube className={style.SocialIcon} />
                 </a>
               </div>
             </div>
-          <ContactForm />
+            <ContactForm />
+          </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }
