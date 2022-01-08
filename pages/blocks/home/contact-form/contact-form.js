@@ -85,10 +85,10 @@ export default function ContactForm () {
             rows="4"
             {...register("message", { required: {value: true, message: "You need to enter your message"},
             maxLength: {value: 1618, message: "Your message can't be more than 1618 characters"},
-            minLength: {value: 31, message: "Your message must be longer than this"} 
+            minLength: {value: 31, message: "Your message must be longer than 31 characters"} 
             })}
             placeholder="Message"></textarea>
-          <span style={{color: "#ea4335", fontSize: ".8rem", paddingLeft: ".5em"}}>{errors?.Message?.message}</span>
+          <span style={{color: "#ea4335", fontSize: ".8rem", paddingLeft: ".5em"}}>{errors?.message?.message}</span>
         </div>
         <div className={style.RowB}>
           <button className="primary">Send Message</button>

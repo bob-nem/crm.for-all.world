@@ -101,15 +101,16 @@
   position: relative;
 }
 
-.InputEmail input::placeholder {
+.InputEmail input::placeholder, .InputEmail input:focus {
   color: white;
 }
 
-.InputEmail a {
+.InputEmail button {
   position: absolute;
   top: 4px;
   right: 10px;
   font-size: 1.6rem;
+  color: white;
 }
 
 .Subscribe p {

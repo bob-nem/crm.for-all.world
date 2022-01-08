@@ -21,6 +21,7 @@ export default async (req, res) => {
     subject: `Contact form submission from ${name}`,
     html: `<p>You have a new contact form submission</p><br>
     <p><strong>Name: </strong> ${name} </p><br>
+    <p><strong>E-mail: </strong> ${email} </p><br>
     <p><strong>Phone: </strong> ${phone} </p><br>
     <p><strong>Message: </strong> ${message} </p><br>
     `,
