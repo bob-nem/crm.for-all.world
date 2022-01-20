@@ -45,8 +45,8 @@ export default function Home() {
           crossOrigin="anonymous"
         />
       </Head>
-      <main className={style.Main}>
-        <Header />
+      <Header />
+      <main className={style.Main}>        
         <About />
         <Stages />
         <Capabilities />
