@@ -14,7 +14,7 @@ export default function ThirdBlock () {
       <h2 className={style.Header}>CAPABILITIES OF ENTERPRISE SYSTEMS</h2>
       <p className={style.Description}>All possible areas of automation apply to ERP systems, with the exception of processes in industrial production. Enterprise systems can collect data from production systems like SCADA in real time by connecting via the API.</p>
       <div className={style.CardsWrapper}>
-        <div className={style.ThirdBlockOneCard}>
+        <section className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgCustomerBase />
           </div>
@@ -23,8 +23,8 @@ export default function ThirdBlock () {
             <p className={style.ThirdBlockOneCardP}>One of the most important functions of CRM is to save the necessary customer data in an ordered form. For example, contacts, banking details, purchase history.</p>
           </div>
           <p className={style.CardParagraphMobile}>One of the most important functions of CRM is to save the necessary customer data in an ordered form. For example, contacts, banking details, purchase history.</p>
-        </div>
-        <div className={style.ThirdBlockOneCard}>
+        </section>
+        <section className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgCustomerSupport />
           </div>
@@ -33,8 +33,8 @@ export default function ThirdBlock () {
             <p className={style.ThirdBlockOneCardP}>All external and internal requests fall into the system maintenance funnel. To ensure operational work with the warehouse, the following tools are implemented in ERP:</p>
           </div>
           <p className={style.CardParagraphMobile}>All external and internal requests fall into the system maintenance funnel. To ensure operational work with the warehouse, the following tools are implemented in ERP:</p>
-        </div>
-        <div className={style.ThirdBlockOneCard}>
+        </section>
+        <section className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgEmployeesKpi />
           </div>
@@ -43,8 +43,8 @@ export default function ThirdBlock () {
             <p className={style.ThirdBlockOneCardP}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>
           </div>
           <p className={style.CardParagraphMobile}>Make management decisions based on data by generating reports, displaying the status stages of the processes of interest, monitoring the employment of personnel.</p>
-        </div>
-        <div className={style.ThirdBlockOneCard}>
+        </section>
+        <section className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgTelephony />
           </div>
@@ -53,8 +53,8 @@ export default function ThirdBlock () {
             <p className={style.ThirdBlockOneCardP}>With the help of end-to-end multi-channel analytics and call tracking, you will be able to track the client&apos;s path from viewing an ad to getting into the sales funnel.</p>
           </div>
           <p className={style.CardParagraphMobile}>With the help of end-to-end multi-channel analytics and call tracking, you will be able to track the client&apos;s path from viewing an ad to getting into the sales funnel.</p>
-        </div>
-        <div className={style.ThirdBlockOneCard}>
+        </section>
+        <section className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI}>
             <SvgIntegrationSystems />
           </div>
@@ -63,8 +63,8 @@ export default function ThirdBlock () {
             <p className={style.ThirdBlockOneCardP}>The software used is open for making functional improvements, integration with any external programs, services and equipment based on open standards.</p>
           </div>
           <p className={style.CardParagraphMobile}>The software used is open for making functional improvements, integration with any external programs, services and equipment based on open standards is available.</p>
-        </div>
-        <div className={style.ThirdBlockOneCard}>
+        </section>
+        <section className={style.ThirdBlockOneCard}>
           <div className={style.ThirdBlockOneCardI} style={{paddingRight: "1rem"}}>
             <SvgProcessesModeling />
           </div>
@@ -73,29 +73,29 @@ export default function ThirdBlock () {
             <p className={style.ThirdBlockOneCardP}>Accounting and adaptive regulation of any production processes are configured, from the work of the secretary to the accounting of production productivity indicators.</p>
           </div>
           <p className={style.CardParagraphMobile}>Accounting and adaptive regulation of any production processes are configured, from the work of the secretary to the accounting of production productivity indicators.</p>
-        </div>
+        </section>
       </div>
       <div className={style.ThirdBlockDigits}>
-        <div className={style.ThirdBlockDigitsBlock}>
+        <section className={style.ThirdBlockDigitsBlock}>
           <h3 className={style.ThirdBlockDigitsH3}>on 21%</h3>
           <p className={style.ThirdBlockDigitsP}>sales growth on the same flow of incoming requests with the use of a customer heating system by stages.</p>
-        </div>
-        <div className={style.ThirdBlockDigitsBlock}>
+        </section>
+        <section className={style.ThirdBlockDigitsBlock}>
           <h3 className={style.ThirdBlockDigitsH3}>up to 64%</h3>
           <p className={style.ThirdBlockDigitsP}>labor productivity growth on the same basis due to optimization of internal processes.</p>
-        </div>
-        <div className={style.ThirdBlockDigitsBlock}>
+        </section>
+        <section className={style.ThirdBlockDigitsBlock}>
           <h3 className={style.ThirdBlockDigitsH3}>by 1.6 times</h3>
           <p className={style.ThirdBlockDigitsP}>reducing the processing time of current applications. entering and receiving data, forming documents.</p>
-        </div>
-        <div className={style.ThirdBlockDigitsBlock}>
+        </section>
+        <section className={style.ThirdBlockDigitsBlock}>
           <h3 className={style.ThirdBlockDigitsH3}>100%</h3>
           <p className={style.ThirdBlockDigitsP}>security against loss of account information (if the conditions for saving backups are met)</p>
-        </div>
-        <div className={style.ThirdBlockDigitsBlockL}>
+        </section>
+        <section className={style.ThirdBlockDigitsBlockL}>
           <h3 className={style.ThirdBlockDigitsH3}>by 3.14 times</h3>
           <p className={style.ThirdBlockDigitsP}>improvements in the speed of generating complex reports (compared to the ability of excel)</p>
-        </div>
+        </section>
       </div>
     </div>
     </div>

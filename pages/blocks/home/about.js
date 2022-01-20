@@ -14,7 +14,7 @@ export default function FirstBlock() {
           
         </div>
         <div className={style.RightBlock}>
-          <div className={style.FirstBlockRightList}>
+          <section className={style.FirstBlockRightList}>
             <div className={style.RightListIcon}>
               <SvgTarget className={style.RightIcon} />
             </div>
@@ -23,8 +23,8 @@ export default function FirstBlock() {
               <p className={style.RightListParagraph}>Integration into any service with convenient and intuitive functionality. Depending on the need, we select from simple and cheap ready-made solutions out of the box to complex automation using interconnected algorithms with a large amount of input data with fine-tuning of user functions for each employee. We will make enterprise resource planning and customer relations management system exactly for your needs.</p>
             </div>
             <p className={style.RightListParagraphMobile}>Integration into any service with convenient and intuitive functionality. Depending on the need, we select from simple and cheap ready-made solutions out of the box to complex automation using interconnected algorithms with a large amount of input data with fine-tuning of user functions for each employee. We will make enterprise resource planning and customer relations management system exactly for your needs.</p>
-          </div>
-          <div className={style.FirstBlockRightList}>
+          </section>
+          <section className={style.FirstBlockRightList}>
             <div className={style.RightListIcon}>
               <SvgProcesses className={style.RightIcon} />
             </div>
@@ -33,8 +33,8 @@ export default function FirstBlock() {
               <p className={style.RightListParagraph}>If you have a complex, multi-level business process with interrelated processes that depend on each other. It is critically important to have a well-formed corporate document management regulations, inventory accounting and identify weaknesses of the system. With the help of our software, you get control not only of the sales department, but also of dealers, contractors, the operation of factories together with their warehouses and delivery to the final consumer.</p>
             </div>
             <p className={style.RightListParagraphMobile}>If you have a complex, multi-level business process with interrelated processes that depend on each other. It is critically important to have a well-formed corporate document management regulations, inventory accounting and identify weaknesses of the system. With the help of our software, you get control not only of the sales department, but also of dealers, contractors, the operation of factories together with their warehouses and delivery to the final consumer.</p>
-          </div>
-          <div className={style.FirstBlockRightList}>
+          </section>
+          <section className={style.FirstBlockRightList}>
             <div className={style.RightListIcon3}>
               <SvgEmployeeStudy className={style.RightIcon} />
             </div>
@@ -43,7 +43,7 @@ export default function FirstBlock() {
               <p className={style.RightListParagraph}>Users who have been trained in the use of electronic document management technologies know what processes they automate and for what, are able to quickly generate the necessary information and make clear decisions based on well-established interaction. Employees get rid of routine operations freeing up time for more useful actions. The system minimizes the factor of human errors is intuitive and accessible for perception and interaction.</p>
             </div>
             <p className={style.RightListParagraphMobile}>Users who have been trained in the use of electronic document management technologies know what processes they automate and for what, are able to quickly generate the necessary information and make clear decisions based on well-established interaction. Employees get rid of routine operations freeing up time for more useful actions. The system minimizes the factor of human errors is intuitive and accessible for perception and interaction.</p>
-          </div>
+          </section>
         </div>
       </div>
     </div>

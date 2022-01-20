@@ -277,7 +277,7 @@ export default function SecondBlock() {
       <div className={style.SecondBlockLeft}>
         <h2 className={style.Header}>Stages of enterpize optimization development and implementation</h2>
         <div className={style.SecondBlockLine}></div>
-        <div className={style.SecondBlockConent}>
+        <section className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><SvgCheckWhite className={style.CheckIcon} alt="check icon" /></div>
           <div>
             <h3 className={style.SecondBlockH}>Definition of the general concept, approval of the technical task</h3>
@@ -288,8 +288,8 @@ export default function SecondBlock() {
               &nbsp;<button onClick={() => setSurveyModalIsOpen(true)} className={style.ButtonModal}>thoroughly describing</button>&nbsp;
               all, even the smallest processes.</p>
           </div>
-        </div>
-        <div className={style.SecondBlockConent}>
+        </section>
+        <section className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><SvgCheckWhite alt="check icon" /></div>
           <div>
             <h3 className={style.SecondBlockH}>Interface design, programming of data processing algorithms</h3>
@@ -300,8 +300,8 @@ export default function SecondBlock() {
               &nbsp;<button onClick={() => setAdaptedModalIsOpen(true)} className={style.ButtonModal}>adapted solutions</button>&nbsp;
               for the company&apos;s business processes and develop an interface for them. The execution of all actions in the system will become obvious and intuitive.</p>
           </div>
-        </div>
-        <div className={style.SecondBlockConent}>
+        </section>
+        <section className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><SvgCheckWhite alt="check icon" /></div>
           <div>
             <h3 className={style.SecondBlockH}>Implementation and adaptation of the system to direct activities</h3>
@@ -311,8 +311,8 @@ export default function SecondBlock() {
             &nbsp;<button onClick={() => setInfrastructureModalIsOpen(true)} className={style.ButtonModal}>IT infrastructure</button>&nbsp;
             necessary to ensure the normal functioning of the system. Work data and reference information are loaded from the old system, excel files, etc.</p>
           </div>
-        </div>
-        <div className={style.SecondBlockConent}>
+        </section>
+        <section className={style.SecondBlockConent}>
           <div className={style.SecondBlockIcon}><SvgCheckWhite alt="check icon" /></div>
           <div>
             <h3 className={style.SecondBlockH}>Commissioning into commercial operation, further maintenance</h3>
@@ -320,7 +320,7 @@ export default function SecondBlock() {
             &nbsp;<button onClick={() => setStudyModalIsOpen(true)} className={style.ButtonModal}>users is trained</button>
             , instructions for working in the system are developed. In the process of full-fledged operation, will necessarily appear current improvements, finding ways to increase the efficiency and return on the system, adding new modules to it. Take into account the aspects of information security - identifying risks and ways to respond to them.</p>
           </div>
-        </div>
+        </section>
       </div>
       <div className={style.SecondBlockRight}>
         <Image
