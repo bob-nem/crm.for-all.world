@@ -8,7 +8,7 @@ import chooseERP from '../../images/articles/find-best-erp.webp'
 
 export default function HowToChoise() {
     return (
-        <div className={style.Container}>
+        <article>
             <Head>
                 <title>How to choise ERP system</title>
                 <meta name="description" content="Enterprise processes optimization systems others software integration in Bangladesh business." />
@@ -98,6 +98,6 @@ export default function HowToChoise() {
                 <p style={{ fontWeight: "bold", paddingTop: "1em" }}>And most importantly, remember: the chosen ERP system should simplify and speed up your work, and not vice versa</p>
             </div>
             <Footer />
-        </div>
+        </article>
     )
 }

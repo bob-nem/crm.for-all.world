@@ -17,7 +17,7 @@ import AxelorInterface from '../../images/articles/Open-Source-ERP-Axelor-interf
 
 export default function OpenSourceSystems() {
     return (
-        <div>
+        <article>
             <Head>
                 <title>Open source corporate systems</title>
                 <meta name="description" content="enterprise ERP systems software integration in Bangladesh business." />
@@ -209,6 +209,6 @@ export default function OpenSourceSystems() {
                 <p>There are other open source ERP solutions, although less common. These include <Link href="https://ofbiz.apache.org/"><a title="Apache ERP developer" target="_blank">Apache OFBiz</a></Link> and <Link href="https://www.idempiere.org/"><a title="IDempiere ERP developer" target="_blank">IDempiere</a></Link>. You can search about them on the internet to find more information.</p>
             </div>
             <Footer />
-        </div>
+        </article>
     )
 }

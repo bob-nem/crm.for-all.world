@@ -8,7 +8,7 @@ import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
 export default function CloudAdvantages() {
     return (
-        <>
+        <article>
             <Head>
                 <title>Advantages of cloud corporate systems</title>
                 <meta name="description" content="Installation methods for ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
@@ -109,6 +109,6 @@ export default function CloudAdvantages() {
                 </ul>
             </div>
             <Footer />
-        </>
+        </article>
     )
 }

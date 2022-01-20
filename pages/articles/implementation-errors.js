@@ -7,7 +7,7 @@ import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
 export default function ImplementationErrors () {
     return (
-        <div>
+        <article>
             <Head>
                 <title>Top 5 Business Optimization Mistakes</title>
                 <meta name="description" content="ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
@@ -76,6 +76,6 @@ export default function ImplementationErrors () {
                 <p>Subscribe, then we will talk about specific ways to optimize the business of different industries. Leave comments so that we can understand which industry is more relevant to you. Let&apos;s start with her!</p>
             </div>
             <Footer />
-        </div>
+        </article>
     )
 }

@@ -16,8 +16,7 @@ export default function Articles() {
         <div className={style.Wrapper} id="articles">
             <h2 className={style.Header}>ARTICLES</h2>
             <div className={style.Container}>
-
-                <div className={style.Box}>
+                <section className={style.Box}>
                     <Link href="/articles/how-to-choise-ERP">
                         <a title="How to choise ERP system">
                             <div className={style.Content} style={{ border: "2px dashed white", borderRadius: ".5rem" }}>
@@ -34,8 +33,8 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
-                <div className={style.Box} style={{ placeItems: "start" }}>
+                </section>
+                <section className={style.Box} style={{ placeItems: "start" }}>
                     <Link href="/articles/differences-between-erp-and-crm">
                         <a title="Differences between ERP and CRM systems">
                             <div className={style.Content} style={{ display: "flex", flexDirection: "column", flex: "1" }}>
@@ -55,8 +54,8 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
-                <div className={style.Box}>
+                </section>
+                <section className={style.Box}>
                     <Link href="/articles/open-source-corporate-systems">
                         <a title="Open source corporate systems">
                             <div className={style.ContentOpenSource}>
@@ -70,8 +69,8 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
-                <div className={style.Box}>
+                </section>
+                <section className={style.Box}>
                     <Link href="/articles/cloud-infrstructure-advantages">
                         <a title="Advantages of cloud infrastructure">
                             <div className={style.Content}>
@@ -93,8 +92,8 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
-                <div className={style.Box}>
+                </section>
+                <section className={style.Box}>
                     <Link href="/articles/implementation-errors">
                         <a title="Implementation errors">
                             <div className={style.Content} style={{ display: "inline-flex" }}>
@@ -108,8 +107,8 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
-                <div className={style.Box}>
+                </section>
+                <section className={style.Box}>
                     <Link href="/articles/scada-with-erp">
                         <a title="SCADA with ERP integration">
                             <div className={style.ContentScada}>
@@ -117,8 +116,8 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
-                <div className={style.Box}>
+                </section>
+                <section className={style.Box}>
                     <Link href="/articles/wms-systems">
                         <a title="Warehouse Management Systems">
                             <div className={style.Content}>
@@ -130,7 +129,7 @@ export default function Articles() {
                             </div>
                         </a>
                     </Link>
-                </div>
+                </section>
             </div>
         </div>
     )

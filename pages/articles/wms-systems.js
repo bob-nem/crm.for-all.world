@@ -8,7 +8,7 @@ import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
 export default function WmsSystems() {
     return (
-        <>
+        <article>
             <Head>
                 <title>Warehose management systems</title>
                 <meta name="description" content="WMS software integration in Bangladesh business." />
@@ -162,6 +162,6 @@ export default function WmsSystems() {
                 <p>IT professionals specializing in warehouse activities assure that a simple investment in automation will not be able to seriously increase the productivity of the warehouse. A banal replacement of some resources with others, albeit more technologically advanced, is not enough. The competent organization of the exploitation of these resources becomes a non-trivial task: anyway, in any system there is a person on whom a lot depends. Attempts to negate the influence of the human factor by means of automation, of course, are doomed to failure. Introducing even the most modern and technologically advanced management tools, we must not forget that the key to the success of any activity is an organized team of qualified specialists who responsibly approach their work and believe in a common goal.</p>
             </div>
             <Footer />
-        </>
+        </article>
     )
 }

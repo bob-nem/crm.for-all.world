@@ -7,7 +7,7 @@ import TopImg from '../../images/articles/erp-and-crm-differences_topBG.webp'
 
 export default function ScadaWithErp() {
     return (
-        <div>
+        <article>
             <Head>
                 <title>Integration of SCADA and ERP systems</title>
                 <meta name="description" content="Difficult enterprise processes integration. ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
@@ -131,6 +131,6 @@ export default function ScadaWithErp() {
                 <p>For a long time, system integrators from the field of automated control systems we have not faced the need to deal with related systems and provide interfaces for information exchange. The problems of processing and using the information accumulated in the databases of SCADA systems in the field of business processes were imposed on those who need this data. But now they are facing a serious challenge: potential and former customers no longer need only a well-established technological process, they need a business process linked to technology. And for this, it is necessary to take much more seriously the design of new systems, as well as the choice of the &quot;right&quot; tools.</p>
             </div>
             <Footer />
-        </div>
+        </article>
     )
 }

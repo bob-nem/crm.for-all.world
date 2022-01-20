@@ -23,7 +23,7 @@ import SvgMaterialResources from '../../images/icons/MaterialResources'
 
 export default function Differences() {
     return (
-        <div className={style.Container}>
+        <article>
             <Head>
                 <title>Differences between CRM and ERP systems</title>
                 <meta name="description" content="which program to choose? ERP or CRM software integration in Bangladesh business." />
@@ -274,6 +274,6 @@ export default function Differences() {
                 <p style={{ padding: "1em 0 .1em" }}><strong>So, both IT products are engaged in business process automation, but CRM is at the level of the relationship between the company and customers, and ERP is at the level of the internal organization of the entire enterprise. If you need the capabilities of both programs, then even at the stage of choosing a system, you should think about which of the integration options will be most convenient.</strong></p>
             </div>
             <Footer />
-        </div>
+        </article>
     )
 }
