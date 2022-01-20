@@ -15,7 +15,10 @@ export default function Home() {
     <div className={style.Container}>
       <Head>
         <title>Enterprise processes optimization</title>
-        <meta name="description" content="Corporate systems. ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
+        <meta name="description" content="software integration in Bangladesh business." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Corporate software systems. ERP, CRM, WMS, MES, SCADA" />
+        <meta name="author" content="it.for-all.world" />
         <link rel="canonical" href="https://optimization.for-all.world" key="canonical" />
         <meta property="og:title" content="Enterprise processes optimization" />
         <meta property="og:description" content="Corporate systems. ERP, CRM, WMS, MES, SCADA and others software integration in Bangladesh business." />
