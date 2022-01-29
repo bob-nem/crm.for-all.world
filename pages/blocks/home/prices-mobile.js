@@ -2,7 +2,6 @@ import style from '../../../styles/Prices.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import {Tabs} from '../../../components/tabs/Tabs'
-import TabsContainerMobile from './prices-mobile'
 
 import suitecrm from '../../../images/logotypes/suite-crm-logo.png'
 import orocrm from '../../../images/logotypes/oroinc-logo-s.png'
@@ -16,14 +15,11 @@ import kaskad from '../../../images/logotypes/kaskad.png'
 import siemens from '../../../images/logotypes/siemens-sq.jpg'
 import Yokogawa from '../../../images/logotypes/Yokogawa'
 
-export default function Prices() {
+export default function PricesMobile() {
   return (
-    <div className={style.Container} id="prices">
-      <h2 className={style.Header}>categories of solutions and their prices</h2>
-      <p className={style.MainHeaderDescription}>Please note that depending on the set of functions and the presence of special conditions in the technical specification of the customer, the price may vary greatly. These prices are valid for the installation and configuration of a standard basic package.</p>
-      <div className={style.TabsContainerDesk}> {/* desk view */}
+      <div className={style.TabsContainerMobile}> {/* mobile view */}
         <Tabs>
-          <div label="CRM - Customer Relationship Management" className={style.OneTabContainer}>
+          <div label="CRM" className={style.OneTabContainer}>
             <p>
               These systems are built to make customers happy, whether it’s through improved ad targeting or tailored sales communications. CRM software is a front-office tool that is used by employees in departments such as sales and marketing to increase revenue through an improvement in customer experience. After all, without a solid customer base, your company doesn’t have much to go on. These programs are available as either standalone software or as part of an ERP solution. These are some of the most popular CRM systems in the world. The general functionality of all the proposed solutions, with the exception of some details, is the same.
             </p>
@@ -56,7 +52,7 @@ export default function Prices() {
                 <div className={style.Logo}>
                   <Image
                     src={bitrix24}
-                    alt="Bitrix24 site and CRM"
+                    alt="Bitrix24 site & CRM"
                   />
                 </div>
                 <p className={style.CardD}>
@@ -127,7 +123,7 @@ export default function Prices() {
             </div>
             <p style={{paddingTop: "1rem"}}>We conduct a comprehensive audit of the enterprise for the possibility of optimizing work processes, improving production indicators and reducing costs.</p>
           </div>
-          <div label="ERP - Enterprise Resource Planning"  className={style.OneTabContainer}>
+          <div label="ERP"  className={style.OneTabContainer}>
             <p>
               This software contains functionality for multiple different business processes such as finance, HR, inventory management and distribution. Large enterprises commonly use enterprise resource planning solutions, but some small businesses do opt for these solutions as well. ERP software is known for containing tools related to both front- and back-office information, along with improving internal communication and data exchange. Automation is also a key feature due to its connectivity of multiple workflows. Our company provides integration services for the most popular ERP solutions in the world.
             </p>
@@ -231,7 +227,7 @@ export default function Prices() {
             </div>
             <p style={{paddingTop: "1rem"}}>We conduct a comprehensive audit of the enterprise for the possibility of optimizing work processes, improving production indicators and reducing costs.</p>
           </div>
-          <div label="SCADA - Supervisory Control and Data Acquisition"  className={style.OneTabContainer}>
+          <div label="SCADA"  className={style.OneTabContainer}>
             <p>
               A software package designed to develop and provide real-time operation of systems for collecting, processing, displaying and archiving information about an industrial production or a monitoring object. SCADA can be part of an automated process control system, control and accounting of electric energy and energy resources, an environmental monitoring system, a scientific experiment, building automation, etc. SCADA systems are used in all sectors of the economy where it is required to provide operator control over technological processes in real time. Our company provides integration services for the most popular SCADA solutions in the world.
             </p>
@@ -313,7 +309,5 @@ export default function Prices() {
           </div>
         </Tabs>
       </div>
-      <TabsContainerMobile /> {/* mobile view */}
-    </div>
   )
 }
