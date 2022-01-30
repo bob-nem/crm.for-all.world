@@ -1,8 +1,8 @@
 import style from '../../../styles/Header.module.css';
 import Image from 'next/image';
 
-import topIMG from '../../../images/Top-IMG.png';
-import unicornTopLogo from '../../../images/unicorn-logo-gr.png';
+import topIMG from '../../../images/Top-IMG.webp';
+import unicornTopLogo from '../../../images/unicorn-logo-gr.webp';
 
 export default function Header() {
   return (

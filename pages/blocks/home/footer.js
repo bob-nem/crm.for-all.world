@@ -6,7 +6,7 @@ import axios from 'axios'
 import { useRouter } from 'next/router'
 import API_KEY from '../../../apikey'
 
-import unicornTopLogo from '../../../images/unicorn-logo-gr.png';
+import unicornTopLogo from '../../../images/unicorn-logo-gr.webp';
 
 export default function Footer() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();

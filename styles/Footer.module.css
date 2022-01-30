@@ -1,5 +1,5 @@
 .Container {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/backgrounds/footer-bg.webp);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@
 
 @media only screen and (max-width: 1400px) {
   .Container {
-    background-image: url(../images/footer-bg-sm.png);
+    background-image: url(../images/backgrounds/footer-bg-sm.webp);
     padding: 2% 4% 4%;
   }
 }
